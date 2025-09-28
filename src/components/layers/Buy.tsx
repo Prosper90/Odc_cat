@@ -9,7 +9,7 @@ import TokenSelector from "../swap/TokenSelector";
 import { ConnectKitButton } from "connectkit";
 
 export default function Buy() {
-  const { address, isConnected } = useAccount();
+  const { isConnected } = useAccount();
 
   // Swap state - Default to ODC trading
   const [tokenIn, setTokenIn] = useState<Token | null>(
@@ -33,7 +33,6 @@ export default function Buy() {
     error: hookError,
     clearError,
     tokenBalances,
-    tokenPrices,
     refreshBalances,
   } = useSwapLogic();
 

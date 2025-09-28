@@ -3,7 +3,7 @@ import { useAccount, useWalletClient } from 'wagmi';
 import { ethers } from 'ethers';
 import { PancakeSwapService } from '../utils/pancakeSwap';
 import { priceService } from '../utils/priceService';
-import { Token, TokenBalance } from '../types';
+import { Token } from '../types';
 
 export const useSwapLogic = () => {
   const { address, isConnected } = useAccount();
