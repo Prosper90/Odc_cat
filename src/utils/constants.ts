@@ -3,6 +3,7 @@ export const TOKEN_ADDRESSES = {
   WBNB: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
   BNB: 'BNB', // Native BNB
   USDT: '0x55d398326f99059fF775485246999027B3197955',
+  ODC: '0x018cF072DEF5e8075294B019FcECCbD49C224444', // OBE CAT Token
 } as const;
 
 // PancakeSwap Router addresses
@@ -18,11 +19,11 @@ export const BSC_RPC_URL = 'https://bsc-dataseed1.binance.org/';
 // Token configurations
 export const SUPPORTED_TOKENS = [
   {
-    symbol: 'USDT',
-    name: 'Tether USD',
-    address: TOKEN_ADDRESSES.USDT,
+    symbol: 'ODC',
+    name: 'OBE CAT Token',
+    address: TOKEN_ADDRESSES.ODC,
     decimals: 18,
-    logo: '/tokens/usdt.png',
+    logo: '/tokens/odc.png',
   },
   {
     symbol: 'BNB',
@@ -37,6 +38,13 @@ export const SUPPORTED_TOKENS = [
     address: TOKEN_ADDRESSES.WBNB,
     decimals: 18,
     logo: '/tokens/wbnb.png',
+  },
+  {
+    symbol: 'USDT',
+    name: 'Tether USD',
+    address: TOKEN_ADDRESSES.USDT,
+    decimals: 18,
+    logo: '/tokens/usdt.png',
   },
 ] as const;
 

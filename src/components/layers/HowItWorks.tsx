@@ -1,5 +1,3 @@
-
-
 export default function HowItWorks() {
   return (
     <div
@@ -13,9 +11,9 @@ export default function HowItWorks() {
             AI-Powered Hedge Fund for Everyone
           </h2>
           <p className="max-w-[742px] mx-auto text-white text-base max-md:text-sm">
-            Instead of spending hours managing trades, Cat automates the
-            entire process. Every $CAT token you hold connects you to our AI
-            managed funds - generating growth and rewards daily.
+            Instead of spending hours managing trades, Cat automates the entire
+            process. Every $CAT token you hold connects you to our AI managed
+            funds - generating growth and rewards daily.
           </p>
         </div>
 
@@ -28,7 +26,7 @@ export default function HowItWorks() {
             height="950"
             decoding="async"
             className="w-full h-auto object-cover"
-            src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhowItWorksFlowImg.610e073e.png&w=3840&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t"
+            src="/howItWorksFlowImg.png"
           />
         </figure>
 
@@ -41,7 +39,7 @@ export default function HowItWorks() {
             height="1278"
             decoding="async"
             className="w-full h-auto object-cover"
-            src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FnewMobileHowItWorksImg.bc8a3dcf.png&w=750&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t"
+            src="/howItWorksFlowImg.png"
           />
         </figure>
       </div>

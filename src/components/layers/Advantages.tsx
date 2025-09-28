@@ -8,12 +8,12 @@ export default function Advantages() {
       <div className="container relative max-md:z-20">
         <div className="text-center max-w-[832px] mx-auto mb-[24px] flex flex-col items-center max-md:mb-5 animate-fade-in-up">
           <h2 className="text-[40px] font-bold text-white mb-[10px] animate-pulse-soft">
-            Core Advantages That Set Cat Apart
+            Core Advantages That Set <span className="text-amber-400">Sun God Lab</span> Apart
           </h2>
-          <p>
-            Cat Finance removes the barriers of traditional investing. With
-            just wallet, you can access diversified funds spanning crypto, AI,
-            mining, and real-world assets—without the complexity or hidden fees.
+          <p className="text-white/80">
+            Sun God Lab removes the barriers of traditional finance through community-driven
+            solutions. Access fair civil services and participate in governance that benefits
+            everyone—with transparency and freedom at the core.
           </p>
         </div>
         <div
@@ -680,7 +680,7 @@ export default function Advantages() {
           </div>
         </div>
         <div className="flex justify-center">
-          <p className="font-bold text-[20px] text-[#0FEDBE] text-center">
+          <p className="font-bold text-[20px] text-[#FF8800] text-center">
             Built like a hedge fund. Accessible to everyone.
           </p>
         </div>

@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <div className="flex items-center flex-col justify-between border-b transition-all duration-400 ease-in-out w-full fixed top-0 z-[1000] max-sm:h-auto bg-[rgba(2,9,37,0.2)] border-b-[#b3ecfa9d]">
-      <div className="py-1 w-full bg-gradient-to-r from-cyan-400 to-emerald-400 transition-transform duration-300 translate-y-0">
+      <div className="py-1 w-full bg-gradient-to-r from-[var(--primary-amber)] to-[var(--secondary-amber)] transition-transform duration-300 translate-y-0">
         <div className="overflow-hidden whitespace-nowrap">
           <span className="inline-block animate-marquee">
             <p className="text-center text-[13px] max-[380px]:text-[12px] text-black font-medium capitalize">
@@ -25,8 +25,8 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <div className="py-2 w-full transition-all duration-500">
-        <div className="flex items-center w-full p-5 container mx-auto relative">
+      <div className="py-1 w-full transition-all duration-500">
+        <div className="flex items-center w-full px-5 container mx-auto relative">
           <div className="w-[150px] max-md:w-[50px] flex items-center max-xl:w-[80px]">
             <div className="opacity-100">
               <a
@@ -150,10 +150,10 @@ const Header: React.FC = () => {
                   <a
                     rel="noreferrer"
                     aria-label="link"
-                    className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200"
-                    href="/#how-to-buy"
+                    className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
+                    href="/#swap-interface"
                   >
-                    How to Buy
+                    Trade $ODC
                   </a>
                 </div>
               </li>
@@ -162,7 +162,7 @@ const Header: React.FC = () => {
                   <a
                     rel="noreferrer"
                     aria-label="link"
-                    className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200"
+                    className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
                     href="/#corefeatures"
                   >
                     Core Features
@@ -174,7 +174,7 @@ const Header: React.FC = () => {
                   <a
                     rel="noreferrer"
                     aria-label="link"
-                    className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200"
+                    className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
                     href="/#roadmap"
                   >
                     Roadmap
@@ -187,7 +187,7 @@ const Header: React.FC = () => {
                     rel="noreferrer"
                     aria-label="link"
                     target="_blank"
-                    className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200"
+                    className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
                     href="https://codeum.org/kyc/uni-labs"
                   >
                     Audit
@@ -198,7 +198,7 @@ const Header: React.FC = () => {
                 <div className="opacity-100">
                   <button
                     type="button"
-                    className="outline-none text-white font-medium text-base cursor-pointer hover:text-[#0FEDBE] transition-colors duration-200"
+                    className="outline-none text-white font-medium text-base cursor-pointer hover:text-amber-400 transition-colors duration-200"
                   >
                     White Paper
                   </button>
@@ -215,7 +215,7 @@ const Header: React.FC = () => {
                     return (
                       <button
                         onClick={show}
-                        className="font-medium flex items-center transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 max-sm:w-full bg-gradient-to-r from-cyan-300 to-emerald-300 rounded-[60px] text-[#00070F] hover:from-yellow-400 hover:to-yellow-400 cursor-pointer max-lg:h-10 max-xl:gap-1 w-fit text-sm min-w-[132px] max-xl:min-w-auto px-3 h-[39px] max-[389px]:gap-0 max-[389px]:justify-center z-40"
+                        className="font-medium flex items-center transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 max-sm:w-full bg-gradient-to-r from-[var(--primary-amber)] to-[var(--accent-golden)] rounded-[60px] text-[#00070F] hover:from-yellow-400 hover:to-yellow-400 cursor-pointer max-lg:h-10 max-xl:gap-1 w-fit text-sm min-w-[132px] max-xl:min-w-auto px-3 h-[39px] max-[389px]:gap-0 max-[389px]:justify-center z-40"
                         aria-label="button"
                       >
                         {isConnected
@@ -227,7 +227,10 @@ const Header: React.FC = () => {
                 </ConnectKitButton.Custom>
 
                 <div className="lg:hidden flex items-center gap-8">
-                  <button onClick={toggleMobileMenu} aria-label="Toggle mobile menu">
+                  <button
+                    onClick={toggleMobileMenu}
+                    aria-label="Toggle mobile menu"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -246,7 +249,11 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Slide Sidebar */}
-      <div className={`fixed inset-0 z-[1001] lg:hidden transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+      <div
+        className={`fixed inset-0 z-[1001] lg:hidden transition-all duration-300 ${
+          isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
         {/* Backdrop */}
         <div
           className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -254,18 +261,32 @@ const Header: React.FC = () => {
         ></div>
 
         {/* Sidebar */}
-        <div className={`absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-[rgba(2,9,37,0.95)] border-l border-[#b3ecfa9d] transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div
+          className={`absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-[rgba(2,9,37,0.95)] border-l border-[#b3ecfa9d] transform transition-transform duration-300 ${
+            isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-[#b3ecfa9d]">
             <h2 className="text-white font-bold text-lg">Menu</h2>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-white hover:text-[#0FEDBE] transition-colors"
+              className="text-white hover:text-amber-400 transition-colors"
               aria-label="Close menu"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <path d="M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                <path
+                  d="M18 6L6 18"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M6 6l12 12"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
               </svg>
             </button>
           </div>
@@ -273,22 +294,22 @@ const Header: React.FC = () => {
           {/* Navigation Links */}
           <div className="flex flex-col p-6 space-y-4">
             <a
-              href="/#how-to-buy"
-              className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200 py-3 border-b border-white/10"
+              href="/#swap-interface"
+              className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              How to Buy
+              Trade $ODC
             </a>
             <a
               href="/#corefeatures"
-              className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200 py-3 border-b border-white/10"
+              className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Core Features
             </a>
             <a
               href="/#roadmap"
-              className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200 py-3 border-b border-white/10"
+              className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Roadmap
@@ -297,14 +318,14 @@ const Header: React.FC = () => {
               href="https://codeum.org/kyc/uni-labs"
               target="_blank"
               rel="noreferrer"
-              className="text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200 py-3 border-b border-white/10"
+              className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Audit
             </a>
             <button
               type="button"
-              className="text-left text-white font-medium hover:text-[#0FEDBE] transition-colors duration-200 py-3"
+              className="text-left text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               White Paper

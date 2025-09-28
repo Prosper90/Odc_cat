@@ -105,7 +105,7 @@ export default function ProblemSolution() {
             </div>
 
             {/* Solution Side */}
-            <div className="max-sm:rounded-none max-sm:rounded-b-3 max-sm:p-2 max-sm:rounded-t-none bg-gradient-to-br from-[rgba(36,45,58,0)] to-[rgba(29,141,139,0.5)] h-full border border-[#1dddb4b0] max-sm:border-l max-sm:border-t-0 border-l-0 rounded-tr-[20px] rounded-br-[20px] p-[35px] max-lg:p-5 max-[600px]:p-[15px]">
+            <div className="max-sm:rounded-none max-sm:rounded-b-3 max-sm:p-2 max-sm:rounded-t-none bg-gradient-to-br from-[rgba(58,45,36,0)] to-[rgba(29,141,139,0.5)] h-full border border-[#FF8800] max-sm:border-l max-sm:border-t-0 border-l-0 rounded-tr-[20px] rounded-br-[20px] p-[35px] max-lg:p-5 max-[600px]:p-[15px]">
               <h3 className="text-xl font-bold mb-4 text-white">
                 The Solution
               </h3>
@@ -122,7 +122,7 @@ export default function ProblemSolution() {
                       <g clipPath="url(#clip0_341_11839)">
                         <path
                           d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
-                          stroke="#0FEDBE"
+                          stroke="#FF8800"
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -154,7 +154,7 @@ export default function ProblemSolution() {
                       <g clipPath="url(#clip0_341_11839_2)">
                         <path
                           d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
-                          stroke="#0FEDBE"
+                          stroke="#FF8800"
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -188,7 +188,7 @@ export default function ProblemSolution() {
                       <g clipPath="url(#clip0_341_11839_3)">
                         <path
                           d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
-                          stroke="#0FEDBE"
+                          stroke="#FF8800"
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -229,37 +229,37 @@ export default function ProblemSolution() {
         </div>
 
         {/* Comparison Table */}
-        <div className="relative shadow-[inset_0px_4px_34px_0px_#00FFDD] max-[900px]:shadow-[inset_0px_4px_10px_0px_#00FFDD] rounded-[20px] max-md:rounded-[10px] overflow-hidden overflow-x-auto">
+        <div className="relative shadow-[inset_0px_4px_34px_0px_#FF8800] max-[900px]:shadow-[inset_0px_4px_10px_0px_#FF8800] rounded-[20px] max-md:rounded-[10px] overflow-hidden overflow-x-auto">
           {/* Hover overlays for desktop */}
           <div className="absolute inset-0 z-20 pointer-events-none max-[1200px]:hidden">
             <div
-              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#00FFDD] bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
+              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
               style={{ left: "0.399994px", width: "240px" }}
             ></div>
             <div
-              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#00FFDD] bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
+              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
               style={{ left: "240.4px", width: "308.925px" }}
             ></div>
             <div
-              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#00FFDD] bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
+              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
               style={{ left: "549.325px", width: "524.513px" }}
             ></div>
           </div>
 
-          <table className="relative z-12 w-full border-collapse bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.6)] max-[900px]:from-[rgba(36,45,58,0.3)] max-[900px]:to-[rgba(15,237,190,0.1)] min-w-[800px] max-[767px]:min-w-auto">
+          <table className="relative z-12 w-full border-collapse bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.6)] max-[900px]:from-[rgba(58,45,36,0.3)] max-[900px]:to-[rgba(237,134,15,0.1)] min-w-[800px] max-[767px]:min-w-auto">
             <thead className="max-md:hidden">
               <tr className="font-bold">
-                <th className="py-[23px] px-8 border border-[#283442] min-w-[240px]">
+                <th className="py-[23px] px-8 border border-[#443828] min-w-[240px]">
                   <p className="text-xl font-bold text-left text-white">
                     Performance
                   </p>
                 </th>
-                <th className="py-[23px] px-8 border border-[#283442]">
+                <th className="py-[23px] px-8 border border-[#443828]">
                   <p className="text-xl font-bold text-left text-white">
                     Other Crypto Exchanges
                   </p>
                 </th>
-                <th className="py-[23px] px-8 border border-[#283442]">
+                <th className="py-[23px] px-8 border border-[#443828]">
                   <p className="text-xl font-bold text-left text-white">
                     Cat
                   </p>
@@ -269,11 +269,11 @@ export default function ProblemSolution() {
 
             <tbody>
               {/* Time & Stress Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
-                <td className="p-4 border border-[#283442] align-middle">
+              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
+                <td className="p-4 border border-[#443828] align-middle">
                   <p className="font-semibold text-white">Time & Stress</p>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -301,7 +301,7 @@ export default function ProblemSolution() {
                     </div>
                   </div>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -317,7 +317,7 @@ export default function ProblemSolution() {
                         ></path>
                         <path
                           d="M24.779 7.74317V4.50653C25.6772 4.18906 26.3276 3.33731 26.3276 2.32295C26.3276 1.04533 25.2823 0 24.0047 0C22.727 0 21.6817 1.04533 21.6817 2.32295C21.6817 3.32957 22.3321 4.18131 23.2303 4.50653V7.74317H24.779Z"
-                          fill="#00FFDD"
+                          fill="#FF8800"
                         ></path>
                       </svg>
                     </i>
@@ -335,11 +335,11 @@ export default function ProblemSolution() {
               </tr>
 
               {/* Rewards Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
-                <td className="p-4 border border-[#283442] align-middle">
+              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
+                <td className="p-4 border border-[#443828] align-middle">
                   <p className="font-semibold text-white">Rewards</p>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -367,7 +367,7 @@ export default function ProblemSolution() {
                     </div>
                   </div>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -383,7 +383,7 @@ export default function ProblemSolution() {
                         ></path>
                         <path
                           d="M32.6274 41.375H9.0569C7.95579 41.375 7.05488 40.4741 7.05488 39.373V25.7992C7.05488 24.6981 7.95579 23.7972 9.0569 23.7972H32.6274C33.7285 23.7972 34.6294 24.6981 34.6294 25.7992V39.373C34.6294 40.4741 33.7285 41.375 32.6274 41.375Z"
-                          fill="#00FFDD"
+                          fill="#FF8800"
                         ></path>
                       </svg>
                     </i>
@@ -398,11 +398,11 @@ export default function ProblemSolution() {
               </tr>
 
               {/* Transparency Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
-                <td className="p-4 border border-[#283442] align-middle">
+              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
+                <td className="p-4 border border-[#443828] align-middle">
                   <p className="font-semibold text-white">Transparency</p>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -430,7 +430,7 @@ export default function ProblemSolution() {
                     </div>
                   </div>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -446,7 +446,7 @@ export default function ProblemSolution() {
                         ></path>
                         <path
                           d="M32.408 0C32.091 0 31.774 0.211346 31.774 0.636441V1.90692C31.774 2.75471 33.0445 2.75471 33.0445 1.90692V0.634039C33.0445 0.211346 32.7251 0 32.408 0Z"
-                          fill="#00FFDD"
+                          fill="#FF8800"
                         ></path>
                       </svg>
                     </i>
@@ -462,11 +462,11 @@ export default function ProblemSolution() {
               </tr>
 
               {/* Community Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
-                <td className="p-4 border border-[#283442] align-middle">
+              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
+                <td className="p-4 border border-[#443828] align-middle">
                   <p className="font-semibold text-white">Community</p>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -497,7 +497,7 @@ export default function ProblemSolution() {
                     </div>
                   </div>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -509,7 +509,7 @@ export default function ProblemSolution() {
                       >
                         <path
                           d="M37.9402 22.3743V10.6897C37.9402 9.75999 38.3172 8.91772 38.9269 8.30891C39.5365 7.69927 40.378 7.32227 41.3077 7.32227C41.966 7.32227 42.4997 7.85601 42.4997 8.51432V24.36C42.4997 24.9943 42.3133 25.6147 41.9643 26.1435L41.1872 27.3207M32.6309 41.9998C32.7565 40.6804 33.204 39.4119 33.9343 38.3057L39.5959 29.7304"
-                          stroke="#00FFDD"
+                          stroke="#FF8800"
                           strokeWidth="1.5"
                           strokeMiterlimit="10"
                           strokeLinecap="round"
@@ -528,13 +528,13 @@ export default function ProblemSolution() {
               </tr>
 
               {/* Dashboard Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
-                <td className="p-4 border border-[#283442] align-middle">
+              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
+                <td className="p-4 border border-[#443828] align-middle">
                   <p className="font-semibold text-white">
                     Transparent Dashboard
                   </p>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -572,7 +572,7 @@ export default function ProblemSolution() {
                     </div>
                   </div>
                 </td>
-                <td className="p-4 border border-[#283442] align-middle">
+                <td className="p-4 border border-[#443828] align-middle">
                   <div className="flex items-center gap-[15px]">
                     <i className="flex items-center flex-shrink-0">
                       <svg
@@ -585,7 +585,7 @@ export default function ProblemSolution() {
                         <circle cx="17" cy="26" r="17" fill="#0D4744"></circle>
                         <path
                           d="M26 33C34.8366 33 42 25.8366 42 17C42 8.16344 34.8366 1 26 1C17.1634 1 10 8.16344 10 17C10 25.8366 17.1634 33 26 33Z"
-                          stroke="#00FFDD"
+                          stroke="#FF8800"
                           strokeWidth="2"
                           strokeMiterlimit="10"
                           strokeLinecap="round"
@@ -593,7 +593,7 @@ export default function ProblemSolution() {
                         ></path>
                         <path
                           d="M17 42C25.8366 42 33 34.8366 33 26C33 17.1634 25.8366 10 17 10C8.16344 10 1 17.1634 1 26C1 34.8366 8.16344 42 17 42Z"
-                          stroke="#00FFDD"
+                          stroke="#FF8800"
                           strokeWidth="2"
                           strokeMiterlimit="10"
                           strokeLinecap="round"

@@ -22,7 +22,7 @@ export default function Testimony() {
           <div className="flex gap-4 px-4 min-w-max">
             {/* Testimonial Card 1 */}
             <div className="w-[316px] px-2">
-              <div className="bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] p-2 border border-[#283442] rounded-2xl max-lg:rounded-xl">
+              <div className="bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] p-2 border border-[#443828] rounded-2xl max-lg:rounded-xl">
                 <div className="flex flex-col items-center max-xl:items-start justify-between gap-5 max-xl:gap-8 max-xl:flex-col-reverse">
                   <div className="w-full max-xl:max-w-none">
                     <a
@@ -70,7 +70,7 @@ export default function Testimony() {
 
             {/* Testimonial Card 2 */}
             <div className="w-[316px] px-2">
-              <div className="bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] p-2 border border-[#283442] rounded-2xl max-lg:rounded-xl">
+              <div className="bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] p-2 border border-[#443828] rounded-2xl max-lg:rounded-xl">
                 <div className="flex flex-col items-center max-xl:items-start justify-between gap-5 max-xl:gap-8 max-xl:flex-col-reverse">
                   <div className="w-full max-xl:max-w-none">
                     <a
@@ -118,7 +118,7 @@ export default function Testimony() {
 
             {/* Testimonial Card 3 */}
             <div className="w-[316px] px-2">
-              <div className="bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] p-2 border border-[#283442] rounded-2xl max-lg:rounded-xl">
+              <div className="bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] p-2 border border-[#443828] rounded-2xl max-lg:rounded-xl">
                 <div className="flex flex-col items-center max-xl:items-start justify-between gap-5 max-xl:gap-8 max-xl:flex-col-reverse">
                   <div className="w-full max-xl:max-w-none">
                     <a
@@ -166,7 +166,7 @@ export default function Testimony() {
 
             {/* Testimonial Card 4 */}
             <div className="w-[316px] px-2">
-              <div className="bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] p-2 border border-[#283442] rounded-2xl max-lg:rounded-xl">
+              <div className="bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] p-2 border border-[#443828] rounded-2xl max-lg:rounded-xl">
                 <div className="flex flex-col items-center max-xl:items-start justify-between gap-5 max-xl:gap-8 max-xl:flex-col-reverse">
                   <div className="w-full max-xl:max-w-none">
                     <a
@@ -214,7 +214,7 @@ export default function Testimony() {
 
             {/* Testimonial Card 5 */}
             <div className="w-[316px] px-2">
-              <div className="bg-gradient-to-br from-[rgba(36,45,58,0.3)] to-[rgba(15,237,190,0.3)] p-2 border border-[#283442] rounded-2xl max-lg:rounded-xl">
+              <div className="bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] p-2 border border-[#443828] rounded-2xl max-lg:rounded-xl">
                 <div className="flex flex-col items-center max-xl:items-start justify-between gap-5 max-xl:gap-8 max-xl:flex-col-reverse">
                   <div className="w-full max-xl:max-w-none">
                     <a

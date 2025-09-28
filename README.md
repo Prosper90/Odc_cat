@@ -1,12 +1,12 @@
-# Cat Finance Frontend
+# Sun God Lab Frontend
 
-A modern, responsive React application for Cat Finance - an AI-driven DeFi platform that enables high-percentage yields through automated portfolio management and PancakeSwap integration.
+A modern, responsive React application for Sun God Lab - empowering communities through freedom in a disciplined world. Trade OBE CAT Token ($ODC) on BNB Chain with seamless PancakeSwap integration.
 
 ## 🚀 Features
 
 ### Core Functionality
-- **Presale Interface**: Interactive presale dashboard with real-time progress tracking
-- **Token Swapping**: Integrated PancakeSwap functionality for BNB, WBNB, and USDT
+- **Token Trading Interface**: PancakeSwap-style trading interface focused on $ODC
+- **Multi-Token Support**: Trade $ODC with BNB, WBNB, and USDT
 - **Web3 Integration**: Full wallet connectivity using ConnectKit and Wagmi
 - **Responsive Design**: Mobile-first design with adaptive layouts
 
@@ -102,6 +102,7 @@ frontend/
 - Binance Smart Chain (BSC) Mainnet
 
 ### Supported Tokens
+- **ODC**: OBE CAT Token (0x018cF072DEF5e8075294B019FcECCbD49C224444)
 - **BNB**: Native Binance Coin
 - **WBNB**: Wrapped BNB
 - **USDT**: Tether USD (BEP-20)
@@ -214,4 +215,4 @@ This project is part of the Cat Finance ecosystem. All rights reserved.
 
 ---
 
-**Cat Finance** - Revolutionizing DeFi through AI-driven portfolio management 🐱✨
+**Sun God Lab** - Empowering communities through freedom in a disciplined world 🌟✨
