@@ -23,7 +23,7 @@ export default function Tokenomics() {
           >
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-3.5 max-[1200px]:gap-5">
               <div className="col-span-1 max-sm:col-span-2">
-                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                   <label className="font-normal text-base leading-[1.3] mb-1 table">
                     Token Name
                   </label>
@@ -36,7 +36,7 @@ export default function Tokenomics() {
                 </div>
               </div>
               <div className="col-span-1 max-sm:col-span-2">
-                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                   <label className="font-normal text-base leading-[1.3] mb-1 table">
                     Token Type
                   </label>
@@ -49,7 +49,7 @@ export default function Tokenomics() {
                 </div>
               </div>
               <div className="col-span-1 max-sm:col-span-2">
-                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                   <label className="font-normal text-base leading-[1.3] mb-1 table">
                     Token Symbol
                   </label>
@@ -62,7 +62,7 @@ export default function Tokenomics() {
                 </div>
               </div>
               <div className="col-span-1 max-sm:col-span-2">
-                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                   <label className="font-normal text-base leading-[1.3] mb-1 table">
                     Decimal
                   </label>
@@ -75,7 +75,7 @@ export default function Tokenomics() {
                 </div>
               </div>
               <div className="col-span-1 max-sm:col-span-2 col-span-2">
-                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                   <label className="font-normal text-base leading-[1.3] mb-1 table">
                     Total Supply
                   </label>
@@ -88,7 +88,7 @@ export default function Tokenomics() {
                 </div>
               </div>
               <div className="col-span-2">
-                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] rounded-[20px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] rounded-[20px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex-[1]">
                       <label className="font-normal text-base leading-[1.3] mb-1 table">

@@ -178,7 +178,7 @@ export default function Faq() {
               <div
                 role="tablist"
                 aria-orientation="horizontal"
-                className="inline-flex h-auto items-center justify-center gap-[0] flex-col max-sm:flex-row max-w-[308px] max-md:max-w-[220px] max-sm:max-w-none w-full bg-[#242D3A33] border border-[#443828] rounded-[10px] overflow-hidden max-sm:overflow-x-auto max-sm:justify-start backdrop-blur-[90px] max-sm:whitespace-nowrap faqTabsList max-sm:!flex-col"
+                className="inline-flex h-auto items-center justify-center gap-[0] flex-col max-sm:flex-row max-w-[308px] max-md:max-w-[220px] max-sm:max-w-none w-full bg-[#2a1f1a33] border border-[#443828] rounded-[10px] overflow-hidden max-sm:overflow-x-auto max-sm:justify-start backdrop-blur-[90px] max-sm:whitespace-nowrap faqTabsList max-sm:!flex-col"
                 data-aos="fade-right"
                 data-aos-duration="800"
                 data-orientation="horizontal"
@@ -225,7 +225,7 @@ export default function Faq() {
                         <div
                           data-state={isOpen ? "open" : "closed"}
                           data-orientation="vertical"
-                          className="!bg-[#FFFFFF1A] w-full rounded-[12px] relative z-[999] max-md:rounded-[10px] [background-image:linear-gradient(180.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.2)_87.34%)] border border-[#443828] backdrop-blur-[90px] shadow-[0px_4px_10px_0px_#FF8800_inset] data-[state=open]:border-border duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90 max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(29_84_73)_87.34%)] max-[900px]:shadow-[inset_0px_4px_20px_0px_#d67b26]"
+                          className="!bg-[#FFFFFF1A] w-full rounded-[12px] relative z-[999] max-md:rounded-[10px] [background-image:linear-gradient(180.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.2)_87.34%)] border border-[#443828] backdrop-blur-[90px] shadow-[0px_4px_10px_0px_#FF8800_inset] data-[state=open]:border-border duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90 max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_20px_0px_#d67b26]"
                         >
                           <h3
                             data-orientation="vertical"

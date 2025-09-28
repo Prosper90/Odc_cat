@@ -1,11 +1,16 @@
 import { useState, useCallback, useEffect } from "react";
+import { useAccount } from "wagmi";
 import { Token } from "../../types";
 import { useSwapLogic } from "../../hooks/useSwap";
 import { SUPPORTED_TOKENS } from "../../utils/constants";
+import { priceService } from "../../utils/priceService";
 import ErrorMessage from "../common/ErrorMessage";
 import TokenSelector from "../swap/TokenSelector";
+import { ConnectKitButton } from "connectkit";
 
 export default function Buy() {
+  const { address, isConnected } = useAccount();
+
   // Swap state - Default to ODC trading
   const [tokenIn, setTokenIn] = useState<Token | null>(
     SUPPORTED_TOKENS.find((t) => t.symbol === "BNB") || null
@@ -17,6 +22,8 @@ export default function Buy() {
   const [amountOut, setAmountOut] = useState("");
   const [isSwapLoading, setIsSwapLoading] = useState(false);
   const [swapError, setSwapError] = useState<string | null>(null);
+  const [currentPrice, setCurrentPrice] = useState<number>(0);
+  const [priceChange24h, setPriceChange24h] = useState<number>(0);
 
   // Swap logic hook
   const {
@@ -25,7 +32,28 @@ export default function Buy() {
     isLoading: hookLoading,
     error: hookError,
     clearError,
+    tokenBalances,
+    tokenPrices,
+    refreshBalances,
   } = useSwapLogic();
+
+  // Update current price and change when tokenOut changes
+  useEffect(() => {
+    const updatePrice = async () => {
+      if (tokenOut) {
+        try {
+          const price = await priceService.getTokenPrice(tokenOut.symbol);
+          const change = priceService.getPriceChange24h(tokenOut.symbol);
+          setCurrentPrice(price);
+          setPriceChange24h(change);
+        } catch (error) {
+          console.error("Error fetching price:", error);
+        }
+      }
+    };
+
+    updatePrice();
+  }, [tokenOut]);
 
   // Get quote when amount or tokens change
   useEffect(() => {
@@ -66,6 +94,8 @@ export default function Buy() {
         // Reset form on success
         setAmountIn("");
         setAmountOut("");
+        // Refresh balances after successful swap
+        refreshBalances();
       }
     } catch (err) {
       setSwapError(err instanceof Error ? err.message : "Swap failed");
@@ -82,7 +112,12 @@ export default function Buy() {
   }, [tokenIn, tokenOut, amountIn, amountOut]);
 
   const canSwap =
-    tokenIn && tokenOut && amountIn && parseFloat(amountIn) > 0 && amountOut;
+    isConnected &&
+    tokenIn &&
+    tokenOut &&
+    amountIn &&
+    parseFloat(amountIn) > 0 &&
+    amountOut;
   const isLoading = isSwapLoading || hookLoading;
   return (
     <div
@@ -132,10 +167,21 @@ export default function Buy() {
             <div className="flex flex-col mt-4">
               <div className="rounded-[11px] bg-white/10 py-2 text-white flex backdrop-blur-[90px] items-center px-[15px] border border-[#FF8800] max-sm:flex-col w-full justify-between">
                 <p className="font-normal max-md:text-xs">
-                  1 ODC = <span className="text-[#FF8800]">$0.00012727</span>
+                  1 {tokenOut?.symbol || "ODC"} ={" "}
+                  <span className="text-[#FF8800]">
+                    ${currentPrice.toFixed(8)}
+                  </span>
                 </p>
                 <p className="font-normal max-md:text-xs">
-                  24h Change: <span className="text-[#FF8800]">+1.51%</span>
+                  24h Change:{" "}
+                  <span
+                    className={`${
+                      priceChange24h >= 0 ? "text-green-400" : "text-red-400"
+                    }`}
+                  >
+                    {priceChange24h >= 0 ? "+" : ""}
+                    {priceChange24h.toFixed(2)}%
+                  </span>
                 </p>
                 <p className="font-semibold max-md:text-xs">
                   Slippage: <span className="text-[#FF8800]">0.5%</span>
@@ -170,8 +216,27 @@ export default function Buy() {
                   <div className="bg-[linear-gradient(174.51deg,rgba(58,45,36,0.3)_9.58%,rgba(237,134,15,0.3)_101.94%)] border border-[#443828] rounded-[16px] p-[16px]">
                     <div className="flex items-center justify-between mb-[12px]">
                       <span className="text-[12px] text-white/60">
-                        Balance: 0.00
+                        Balance:{" "}
+                        {tokenIn
+                          ? tokenBalances[tokenIn.symbol]
+                            ? parseFloat(tokenBalances[tokenIn.symbol]).toFixed(
+                                4
+                              )
+                            : "0.00"
+                          : "0.00"}
                       </span>
+                      {tokenIn &&
+                        tokenBalances[tokenIn.symbol] &&
+                        parseFloat(tokenBalances[tokenIn.symbol]) > 0 && (
+                          <button
+                            onClick={() =>
+                              setAmountIn(tokenBalances[tokenIn.symbol])
+                            }
+                            className="text-[10px] text-[#FF8800] hover:text-[#FF6600] transition-colors"
+                          >
+                            MAX
+                          </button>
+                        )}
                     </div>
                     <div className="flex items-center justify-between gap-[12px]">
                       <div className="flex-1">
@@ -227,7 +292,14 @@ export default function Buy() {
                   <div className="bg-[linear-gradient(174.51deg,rgba(58,45,36,0.3)_9.58%,rgba(237,134,15,0.3)_101.94%)] border border-[#443828] rounded-[16px] p-[16px]">
                     <div className="flex items-center justify-between mb-[12px]">
                       <span className="text-[12px] text-white/60">
-                        Balance: 0.00
+                        Balance:{" "}
+                        {tokenOut
+                          ? tokenBalances[tokenOut.symbol]
+                            ? parseFloat(
+                                tokenBalances[tokenOut.symbol]
+                              ).toFixed(4)
+                            : "0.00"
+                          : "0.00"}
                       </span>
                     </div>
                     <div className="flex items-center justify-between gap-[12px]">
@@ -276,52 +348,70 @@ export default function Buy() {
 
               {/* Swap Button */}
               <div className="animate-fade-in-up animate-delay-500">
-                <button
-                  onClick={handleSwap}
-                  disabled={!canSwap || isLoading}
-                  className={`w-full min-w-[166px] flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 rounded-[60px] h-12 font-bold hover-lift ${
-                    !canSwap || isLoading
-                      ? "bg-gray-600 text-gray-300 cursor-not-allowed"
-                      : "bg-gradient-to-r from-orange-400 to-orange-600 text-[#00070F] hover:from-orange-500 hover:to-orange-700 animate-glow"
-                  }`}
-                  aria-label="Swap Tokens"
-                >
-                  {isLoading ? (
-                    <>
-                      <div className="animate-spin rounded-full h-4 w-4 border-2 border-gray-300 border-t-gray-600"></div>
-                      Swapping...
-                    </>
-                  ) : !tokenIn || !tokenOut ? (
-                    "Select Tokens"
-                  ) : !amountIn ? (
-                    "Enter Amount"
-                  ) : (
-                    <>
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M12 6L8 2L4 6"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M4 10L8 14L12 10"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      Swap {tokenIn?.symbol} for {tokenOut?.symbol}
-                    </>
-                  )}
-                </button>
+                {!isConnected ? (
+                  <ConnectKitButton.Custom>
+                    {({ isConnected, show, truncatedAddress, ensName }) => {
+                      return (
+                        <button
+                          onClick={show}
+                          className="w-full min-w-[166px] flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 rounded-[60px] h-12 font-bold hover-lift bg-gradient-to-r from-[var(--primary-amber)] to-[var(--accent-golden)] text-[#00070F] hover:from-yellow-400 hover:to-yellow-400"
+                          aria-label="Connect Wallet"
+                        >
+                          {isConnected
+                            ? ensName ?? truncatedAddress
+                            : "Connect Wallet"}
+                        </button>
+                      );
+                    }}
+                  </ConnectKitButton.Custom>
+                ) : (
+                  <button
+                    onClick={handleSwap}
+                    disabled={!canSwap || isLoading}
+                    className={`w-full min-w-[166px] flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 rounded-[60px] h-12 font-bold hover-lift ${
+                      !canSwap || isLoading
+                        ? "bg-gray-600 text-gray-300 cursor-not-allowed"
+                        : "bg-gradient-to-r from-orange-400 to-orange-600 text-[#00070F] hover:from-orange-500 hover:to-orange-700 animate-glow"
+                    }`}
+                    aria-label="Swap Tokens"
+                  >
+                    {isLoading ? (
+                      <>
+                        <div className="animate-spin rounded-full h-4 w-4 border-2 border-gray-300 border-t-gray-600"></div>
+                        Swapping...
+                      </>
+                    ) : !tokenIn || !tokenOut ? (
+                      "Select Tokens"
+                    ) : !amountIn ? (
+                      "Enter Amount"
+                    ) : (
+                      <>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M12 6L8 2L4 6"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M4 10L8 14L12 10"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                        Swap {tokenIn?.symbol} for {tokenOut?.symbol}
+                      </>
+                    )}
+                  </button>
+                )}
               </div>
             </div>
 

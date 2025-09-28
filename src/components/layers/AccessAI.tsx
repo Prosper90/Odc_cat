@@ -41,8 +41,7 @@ export default function AccessAI() {
               data-nimg={1}
               className="object-contain w-full h-full"
               style={{ color: "transparent" }}
-              srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhedgeMobile.e78e40f0.png&w=1080&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhedgeMobile.e78e40f0.png&w=1920&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t 2x"
-              src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhedgeMobile.e78e40f0.png&w=1920&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t"
+              src="/hedgeMobile.webp"
             />
           </figure>
           <div className="flex flex-wrap items-center justify-between -m-[10px] max-[1200px]:!-m-[10px]">
@@ -52,8 +51,8 @@ export default function AccessAI() {
               data-aos-delay={100}
               style={{ height: 225 }}
             >
-              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(3,28,42,0.6)_38.35%,rgba(0,7,15,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
+              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(42,31,26,0.6)_38.35%,rgba(15,11,8,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
                   <svg
                     width={53}
                     height={53}
@@ -146,8 +145,8 @@ export default function AccessAI() {
               data-aos-delay={200}
               style={{ height: 225 }}
             >
-              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(3,28,42,0.6)_38.35%,rgba(0,7,15,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
+              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(42,31,26,0.6)_38.35%,rgba(15,11,8,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
                   <svg
                     width={56}
                     height={56}
@@ -234,8 +233,8 @@ export default function AccessAI() {
               data-aos-delay={300}
               style={{ height: 225 }}
             >
-              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(3,28,42,0.6)_38.35%,rgba(0,7,15,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
+              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(42,31,26,0.6)_38.35%,rgba(15,11,8,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
                   <svg
                     width={57}
                     height={57}
@@ -321,8 +320,8 @@ export default function AccessAI() {
               data-aos-delay={400}
               style={{ height: 225 }}
             >
-              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(3,28,42,0.6)_38.35%,rgba(0,7,15,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(84_57_29)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
+              <div className="flex max-[1200px]:flex-col !h-full max-[1200px]:items-start max-md:!items-center max-[1200px]:gap-[20px] items-center bg-[linear-gradient(109.78deg,rgba(42,31,26,0.6)_38.35%,rgba(15,11,8,0.6)_87.23%)]  shadow-[inset_0px_4px_34px_#FF8800]  backdrop-blur-[22px]  rounded-[20px] py-[28px] px-[20px] h-[100%] max-[1600px]:p-5 max-lg:py-[20px] max-lg:rounded-[16px] max-[389px]:flex-col max-[390px]:gap-2  max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                <i className="flex-shrink-0 w-[106px] h-[106px] max-[1600px]:size-[90px] max-[1300px]:p-4 max-[1300px]:size-[70px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800] svgAnimWrapper">
                   <svg
                     width={51}
                     height={51}

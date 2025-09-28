@@ -47,7 +47,7 @@ export default function Benefits() {
               style={{ left: "930.338px", width: "143.9px" }}
             />
           </div>
-          <table className="relative z-10 w-full border-collapse bg-[linear-gradient(174.51deg,rgba(58,45,36,0.3)9.58%,rgba(237,134,15,0.6)101.94%)] max-[900px]:!bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(29_84_73_/_11%)_87.34%)]  min-w-[1000px] max-sm:min-w-[500px]">
+          <table className="relative z-10 w-full border-collapse bg-[linear-gradient(174.51deg,rgba(58,45,36,0.3)9.58%,rgba(237,134,15,0.6)101.94%)] max-[900px]:!bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(29_84_73_/_11%)_87.34%)]  min-w-[1000px] max-sm:min-w-[500px]">
             <thead>
               <tr>
                 <th className="py-[25px] max-sm:!text-[10px] max-sm:font-normal max-sm:p-2 border-r border-r-[#443828] px-6 transition-all duration-300 ease sticky left-0 bg-transparent">

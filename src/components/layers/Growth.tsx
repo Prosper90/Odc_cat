@@ -30,8 +30,8 @@ export default function Growth() {
             </p>
             <div className="flex flex-wrap -m-[10px]">
               <div className="w-1/2 p-[10px] max-[1200px]:p-[10px] max-sm:w-full">
-                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(29_84_73)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
+                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
                     <span className="relative svgAnimWrapper">
                       <svg
                         width={33}
@@ -144,8 +144,8 @@ export default function Growth() {
                 </div>
               </div>
               <div className="w-1/2 p-[10px] max-[1200px]:p-[10px] max-sm:w-full">
-                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(29_84_73)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
+                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
                     <span className="relative svgAnimWrapper">
                       <svg
                         width={31}
@@ -251,8 +251,8 @@ export default function Growth() {
                 </div>
               </div>
               <div className="w-1/2 p-[10px] max-[1200px]:p-[10px] max-sm:w-full">
-                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(29_84_73)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
+                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
                     <span className="relative svgAnimWrapper">
                       <svg
                         width={34}
@@ -326,8 +326,8 @@ export default function Growth() {
                 </div>
               </div>
               <div className="w-1/2 p-[10px] max-[1200px]:p-[10px] max-sm:w-full">
-                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(0_0_0)_15.6%,_rgb(29_84_73)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
-                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#18212C] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
+                <div className="bg-[linear-gradient(170.41deg,rgba(58,45,36,0.5)_35.19%,rgba(237,134,15,0.3)_107.69%)] shadow-[inset_0px_4px_10px_#08C89F] backdrop-blur-[22px] rounded-[20px] py-[30px] px-[37px] h-full max-lg:py-[20px] max-lg:px-[20px] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-lg:rounded-[16px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
+                  <i className="mb-[20px] flex-shrink-0 w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#2a1f1a] border border-[#FF8800] shadow-[inset_0_4px_9px_#FF8800]">
                     <span className="relative svgAnimWrapper">
                       <svg
                         width={24}

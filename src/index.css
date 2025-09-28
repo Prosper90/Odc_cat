@@ -8,7 +8,7 @@
   --secondary-amber: #f59e0b;
   --light-amber: #fef3c7;
   --accent-golden: #f7931e;
-  --dark-bg: #0a0a0a;
+  --dark-bg: #1a1612;
   --gradient-amber: linear-gradient(
     174.51deg,
     rgba(251, 191, 36, 1) 0%,
@@ -21,7 +21,7 @@
   );
   --glass-bg: linear-gradient(
     104.08deg,
-    rgba(10, 10, 10, 0.18) 34.14%,
+    rgba(26, 22, 18, 0.18) 34.14%,
     rgba(251, 191, 36, 0.08) 100.82%
   );
 }
@@ -51,7 +51,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #2a1f1a;
 }
 
 ::-webkit-scrollbar-thumb {

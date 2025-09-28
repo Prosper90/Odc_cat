@@ -23,7 +23,7 @@ const App: React.FC = () => {
     <Web3Provider>
       <SwapProvider>
         <Header />
-        <div className="min-h-screen bg-[#0a0a0a] flex flex-col md:px-20 px-2 overflow-x-hidden">
+        <div className="min-h-screen bg-[#1a1612] flex flex-col md:px-20 px-2 overflow-x-hidden">
           <Hero />
           <Testimony />
           <Buy />

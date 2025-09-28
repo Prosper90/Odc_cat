@@ -2,7 +2,8 @@ import { useState, useCallback, useEffect } from 'react';
 import { useAccount, useWalletClient } from 'wagmi';
 import { ethers } from 'ethers';
 import { PancakeSwapService } from '../utils/pancakeSwap';
-import { Token } from '../types';
+import { priceService } from '../utils/priceService';
+import { Token, TokenBalance } from '../types';
 
 export const useSwapLogic = () => {
   const { address, isConnected } = useAccount();
@@ -11,6 +12,8 @@ export const useSwapLogic = () => {
   const [pancakeSwapService, setPancakeSwapService] = useState<PancakeSwapService | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [tokenBalances, setTokenBalances] = useState<Record<string, string>>({});
+  const [tokenPrices, setTokenPrices] = useState<Record<string, number>>({});
 
   // Initialize PancakeSwap service
   useEffect(() => {
@@ -20,6 +23,61 @@ export const useSwapLogic = () => {
       setPancakeSwapService(service);
     }
   }, [walletClient]);
+
+  // Fetch token prices
+  useEffect(() => {
+    const fetchPrices = async () => {
+      try {
+        const symbols = ['ODC', 'BNB', 'WBNB', 'USDT'];
+        const prices = await priceService.getTokenPrices(symbols);
+        setTokenPrices(prices);
+      } catch (error) {
+        console.error('Error fetching prices:', error);
+      }
+    };
+
+    fetchPrices();
+    // Update prices every 30 seconds
+    const interval = setInterval(fetchPrices, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Fetch token balances when wallet is connected
+  useEffect(() => {
+    const fetchBalances = async () => {
+      if (!pancakeSwapService || !address || !isConnected) return;
+
+      try {
+        const symbols = ['ODC', 'BNB', 'WBNB', 'USDT'];
+        const addresses = {
+          'ODC': '0x018cF072DEF5e8075294B019FcECCbD49C224444',
+          'BNB': 'BNB',
+          'WBNB': '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+          'USDT': '0x55d398326f99059fF775485246999027B3197955'
+        };
+
+        const balances: Record<string, string> = {};
+
+        await Promise.all(
+          symbols.map(async (symbol) => {
+            try {
+              const balance = await pancakeSwapService.getTokenBalance(addresses[symbol as keyof typeof addresses], address);
+              balances[symbol] = balance;
+            } catch (error) {
+              console.error(`Error fetching ${symbol} balance:`, error);
+              balances[symbol] = '0';
+            }
+          })
+        );
+
+        setTokenBalances(balances);
+      } catch (error) {
+        console.error('Error fetching balances:', error);
+      }
+    };
+
+    fetchBalances();
+  }, [pancakeSwapService, address, isConnected]);
 
   // Get quote for swap
   const getQuote = useCallback(async (
@@ -146,5 +204,13 @@ export const useSwapLogic = () => {
     error,
     clearError: () => setError(null),
     isServiceReady: !!pancakeSwapService,
+    tokenBalances,
+    tokenPrices,
+    refreshBalances: () => {
+      if (pancakeSwapService && address && isConnected) {
+        // Re-fetch balances
+        setTokenBalances({});
+      }
+    },
   };
 };
