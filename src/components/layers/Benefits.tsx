@@ -1,8 +1,12 @@
 
 
+import SectionDivider from "../common/SectionDivider";
+
 export default function Benefits() {
   return (
-    <div className="py-[70px] max-[1200px]:py-[60px] max-[900px]:py-[40px] relative comparisonTableBG">
+    <>
+      <SectionDivider variant="simple" />
+      <div className="py-[70px] max-[1200px]:py-[60px] max-[900px]:py-[40px] relative comparisonTableBG bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent">
       <div className="container">
         <div className="text-center max-w-[1120px] mx-auto mb-6">
           <h2 className="font-bold text-white mb-[10px]">
@@ -3919,5 +3923,6 @@ export default function Benefits() {
         </div>
       </div>
     </div>
+    </>
   );
 }

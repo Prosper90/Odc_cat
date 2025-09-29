@@ -1,31 +1,31 @@
 export default function Hero() {
   return (
-    <div className="relative pt-[120px] max-md:pt-[110px] max-sm:pt-[120px] pb-10 bg-[#0a0a0a] before:absolute before:inset-x-0 before:bottom-0 before:w-full before:h-[75px] before:z-[2] before:bg-gradient-to-t before:from-[#0a0a0a] before:via-[rgba(0,7,15,0.33)] before:to-transparent before:content-['']">
+    <div className="relative pt-[120px] max-md:pt-[100px] max-sm:pt-[90px] pb-16 max-md:pb-12 max-sm:pb-8 bg-[#1a1612] before:absolute before:inset-x-0 before:bottom-0 before:w-full before:h-[75px] before:z-[2] before:bg-gradient-to-t before:from-[#1a1612] before:via-[rgba(26,22,18,0.33)] before:to-transparent before:content-['']">
       <img
         alt="bannerMain"
         loading="lazy"
         width="1600"
         height="730"
         decoding="async"
-        className="absolute top-0 left-0 w-full h-full z-[1] object-cover object-[40%] max-[1600px]:object-[60%] max-[1400px]:object-[70%] max-md:object-[30%]"
+        className="absolute top-0 left-0 w-full h-full z-[1] object-cover object-[40%] max-[1600px]:object-[60%] max-[1400px]:object-[70%] max-md:object-[30%] opacity-80"
         src="/bannerOriginalOverlay.png"
       />
 
-      <div className="container relative z-20">
-        <div className="ml-auto max-w-[472px] flex flex-col max-[1200px]:max-w-none">
-          <h1 className="leading-[1.1] text-5xl max-lg:text-[40px] max-md:text-[32px] font-inter font-semibold text-white animate-fade-in-up">
-            Freedom Through
-            <span className="text-amber-400 animate-glow"> Innovation </span>
-            Sun God Lab
+      <div className="container relative z-20 px-6 max-md:px-4 max-sm:px-3">
+        <div className="ml-auto max-w-[520px] flex flex-col max-lg:max-w-none max-lg:mx-auto max-lg:text-center lg:ml-auto lg:mr-0">
+          <h1 className="leading-[1.1] text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-inter font-bold text-white animate-fade-in-up mb-6 max-md:mb-4">
+            <span className="block">Freedom Through</span>
+            <span className="block text-transparent bg-gradient-to-r from-[#FF8800] via-[#FFA500] to-[#FFD700] bg-clip-text animate-glow"> Innovation </span>
+            <span className="block">Sun God Lab</span>
           </h1>
 
-          <p className="mt-[10px] text-white animate-fade-in-up animate-delay-200">
+          <p className="text-lg max-md:text-base max-sm:text-sm text-gray-300 leading-relaxed animate-fade-in-up animate-delay-200 mb-8 max-md:mb-6 max-sm:mb-4 max-w-lg max-lg:max-w-none">
             Empowering communities through disciplined systems that serve
             everyone fairly. Trade OBE CAT Token ($ODC) and join our mission of
             freedom and community empowerment.
           </p>
 
-          <ul className="mt-4 flex flex-col gap-4 bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent">
+          <ul className="flex flex-col gap-4 max-sm:gap-3 bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent mb-8 max-md:mb-6">
             <li className="flex items-start gap-3">
               <i className="inline-flex">
                 <svg
@@ -70,9 +70,8 @@ export default function Hero() {
                   </defs>
                 </svg>
               </i>
-              <p className="text-sm font-inter font-bold leading-[1.5] ">
-                The First AI-Managed Platform{" "}
-                <br className="max-[1200px]:hidden" /> Offering Passive Income
+              <p className="text-base max-sm:text-sm font-inter font-bold leading-[1.5] max-lg:text-center lg:text-left">
+                The First AI-Managed Platform Offering Passive Income
               </p>
             </li>
 
@@ -120,9 +119,8 @@ export default function Hero() {
                   </defs>
                 </svg>
               </i>
-              <p className="text-sm font-inter font-bold leading-[1.5]">
-                Invest in Bitcoin, Litecoin, Real Estate{" "}
-                <br className="max-[1200px]:hidden" /> &amp; AI Assets
+              <p className="text-base max-sm:text-sm font-inter font-bold leading-[1.5] max-lg:text-center lg:text-left">
+                Invest in Bitcoin, Litecoin, Real Estate &amp; AI Assets
               </p>
             </li>
 
@@ -170,41 +168,37 @@ export default function Hero() {
                   </defs>
                 </svg>
               </i>
-              <p className="text-sm font-inter font-bold leading-[1.5]">
+              <p className="text-base max-sm:text-sm font-inter font-bold leading-[1.5] max-lg:text-center lg:text-left">
                 Get Over 105%* Yearly Yields
               </p>
             </li>
           </ul>
 
-          <div className="flex items-center gap-4 mt-5 max-sm:flex-col max-sm:[&>div]:w-full max-w-[408px]">
-            <div className="relative flex-1">
-              <button
-                className="h-12 min-w-[166px] font-medium flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 max-sm:w-full bg-gradient-to-r from-yellow-300 to-orange-400 rounded-[60px] text-[#00070F] hover:from-yellow-400 hover:to-orange-500 px-[50px] flex-1"
-                aria-label="button"
-              >
-                Buy $CAT
-              </button>
-            </div>
+          <div className="flex items-center gap-4 max-sm:gap-3 max-sm:flex-col max-lg:justify-center w-full max-w-[480px] max-lg:max-w-none">
+            <button
+              className="h-14 max-sm:h-12 min-w-[180px] max-sm:min-w-full font-medium flex items-center cursor-pointer transition-all duration-300 ease-in-out justify-center gap-2.5 font-bold text-base max-sm:text-sm bg-gradient-to-r from-[#FF8800] to-[#FF6600] rounded-full text-white hover:from-[#FF9900] hover:to-[#FF7700] hover:shadow-lg hover:scale-105 px-8 flex-1 max-sm:flex-initial"
+              aria-label="Buy $CAT Token"
+            >
+              Buy $CAT
+            </button>
 
-            <div className="relative">
-              <button
-                className="h-12 min-w-[166px] font-medium flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 max-sm:w-full bg-transparent border border-[#fbbf24] rounded-[60px] text-[#FFFFFF] hover:from-cyan-400 hover:to-emerald-400 px-5"
-                aria-label="button"
-              >
-                How It Works?
-              </button>
-            </div>
+            <button
+              className="h-14 max-sm:h-12 min-w-[180px] max-sm:min-w-full font-medium flex items-center cursor-pointer transition-all duration-300 ease-in-out justify-center gap-2.5 font-bold text-base max-sm:text-sm bg-transparent border-2 border-[#FF8800] rounded-full text-white hover:bg-[#FF8800] hover:scale-105 px-8"
+              aria-label="How It Works"
+            >
+              How It Works?
+            </button>
           </div>
 
-          <div className="bg-gradient-to-br from-[rgba(1,7,14,0.18)] to-[rgba(255,255,255,0.18)] border border-[rgba(97,97,97,0.5)] backdrop-blur-[15px] rounded-lg mt-5 max-w-[410px] max-[640px]:max-w-full">
-            <div className="py-[19px] px-5 flex items-center gap-[15px] border-b border-[#616161] max-md:p-3 max-md:gap-2 max-[479px]:flex-col">
-              <p className="text-base font-semibold font-inter min-w-[100px]">
+          <div className="bg-gradient-to-br from-[rgba(42,31,26,0.3)] to-[rgba(255,136,0,0.1)] border border-[rgba(255,136,0,0.3)] backdrop-blur-[15px] rounded-xl mt-8 max-md:mt-6 w-full max-w-[480px] max-lg:max-w-none shadow-lg">
+            <div className="py-5 px-6 flex items-center gap-4 border-b border-[rgba(255,136,0,0.2)] max-md:p-4 max-md:gap-3 max-sm:flex-col max-sm:text-center">
+              <p className="text-base font-semibold font-inter text-[#FF8800] min-w-[100px] max-sm:min-w-0">
                 Powered By:
               </p>
-              <div className="flex items-center gap-[15px]">
+              <div className="flex items-center gap-4 max-sm:justify-center">
                 <a
                   target="_blank"
-                  className="hover:opacity-70 transition-opacity"
+                  className="hover:opacity-70 hover:scale-105 transition-all duration-300"
                   href="https://codeum.org/kyc/uni-labs"
                 >
                   <img
@@ -219,11 +213,11 @@ export default function Hero() {
                 </a>
                 <a
                   target="_blank"
-                  className="hover:opacity-70 transition-opacity"
+                  className="hover:opacity-70 hover:scale-105 transition-all duration-300"
                   href="https://x.com/cyberscope_ann/status/1966489255368081573"
                 >
                   <img
-                    alt="unilabs"
+                    alt="cyberscope"
                     loading="lazy"
                     width="103"
                     height="20"
@@ -235,14 +229,14 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="py-[13px] px-5 flex items-center gap-[15px] max-md:p-3 max-md:gap-2 max-[479px]:flex-col max-[479px]:text-center">
-              <p className="text-base font-semibold font-inter min-w-[100px] ">
+            <div className="py-5 px-6 flex items-center gap-4 max-md:p-4 max-md:gap-3 max-sm:flex-col max-sm:text-center">
+              <p className="text-base font-semibold font-inter text-[#FF8800] min-w-[100px] max-sm:min-w-0">
                 Listed On:
               </p>
-              <div className="flex items-center gap-[15px]">
+              <div className="flex items-center gap-4 max-sm:justify-center">
                 <a
                   target="_blank"
-                  className="hover:opacity-70 transition-opacity"
+                  className="hover:opacity-70 hover:scale-105 transition-all duration-300"
                   href="https://coinmarketcap.com/currencies/unilabs-finance/"
                 >
                   <img

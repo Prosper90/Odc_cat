@@ -1,12 +1,16 @@
+import SectionDivider from "../common/SectionDivider";
+
 export default function AccessAI() {
   return (
-    <div
-      className="py-[70px] max-[900px]:py-[40px]  overflow-hidden relative max-[1200px]:mb-0 mobileBg z-[1]  bg-no-repeat bg-cover"
-      style={{
-        backgroundImage:
-          "url(/_next/static/media/builtCircleBack.b62f4214.jpg)",
-      }}
-    >
+    <>
+      <SectionDivider variant="dots" />
+      <div
+        className="py-[70px] max-[900px]:py-[40px] overflow-hidden relative max-[1200px]:mb-0 mobileBg z-[1] bg-no-repeat bg-cover bg-gradient-to-b from-transparent to-[rgba(255,136,0,0.02)]"
+        style={{
+          backgroundImage:
+            "url(/_next/static/media/builtCircleBack.b62f4214.jpg)",
+        }}
+      >
       <div className="absolute  bottom-0 left-0 w-full h-full">
         <canvas
           className="absolute bottom-[-16px] left-0 w-full h-full"
@@ -425,5 +429,6 @@ export default function AccessAI() {
         </div>
       </div>
     </div>
+    </>
   );
 }

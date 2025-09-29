@@ -1,8 +1,12 @@
 
 
+import SectionDivider from "../common/SectionDivider";
+
 export default function Phase() {
   return (
-    <div
+    <>
+      <SectionDivider variant="simple" />
+      <div
       className="ecosystemNewBg py-[70px] max-[1200px]:py-[60px] max-[900px]:py-[40px] scroll-mt-[40px]"
       id="roadmap"
     >
@@ -1278,5 +1282,6 @@ export default function Phase() {
         </div>
       </div>
     </div>
+    </>
   );
 }

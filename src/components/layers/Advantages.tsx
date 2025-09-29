@@ -1,10 +1,14 @@
 
+import SectionDivider from "../common/SectionDivider";
+
 export default function Advantages() {
   return (
-    <div
-      className="pt-[70px] pb-[35px] max-[900px]:py-[40px] relative advantageBG z-10 scroll-mt-[40px]"
-      id="corefeatures"
-    >
+    <>
+      <SectionDivider variant="gradient" />
+      <div
+        className="pt-[70px] pb-[35px] max-[900px]:py-[40px] relative advantageBG z-10 scroll-mt-[40px] bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent"
+        id="corefeatures"
+      >
       <div className="container relative max-md:z-20">
         <div className="text-center max-w-[832px] mx-auto mb-[24px] flex flex-col items-center max-md:mb-5 animate-fade-in-up">
           <h2 className="text-[40px] font-bold text-white mb-[10px] animate-pulse-soft">
@@ -23,19 +27,19 @@ export default function Advantages() {
         >
           <div data-aos="fade-up" data-aos-delay={400}>
             <div
-              className="relative rounded-[20px] p-[1px] overflow-hidden group cursor-pointer"
+              className="relative rounded-[20px] p-[1px] overflow-hidden group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl"
               style={{
                 background:
-                  "linear-gradient(180.51deg, #C11CB4 7.39%, #06111E 81.12%)",
+                  "linear-gradient(180.51deg, #FF8800 7.39%, #2a1f1a 81.12%)",
               }}
             >
               <div
-                className="absolute w-[158px] h-[70px] rounded-[100%] top-[-32px] left-1/2 -translate-x-1/2 blur-[36px] z-11 border-anim-blur"
-                style={{ background: "#C11CB4" }}
+                className="absolute w-[158px] h-[70px] rounded-[100%] top-[-32px] left-1/2 -translate-x-1/2 blur-[36px] z-11 border-anim-blur transition-all duration-300 group-hover:blur-[30px]"
+                style={{ background: "#FF8800" }}
               />
               <div className="absolute inset-0 rounded-[20px] border-anim opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
               <div className="absolute inset-0 rounded-[20px] border-anim blur-[40px] opacity-0 group-hover:opacity-75 transition-opacity duration-500 z-0" />
-              <div className="relative rounded-[20px] bg-[linear-gradient(124.93deg,#020C18_29.44%,#00070F_100.96%)] p-[32px] h-full text-center z-10">
+              <div className="relative rounded-[20px] bg-[linear-gradient(124.93deg,rgba(42,31,26,0.9)_29.44%,rgba(26,22,18,0.95)_100.96%)] backdrop-blur-sm p-[32px] h-full text-center z-10 group-hover:bg-[linear-gradient(124.93deg,rgba(42,31,26,0.95)_29.44%,rgba(26,22,18,1)_100.96%)] transition-all duration-300">
                 <div className="text-center max-w-[238px] mx-auto flex items-center flex-col">
                   <i className="inline-flex items-center justify-center mb-4">
                     <svg
@@ -159,10 +163,10 @@ export default function Advantages() {
                       </defs>
                     </svg>
                   </i>
-                  <h3 className="font-bold mb-1 !text-[16px] text-white">
+                  <h3 className="font-bold mb-1 !text-[16px] text-white group-hover:text-[#FF8800] transition-colors duration-300">
                     AI-Powered
                   </h3>
-                  <p className="text-[14px] text-white">
+                  <p className="text-[14px] text-white/80 group-hover:text-white transition-colors duration-300">
                     Advance artificial intelligence drives investment decisions.
                   </p>
                 </div>
@@ -686,5 +690,6 @@ export default function Advantages() {
         </div>
       </div>
     </div>
+    </>
   );
 }

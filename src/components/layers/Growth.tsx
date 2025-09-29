@@ -1,8 +1,12 @@
 
 
+import SectionDivider from "../common/SectionDivider";
+
 export default function Growth() {
   return (
-    <div className="py-[70px] max-[1200px]:py-[60px] max-[1200px]:!pb-0 max-[900px]:py-[40px] relative overflow-hidden mobileBg">
+    <>
+      <SectionDivider variant="dots" />
+      <div className="py-[70px] max-[1200px]:py-[60px] max-[1200px]:!pb-0 max-[900px]:py-[40px] relative overflow-hidden mobileBg bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent">
       <img
         alt="powerback"
         loading="lazy"
@@ -26925,5 +26929,6 @@ export default function Growth() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -7,6 +7,7 @@ import { priceService } from "../../utils/priceService";
 import ErrorMessage from "../common/ErrorMessage";
 import TokenSelector from "../swap/TokenSelector";
 import { ConnectKitButton } from "connectkit";
+import SectionDivider from "../common/SectionDivider";
 
 export default function Buy() {
   const { isConnected } = useAccount();
@@ -119,23 +120,25 @@ export default function Buy() {
     amountOut;
   const isLoading = isSwapLoading || hookLoading;
   return (
-    <div
-      className="py-[85px] max-[1200px]:py-[60px] max-[900px]:py-10 relative z-[2] bg-cover overflow-hidden scroll-mt-10"
-      id="how-to-buy"
-      style={{
-        backgroundImage: "url(/_next/static/media/howToBuyBack.5c428fb1.png)",
-      }}
-    >
+    <>
+      <SectionDivider variant="gradient" />
+      <div
+        className="py-[85px] max-[1200px]:py-[60px] max-[900px]:py-10 relative z-[2] bg-cover overflow-hidden scroll-mt-10"
+        id="how-to-buy"
+        style={{
+          backgroundImage: "url(/_next/static/media/howToBuyBack.5c428fb1.png)",
+        }}
+      >
       <canvas
         className="absolute bottom-[-16px] left-0 w-full h-full -z-[1]"
         width="1920"
         height="768"
       ></canvas>
 
-      <div className="container relative z-20">
-        <div className="flex gap-[68px] max-[1400px]:flex-wrap max-[1500px]:gap-4 max-[1400px]:justify-center">
+      <div className="container relative z-20 px-4 max-sm:px-2">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-[68px] max-lg:items-center">
           {/* Swap Card */}
-          <div className="flex-[1.5] flex flex-col border border-[#443828] max-sm:p-2 max-sm:rounded-[10px] rounded-[20px] backdrop-blur-[90px] bg-gradient-to-b from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] shadow-[inset_0px_4px_20px_0px_#FF8800] px-[35px] py-[30px] max-[1200px]:max-w-none w-full max-lg:p-5 max-[640px]:p-[15px] max-[900px]:border-[#dd7730] max-[900px]:bg-gradient-to-br max-[900px]:from-black max-[900px]:to-[rgb(84,57,29)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26] animate-fade-in-up hover-lift">
+          <div className="w-full lg:flex-[1.5] flex flex-col border border-[#443828] rounded-[20px] max-sm:rounded-[16px] backdrop-blur-[90px] bg-gradient-to-b from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] shadow-[inset_0px_4px_20px_0px_#FF8800] px-6 py-6 lg:px-[35px] lg:py-[30px] max-sm:px-4 max-sm:py-5 max-[900px]:border-[#dd7730] max-[900px]:bg-gradient-to-br max-[900px]:from-[rgba(42,31,26,0.9)] max-[900px]:to-[rgba(42,31,26,0.6)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26] animate-fade-in-up hover:shadow-[inset_0px_4px_25px_0px_#FF8800] transition-all duration-300">
             {/* Swap Header */}
             <div className="flex flex-col">
               <p className="font-bold text-center text-white font-inter">
@@ -423,91 +426,112 @@ export default function Buy() {
           </div>
 
           {/* How To Swap Section */}
-          <div className="flex-[1] animate-slide-in-right animate-delay-200">
-            <h2 className="mb-3 text-3xl font-bold text-white max-lg:text-2xl max-md:text-xl animate-fade-in">
-              How To Swap
-            </h2>
-            <p className="mb-2 text-base font-inter font-normal text-white">
-              Trade tokens instantly with our decentralized exchange. Get the
-              best rates with minimal slippage and low fees.
-            </p>
+          <div className="w-full lg:flex-[1] max-lg:mt-8">
+            <div className="text-center lg:text-left">
+              <h2 className="mb-6 text-4xl lg:text-3xl font-bold text-white max-md:text-2xl max-sm:text-xl">
+                How To Swap
+              </h2>
+              <p className="mb-8 text-lg lg:text-base font-inter font-normal text-gray-300 max-w-2xl lg:max-w-none mx-auto lg:mx-0">
+                Trade tokens instantly with our decentralized exchange. Get the
+                best rates with minimal slippage and low fees.
+              </p>
+            </div>
 
-            <div>
-              <div className="mb-[30px] max-md:mb-5">
-                {/* Accordion Items */}
-                <div className="border-b border-b-white/15">
-                  <button className="flex cursor-pointer text-left w-full justify-between py-[18px] px-0 font-inter font-bold text-xl max-md:text-base max-sm:text-sm text-white hover:opacity-70 transition-opacity">
-                    1. Connect Your Wallet
-                  </button>
+            <div className="space-y-1">
+              {[
+                {
+                  step: "1",
+                  title: "Connect Your Wallet",
+                  desc: "Link your Web3 wallet to start trading",
+                },
+                {
+                  step: "2",
+                  title: "Select Token Pair",
+                  desc: "Choose the tokens you want to swap",
+                },
+                {
+                  step: "3",
+                  title: "Enter Amount & Review",
+                  desc: "Set your trade amount and review details",
+                },
+                {
+                  step: "4",
+                  title: "Confirm Transaction",
+                  desc: "Approve and execute your swap",
+                },
+              ].map((item, index) => (
+                <div key={index} className="group relative">
+                  <div className="flex items-center py-4 px-4 lg:px-0 rounded-lg lg:rounded-none hover:bg-white/5 lg:hover:bg-transparent transition-all duration-300 cursor-default">
+                    <div className="flex items-center w-full">
+                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-[#FF8800] to-[#FF6600] text-white font-bold text-sm mr-4 group-hover:scale-110 transition-transform duration-300">
+                        {item.step}
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-bold text-white text-lg lg:text-xl max-md:text-base max-sm:text-sm group-hover:text-[#FF8800] transition-colors duration-300">
+                          {item.title}
+                        </h3>
+                        <p className="text-gray-400 text-sm lg:hidden group-hover:text-gray-300 transition-colors duration-300">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  {index < 3 && (
+                    <div className="hidden lg:block h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                  )}
                 </div>
+              ))}
+            </div>
 
-                <div className="border-b border-b-white/15">
-                  <button className="flex cursor-pointer text-left w-full justify-between py-[18px] px-0 font-inter font-bold text-xl max-md:text-base max-sm:text-sm text-white hover:opacity-70 transition-opacity">
-                    2. Select Token Pair
-                  </button>
-                </div>
-
-                <div className="border-b border-b-white/15">
-                  <button className="flex cursor-pointer text-left w-full justify-between py-[18px] px-0 font-inter font-bold text-xl max-md:text-base max-sm:text-sm text-white hover:opacity-70 transition-opacity">
-                    3. Enter Amount & Review
-                  </button>
-                </div>
-
-                <div className="border-b border-b-white/15">
-                  <button className="flex cursor-pointer text-left w-full justify-between py-[18px] px-0 font-inter font-bold text-xl max-md:text-base max-sm:text-sm text-white hover:opacity-70 transition-opacity">
-                    4. Confirm Transaction
-                  </button>
-                </div>
+            <div className="mt-8 p-6 rounded-xl bg-gradient-to-r from-[rgba(255,136,0,0.1)] to-[rgba(255,102,0,0.1)] border border-[rgba(255,136,0,0.2)] backdrop-blur-sm">
+              <div className="text-center lg:text-left">
+                <h3 className="font-bold text-[#FF8800] text-xl lg:text-lg mb-2">
+                  Best Rates Guaranteed
+                </h3>
+                <p className="text-gray-300 text-base lg:text-sm mb-4">
+                  Lightning fast swaps with minimal fees
+                </p>
+                <button
+                  className="w-full lg:w-auto min-w-[200px] flex items-center cursor-pointer transition-all duration-300 ease-in-out justify-center gap-2.5 font-semibold bg-gradient-to-r from-[#FF8800] to-[#FF6600] rounded-xl text-white hover:from-[#FF9900] hover:to-[#FF7700] hover:shadow-lg hover:scale-105 h-12 px-6 text-base font-bold"
+                  aria-label="View All Trading Pairs"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2L2 7L12 12L22 7L12 2Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M2 17L12 22L22 17"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M2 12L12 17L22 12"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  View All Trading Pairs
+                </button>
               </div>
             </div>
-
-            <div className="mb-5">
-              <p className="font-bold text-[#FF8800] text-xl">
-                Best Rates Guaranteed
-              </p>
-              <p className="text-white">
-                Lightning fast swaps with minimal fees
-              </p>
-            </div>
-
-            <button
-              className="min-w-[166px] flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:h-10 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg text-[#00070F] hover:from-orange-500 hover:to-orange-700 h-[50px] px-5 text-xl font-bold max-[1600px]:text-sm max-sm:text-xs max-sm:w-full"
-              aria-label="button"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2L2 7L12 12L22 7L12 2Z"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M2 17L12 22L22 17"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M2 12L12 17L22 12"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              View All Trading Pairs
-            </button>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -1,8 +1,11 @@
 
+import SectionDivider from "../common/SectionDivider";
 
 export default function ProblemSolution() {
   return (
-    <div className="relative z-10 py-[70px] max-[1200px]:py-[60px] max-[900px]:py-10 bg-cover bg-center">
+    <>
+      <SectionDivider variant="simple" />
+      <div className="relative z-10 py-[70px] max-[1200px]:py-[60px] max-[900px]:py-10 bg-cover bg-center bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent">
       <div className="container relative z-10">
         {/* Problem vs Solution Section */}
         <div className="mb-[70px] max-[1200px]:mb-[50px] max-[900px]:mb-10 max-[600px]:mb-[50px]">
@@ -629,5 +632,6 @@ export default function ProblemSolution() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -1,8 +1,11 @@
 
+import SectionDivider from "../common/SectionDivider";
 
 export default function Testimony() {
   return (
-    <div className="relative py-[50px] max-[1200px]:py-10 max-[900px]:py-8">
+    <>
+      <SectionDivider variant="simple" />
+      <div className="relative py-[50px] max-[1200px]:py-10 max-[900px]:py-8 bg-gradient-to-b from-transparent to-[rgba(255,136,0,0.02)]">
       <div className="container">
         <div className="flex max-lg:flex-col items-center max-lg:items-start justify-between gap-[10px] mb-9 max-md:mb-5 max-md:text-center max-md:items-center">
           <div>
@@ -306,5 +309,6 @@ export default function Testimony() {
         </button>
       </div>
     </div>
+    </>
   );
 }

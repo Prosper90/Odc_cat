@@ -1,8 +1,12 @@
 
 
+import SectionDivider from "../common/SectionDivider";
+
 export default function Ecosystem() {
   return (
-    <div className="ecosystemNewBg py-[70px] max-[1200px]:py-[60px] max-[900px]:py-[40px]">
+    <>
+      <SectionDivider variant="gradient" />
+      <div className="ecosystemNewBg py-[70px] max-[1200px]:py-[60px] max-[900px]:py-[40px] bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent">
       <div className="container relative z-20">
         <div className="text-center max-w-[1022px] mx-auto mb-[35px] max-md:mb-5">
           <h2 className="font-bold text-white mb-[10px]">
@@ -3527,5 +3531,6 @@ export default function Ecosystem() {
         </div>
       </div>
     </div>
+    </>
   );
 }

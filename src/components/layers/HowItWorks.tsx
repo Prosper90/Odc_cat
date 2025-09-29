@@ -1,9 +1,13 @@
+import SectionDivider from "../common/SectionDivider";
+
 export default function HowItWorks() {
   return (
-    <div
-      className="py-[70px] max-[1200px]:py-[60px] max-[900px]:py-10 relative bg-cover bg-center"
-      id="how_it_works"
-    >
+    <>
+      <SectionDivider variant="gradient" />
+      <div
+        className="py-[70px] max-[1200px]:py-[60px] max-[900px]:py-10 relative bg-cover bg-center bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent"
+        id="how_it_works"
+      >
       <div className="container z-20 relative">
         <div className="text-center max-w-[844px] mx-auto mb-10 flex flex-col max-sm:mb-5">
           <h2 className="text-[40px] max-lg:text-3xl max-md:text-2xl font-bold text-white mb-[10px] leading-[1.5]">
@@ -44,5 +48,6 @@ export default function HowItWorks() {
         </figure>
       </div>
     </div>
+    </>
   );
 }
