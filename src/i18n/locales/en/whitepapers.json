@@ -1,0 +1,26 @@
+{
+  "title": "Lorem Ipsum",
+  "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "features": [
+    {
+      "title": "Lorem Ipsum Dolor",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod."
+    },
+    {
+      "title": "Lorem Dolor Sit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+    },
+    {
+      "title": "Lorem et Dolor",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor."
+    },
+    {
+      "title": "Lorem Ipsum et Dolor",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod."
+    }
+  ],
+  "buttons": {
+    "accessWhitepaper": "Lorem Ipsum",
+    "buy": "Lorem Ipsum"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Lorem Ipsum",
+  "phases": [
+    {
+      "number": "1",
+      "date": "Lorem 2024 - Lorem 2025",
+      "name": "Lorem",
+      "subtitle": "Lorem Ipsum Dolor Sit Amet"
+    },
+    {
+      "number": "2",
+      "date": "Lorem 2025 - Lorem 2025",
+      "name": "Lorem",
+      "subtitle": "Lorem Ipsum Dolor"
+    },
+    {
+      "number": "3",
+      "date": "Lorem 2025 - Lorem 2025",
+      "name": "Lorem",
+      "subtitle": "Lorem Ipsum Dolor Sit"
+    }
+  ]
+}

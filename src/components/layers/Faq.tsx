@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface FAQItem {
   question: string;
@@ -11,100 +12,38 @@ interface FAQCategory {
   questions: FAQItem[];
 }
 
-const faqData: FAQCategory[] = [
+const useFaqData = (): FAQCategory[] => {
+  const { t } = useTranslation('faq');
+
+  return [
   {
     id: "general",
-    label: "General",
-    questions: [
-      {
-        question: "What is Sun God Lab and OBE CAT?",
-        answer: "Sun God Lab is a revolutionary DeFi platform featuring the OBE CAT token. Our ecosystem combines advanced trading algorithms with community-driven governance to create sustainable returns for token holders."
-      },
-      {
-        question: "How is $CAT secured?",
-        answer: "$CAT is built on proven blockchain technology with multiple security layers including smart contract audits, multi-signature wallets, and decentralized governance protocols to ensure maximum security for all participants."
-      },
-      {
-        question: "How can I manage my funds?",
-        answer: "You can manage your $CAT tokens through our intuitive dashboard, which allows you to stake, trade, and monitor your portfolio in real-time. All transactions are secured and transparent on the blockchain."
-      },
-      {
-        question: "How is my staking reward calculated?",
-        answer: "Staking rewards are calculated based on your stake amount, duration, and current APY rates. The longer you stake, the higher your rewards. All calculations are transparent and automatically distributed."
-      }
-    ]
+    label: t('categories.general'),
+    questions: t('questions.general', { returnObjects: true }) as FAQItem[]
   },
   {
     id: "presale",
-    label: "Presale",
-    questions: [
-      {
-        question: "When does the presale start and end?",
-        answer: "The presale is currently live with limited-time bonuses available. Visit our dashboard to participate and secure your $CAT tokens at presale prices."
-      },
-      {
-        question: "What payment methods are accepted?",
-        answer: "We accept ETH, USDT, USDC, and other major cryptocurrencies. Payment processing is instant and secure through our smart contract system."
-      },
-      {
-        question: "What are the token distribution details?",
-        answer: "Token distribution follows a carefully planned schedule with immediate access to a portion of your tokens and the remainder distributed over time to ensure ecosystem stability."
-      },
-      {
-        question: "Is there a minimum investment amount?",
-        answer: "There is no minimum investment requirement, making $CAT accessible to all investors regardless of portfolio size."
-      }
-    ]
+    label: t('categories.presale'),
+    questions: t('questions.presale', { returnObjects: true }) as FAQItem[]
   },
   {
     id: "support",
-    label: "Support",
-    questions: [
-      {
-        question: "How can I contact customer support?",
-        answer: "Our support team is available 24/7 through our Discord community, Telegram channel, and email support. We typically respond within 2-4 hours."
-      },
-      {
-        question: "What if I encounter technical issues?",
-        answer: "If you experience any technical difficulties, please reach out to our technical support team who can assist with wallet connections, transaction issues, and platform navigation."
-      },
-      {
-        question: "How do I report bugs or provide feedback?",
-        answer: "We welcome community feedback! You can report bugs or suggestions through our Discord server or by contacting our development team directly."
-      },
-      {
-        question: "Are there any educational resources available?",
-        answer: "Yes! We provide comprehensive guides, video tutorials, and documentation to help you understand DeFi, staking, and how to maximize your $CAT investment."
-      }
-    ]
+    label: t('categories.support'),
+    questions: t('questions.support', { returnObjects: true }) as FAQItem[]
   },
   {
     id: "rewards",
-    label: "Rewards & Staking",
-    questions: [
-      {
-        question: "What are the current staking rewards?",
-        answer: "Current staking APY varies based on market conditions and stake duration. Long-term stakers enjoy higher rewards with our tiered reward system."
-      },
-      {
-        question: "How often are rewards distributed?",
-        answer: "Staking rewards are calculated and distributed automatically every 24 hours directly to your wallet. No manual claiming required."
-      },
-      {
-        question: "Can I unstake my tokens anytime?",
-        answer: "Yes, you can unstake your tokens at any time. However, longer staking periods receive bonus multipliers, so consider your strategy carefully."
-      },
-      {
-        question: "Are there any staking fees?",
-        answer: "Staking itself has no fees. Only standard blockchain gas fees apply when staking or unstaking your tokens."
-      }
-    ]
+    label: t('categories.rewards'),
+    questions: t('questions.rewards', { returnObjects: true }) as FAQItem[]
   }
 ];
+};
 
 export default function Faq() {
+  const { t } = useTranslation('faq');
   const [activeTab, setActiveTab] = useState("general");
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
+  const faqData = useFaqData();
 
   const toggleAccordion = (questionIndex: string) => {
     setOpenAccordion(openAccordion === questionIndex ? null : questionIndex);
@@ -149,11 +88,10 @@ export default function Faq() {
           <div className="flex items-center justify-between gap-[10px] max-md:flex-col max-md:items-start max-md:items-center max-md:text-center">
             <div>
               <h2 className="font-bold text-white mb-[5px] max-lg:text-[32px]">
-                Frequently Asked Questions
+                {t('title')}
               </h2>
               <p className="text-[16px] mx-auto text-white">
-                Clear answers to the most common questions about Sun God Lab, our
-                ecosystem, and how $CAT works.
+                {t('subtitle')}
               </p>
             </div>
             <div className="button-wrapper">
@@ -161,7 +99,7 @@ export default function Faq() {
                 className="h-[48px] font-medium font-ptSans flex items-center cursor-pointer ease-in-out justify-center gap-2.5 !font-semibold max-sm:!text-[14px] max-sm:!h-[40px] max-sm:w-full !border-none buttonRadialBGBlue bg-[radial-gradient(24.83%_154.95%_at_14.43%_72.32%,_#FF8800_0%,_#FF6600_100%)] rounded-[60px] bg-[#FF8800] hover:bg-none hover:border-[#FF8800] max-[479px]:!shadow-none button overflow-hidden px-[47px] max-lg:px-[35px] !bg-black hover:!bg-[#FF8800] hover:text-black relative z-10 text-[#FF8800] !bg-none !border-0 border-transparent shadow-none max-md:px-[30px] max-sm:px-[25px] min-w-[176px] max-lg:min-w-0 whitespace-nowrap max-md:h-[40px] max-md:text-[14px] transition-all duration-300"
                 aria-label="button"
               >
-                Buy $CAT
+                {t('button')}
               </button>
               <div className="button-bg bg-[linear-gradient(45.73deg,#FF8800_12.78%,#FF6600_50.23%)] !z-[2]"></div>
             </div>

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "banner": "Lorem ipsum dolor sit amet: Consectetur adipiscing elit 100% Bonus on any deposit! Use code 'BUY10K' for additional tokens. Offer is for a limited time only",
+    "nav": {
+      "trade": "Trade $ODC",
+      "features": "Lorem Ipsum",
+      "roadmap": "Lorem Dolor",
+      "audit": "Audit",
+      "whitepaper": "White Paper"
+    },
+    "menu": "Lorem",
+    "connectWallet": "Lorem Wallet"
+  },
+  "footer": {
+    "quickLinks": {
+      "title": "Lorem Ipsum",
+      "howToBuy": "Lorem Ipsum Dolor",
+      "features": "Lorem Ipsum",
+      "roadmap": "CAT Lorem"
+    },
+    "privacy": {
+      "title": "Lorem",
+      "terms": "Lorem et Consectetur",
+      "policy": "Lorem Ipsum"
+    },
+    "social": {
+      "title": "Lorem Ipsum",
+      "twitter": "Twitter",
+      "telegram": "Telegram"
+    },
+    "disclaimer": {
+      "title": "Lorem:",
+      "text": "Lorem ipsum dolor sit amet consectetur. Adipiscing elit sed do eiusmod tempor incididunt. Ut labore et dolore magna aliqua quis nostrud exercitation."
+    },
+    "copyright": "CATABS © 2025, Lorem ipsum reserved"
+  }
+}

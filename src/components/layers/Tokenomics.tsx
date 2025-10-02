@@ -1,23 +1,22 @@
 import SectionDivider from "../common/SectionDivider";
+import { useTranslation } from "react-i18next";
 
 export default function Tokenomics() {
+  const { t } = useTranslation("tokenomics");
+
+  {
+    // style={{
+    //   backgroundImage: "url(/tokenomicsBanner.png)",
+    // }}
+  }
   return (
     <div>
       <SectionDivider variant="gradient" />
-      <div
-        className="bg-no-repeat bg-cover pt-[70px] max-lg:py-[50px] max-md:py-[40px] pb-[79px] overflow-hidden bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent"
-        style={{
-          backgroundImage:
-            "url(/_next/static/media/tokenomicsBanner.6f4c582d.png)",
-        }}
-      >
+      <div className="bg-no-repeat bg-cover pt-[70px] max-lg:py-[50px] max-md:py-[40px] pb-[79px] overflow-hidden bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent">
         <div className="container">
           <div className="text-center mb-[58px] max-lg:mb-[40px] max-md:mb-[20px] max-sm-[20px]">
-            <h2 className="font-bold text-white mb-[10px]">Tokenomics</h2>
-            <p>
-              Balanced distribution across presale, advisors, liquidity, and
-              development, ensuring both stability and scalability.
-            </p>
+            <h2 className="font-bold text-white mb-[10px]">{t("title")}</h2>
+            <p>{t("description")}</p>
           </div>
           <div className="grid grid-cols-2 max-xl:grid-cols-1 gap-[40px] relative z-[10] max-md:gap-3">
             <div
@@ -29,7 +28,7 @@ export default function Tokenomics() {
                 <div className="col-span-1 max-sm:col-span-2">
                   <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                     <label className="font-normal text-base leading-[1.3] mb-1 table">
-                      Token Name
+                      {t("fields.tokenName")}
                     </label>
                     <input
                       readOnly
@@ -42,7 +41,7 @@ export default function Tokenomics() {
                 <div className="col-span-1 max-sm:col-span-2">
                   <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                     <label className="font-normal text-base leading-[1.3] mb-1 table">
-                      Token Type
+                      {t("fields.tokenType")}
                     </label>
                     <input
                       readOnly
@@ -55,7 +54,7 @@ export default function Tokenomics() {
                 <div className="col-span-1 max-sm:col-span-2">
                   <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                     <label className="font-normal text-base leading-[1.3] mb-1 table">
-                      Token Symbol
+                      {t("fields.tokenSymbol")}
                     </label>
                     <input
                       readOnly
@@ -68,7 +67,7 @@ export default function Tokenomics() {
                 <div className="col-span-1 max-sm:col-span-2">
                   <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                     <label className="font-normal text-base leading-[1.3] mb-1 table">
-                      Decimal
+                      {t("fields.decimal")}
                     </label>
                     <input
                       readOnly
@@ -81,7 +80,7 @@ export default function Tokenomics() {
                 <div className="col-span-1 max-sm:col-span-2 col-span-2">
                   <div className="bg-[linear-gradient(191.79deg,rgba(58,45,36,0.3)_15.6%,rgba(237,134,15,0.3)_87.34%)] border border-[#443828] shadow-[inset_0px_4px_34px_#FF8800] backdrop-blur-[45px] rounded-[20px] max-lg:rounded-[12px] p-[23px_22px_22px_20px] max-lg:p-[15px_15px_15px_15px] max-[900px]:border max-[900px]:border-[#dd7730] max-[900px]:bg-[linear-gradient(191.79deg,_rgb(26_22_18)_15.6%,_rgb(42_31_26)_87.34%)] max-[900px]:shadow-[inset_0px_4px_8px_0px_#d67b26]">
                     <label className="font-normal text-base leading-[1.3] mb-1 table">
-                      Total Supply
+                      {t("fields.totalSupply")}
                     </label>
                     <input
                       readOnly
@@ -96,7 +95,7 @@ export default function Tokenomics() {
                     <div className="flex items-center justify-between gap-4">
                       <div className="flex-[1]">
                         <label className="font-normal text-base leading-[1.3] mb-1 table">
-                          Token Contract Address
+                          {t("fields.contractAddress")}
                         </label>
                         <input
                           readOnly
@@ -923,8 +922,7 @@ export default function Tokenomics() {
                     data-nimg="1"
                     className="w-full"
                     style={{ color: "transparent" }}
-                    srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FtokenomicsBannGrid.8bf5030c.png&w=640&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FtokenomicsBannGrid.8bf5030c.png&w=1080&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t 2x"
-                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FtokenomicsBannGrid.8bf5030c.png&w=1080&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t"
+                    src="/tokenomicsBannGrid.webp"
                   />
                 </div>
               </div>
@@ -933,10 +931,10 @@ export default function Tokenomics() {
           <div className="mt-6 max-md:mt-5 flex items-center justify-center">
             <div className="button-wrapper">
               <button
-                className="h-[48px] font-medium font-ptSans flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 border-[#ffffff72] !font-semibold max-sm:!text-[14px] max-sm:!h-[40px] max-sm:w-full !border-none buttonRadialBGBlue bg-[radial-gradient(24.83%_154.95%_at_14.43%_72.32%,_#13DCE3_0%,_#33FFD4_100%)] rounded-[60px] text-[#00070F] bg-[#FFFF00] hover:bg-none hover:border-[#FFFF00] max-[479px]:!shadow-none px-[50px] max-lg:px-[35px] max-md:px-[30px] max-sm:px-[25px] min-w-[176px] max-lg:min-w-0 whitespace-nowrap max-md:h-[40px] max-md:text-[14px] buttonRadialBGGreen"
+                className="h-[48px] font-medium font-ptSans flex items-center cursor-pointer ease-in-out justify-center gap-2.5 !font-semibold max-sm:!text-[14px] max-sm:!h-[40px] max-sm:w-full !border-none buttonRadialBGBlue bg-[radial-gradient(24.83%_154.95%_at_14.43%_72.32%,_#FF8800_0%,_#FF6600_100%)] rounded-[60px] bg-[#FFFF00] hover:bg-none hover:border-[#FFFF00] max-[479px]:!shadow-none button overflow-hidden px-[47px] max-lg:px-[35px] !bg-black hover:!bg-[#ffff00] hover:text-black relative z-10 text-[#FFFF00] !bg-none !border-0 border-transparent max-md:px-[30px] max-sm:px-[25px] min-w-[176px] max-lg:min-w-0 whitespace-nowrap max-md:h-[40px] max-md:text-[14px] transition-all duration-300"
                 aria-label="button"
               >
-                Buy $CAT
+                {t("button")}
               </button>
               <div className="button-bg bg-[radial-gradient(45.54%_275.61%_at_14.77%_80.36%,_#FFFF00_0%,_#00FF66_100%)]"></div>
             </div>

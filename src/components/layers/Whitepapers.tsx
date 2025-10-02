@@ -1,6 +1,8 @@
 import SectionDivider from "../common/SectionDivider";
+import { useTranslation } from "react-i18next";
 
 export default function Whitepapers() {
+  const { t } = useTranslation("whitepapers");
   return (
     <div>
       <SectionDivider variant="dots" />
@@ -29,13 +31,8 @@ export default function Whitepapers() {
             </figure>
             <div className="max-w-[582px] max-[1200px]:max-w-full w-full pb-[50px] max-md:pb-4">
               <div className="flex flex-col gap-2 mb-[30px] max-md:mb-5 ">
-                <h2>Cat Whitepaper</h2>
-                <p>
-                  The blueprint behind the first AI-powered retail hedge fund.
-                  Discover how $CAT combines AI-driven allocation, diversified
-                  funds, and risk management into a transparent investment model
-                  anyone can access.
-                </p>
+                <h2>{t("title")}</h2>
+                <p>{t("description")}</p>
               </div>
               <ul className="flex flex-col gap-6">
                 <li
@@ -113,11 +110,8 @@ export default function Whitepapers() {
                     </svg>
                   </i>
                   <div className="flex flex-col gap-[6px]">
-                    <h3>AI Allocation Engine</h3>
-                    <p className="text-[14px]">
-                      Our proprietary models analyze markets in real-time,
-                      rebalance sectors, and optimize exposure.
-                    </p>
+                    <h3>{t("features.0.title")}</h3>
+                    <p className="text-[14px]">{t("features.0.description")}</p>
                   </div>
                 </li>
                 <li
@@ -195,11 +189,8 @@ export default function Whitepapers() {
                     </svg>
                   </i>
                   <div className="flex flex-col gap-[6px]">
-                    <h3>Multi-Fund Strategy</h3>
-                    <p className="text-[14px]">
-                      Diversified funds, including AI Fund, BTC Fund, Mining,
-                      and RWA, each target specific growth opportunities.
-                    </p>
+                    <h3>{t("features.1.title")}</h3>
+                    <p className="text-[14px]">{t("features.1.description")}</p>
                   </div>
                 </li>
                 <li
@@ -277,11 +268,8 @@ export default function Whitepapers() {
                     </svg>
                   </i>
                   <div className="flex flex-col gap-[6px]">
-                    <h3>Risk &amp; Drawdown Controls</h3>
-                    <p className="text-[14px]">
-                      Built-in guardrails, re-hedging protocols, and scenario
-                      testing keep capital protected through volatility.
-                    </p>
+                    <h3>{t("features.2.title")}</h3>
+                    <p className="text-[14px]">{t("features.2.description")}</p>
                   </div>
                 </li>
                 <li
@@ -359,30 +347,27 @@ export default function Whitepapers() {
                     </svg>
                   </i>
                   <div className="flex flex-col gap-[6px]">
-                    <h3>Token Utility &amp; Rewards</h3>
-                    <p className="text-[14px]">
-                      $CAT powers staking, governance, and referral bonuses —
-                      while rewarding early adopters with long-term value.
-                    </p>
+                    <h3>{t("features.3.title")}</h3>
+                    <p className="text-[14px]">{t("features.3.description")}</p>
                   </div>
                 </li>
               </ul>
               <div className="flex items-center gap-4 mt-[30px] max-sm:flex-col max-sm:[&>button]:w-full max-md:mt-4">
                 <div className="button-wrapper ">
                   <button
-                    className="h-[48px] min-w-[166px] font-medium font-ptSans flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 border-[#ffffff72] !font-semibold max-sm:!text-[14px] max-sm:!h-[40px] max-sm:w-full !border-none buttonRadialBGBlue bg-[radial-gradient(24.83%_154.95%_at_14.43%_72.32%,_#13DCE3_0%,_#33FFD4_100%)] rounded-[60px] text-[#00070F] bg-[#FFFF00] hover:bg-none hover:border-[#FFFF00] max-[479px]:!shadow-none px-[50px]"
+                    className="w-full lg:w-auto min-w-[200px] flex items-center cursor-pointer transition-all duration-300 ease-in-out justify-center gap-2.5 font-semibold bg-gradient-to-r from-[#FF8800] to-[#FF6600] rounded-xl text-white hover:from-[#FF9900] hover:to-[#FF7700] hover:shadow-lg hover:scale-105 h-12 px-6 text-base font-bold"
                     aria-label="button"
                   >
-                    Access Whitepaper
+                    {t("buttons.accessWhitepaper")}
                   </button>
                   <div className="button-bg bg-[linear-gradient(45.73deg,#13DCE3_25.78%,#33FFD4_50.23%)]" />
                 </div>
                 <div className="button-wrapper ">
                   <button
-                    className="h-[48px] min-w-[166px] font-medium font-ptSans flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 border-[#ffffff72] !font-semibold max-sm:!text-[14px] max-sm:!h-[40px] max-sm:w-full !border-none buttonRadialBGBlue bg-[radial-gradient(24.83%_154.95%_at_14.43%_72.32%,_#13DCE3_0%,_#33FFD4_100%)] rounded-[60px] text-[#00070F] bg-[#FFFF00] hover:bg-none hover:border-[#FFFF00] max-[479px]:!shadow-none px-[50px] max-xl:px-[30px] buttonRadialBGYellow"
+                    className="h-[48px] font-medium font-ptSans flex items-center cursor-pointer ease-in-out justify-center gap-2.5 !font-semibold max-sm:!text-[14px] max-sm:!h-[40px] max-sm:w-full !border-none buttonRadialBGBlue bg-[radial-gradient(24.83%_154.95%_at_14.43%_72.32%,_#FF8800_0%,_#FF6600_100%)] rounded-[60px] bg-[#FFFF00] hover:bg-none hover:border-[#FFFF00] max-[479px]:!shadow-none button overflow-hidden px-[47px] max-lg:px-[35px] !bg-black hover:!bg-[#ffff00] hover:text-black relative z-10 text-[#FFFF00] !bg-none !border-0 border-transparent max-md:px-[30px] max-sm:px-[25px] min-w-[176px] max-lg:min-w-0 whitespace-nowrap max-md:h-[40px] max-md:text-[14px] transition-all duration-300"
                     aria-label="button"
                   >
-                    Buy $CAT
+                    {t("buttons.buy")}
                   </button>
                   <div className="button-bg bg-[linear-gradient(45.73deg,#eff869df_25.78%,#fdb100_50.23%)]" />
                 </div>

@@ -1,0 +1,59 @@
+{
+  "swap": {
+    "title": "Lorem Ipsum",
+    "subtitle": "Lorem Dolor",
+    "stats": {
+      "volume": "24h Lorem:",
+      "liquidity": "Lorem Ipsum:",
+      "pairs": "Lorem Dolor:"
+    },
+    "price": {
+      "change": "24h Lorem:",
+      "slippage": "Lorem:"
+    },
+    "info": "Lorem ipsum dolor sit amet consectetur adipiscing",
+    "youPay": "Lorem Ipsum:",
+    "youReceive": "Lorem Dolor:",
+    "balance": "Lorem:",
+    "max": "MAX",
+    "details": {
+      "rate": "Lorem Ipsum",
+      "gas": "Lorem. Gas Fee"
+    },
+    "buttons": {
+      "connect": "Lorem Wallet",
+      "selectTokens": "Lorem Ipsum",
+      "enterAmount": "Lorem Dolor",
+      "swap": "Swap {{from}} for {{to}}",
+      "swapping": "Lorem..."
+    },
+    "supported": "Lorem Tokens: ODC, BNB, WBNB, USDT"
+  },
+  "howTo": {
+    "title": "Lorem Ipsum Dolor",
+    "description": "Lorem ipsum dolor sit amet consectetur. Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "steps": {
+      "step1": {
+        "title": "Lorem Ipsum Dolor",
+        "desc": "Lorem ipsum dolor sit amet consectetur"
+      },
+      "step2": {
+        "title": "Lorem Ipsum Dolor",
+        "desc": "Lorem ipsum dolor sit amet"
+      },
+      "step3": {
+        "title": "Lorem Ipsum & Dolor",
+        "desc": "Lorem ipsum dolor sit amet consectetur"
+      },
+      "step4": {
+        "title": "Lorem Ipsum",
+        "desc": "Lorem ipsum dolor sit amet"
+      }
+    },
+    "guarantee": {
+      "title": "Lorem Ipsum Consectetur",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "button": "Lorem Ipsum Dolor"
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import SectionDivider from "../common/SectionDivider";
+import { useTranslation } from "react-i18next";
 
 export default function HowItWorks() {
+  const { t } = useTranslation('howItWorks');
   return (
     <>
       <SectionDivider variant="gradient" />
@@ -11,13 +13,11 @@ export default function HowItWorks() {
       <div className="container z-20 relative">
         <div className="text-center max-w-[844px] mx-auto mb-10 flex flex-col max-sm:mb-5">
           <h2 className="text-[40px] max-lg:text-3xl max-md:text-2xl font-bold text-white mb-[10px] leading-[1.5]">
-            How It Works <br />
-            AI-Powered Hedge Fund for Everyone
+            {t('title')} <br />
+            {t('subtitle')}
           </h2>
           <p className="max-w-[742px] mx-auto text-white text-base max-md:text-sm">
-            Instead of spending hours managing trades, Cat automates the entire
-            process. Every $CAT token you hold connects you to our AI managed
-            funds - generating growth and rewards daily.
+            {t('description')}
           </p>
         </div>
 

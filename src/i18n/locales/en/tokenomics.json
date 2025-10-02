@@ -1,0 +1,39 @@
+{
+  "title": "Lorem Ipsum",
+  "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+  "fields": {
+    "tokenName": "Lorem Ipsum",
+    "tokenType": "Lorem Dolor",
+    "tokenSymbol": "Lorem",
+    "decimal": "Lorem",
+    "totalSupply": "Lorem Ipsum",
+    "contractAddress": "Lorem Ipsum Consectetur"
+  },
+  "distribution": {
+    "teamAdvisors": {
+      "label": "Lorem et Ipsum",
+      "value": "15%"
+    },
+    "liquidityExchange": {
+      "label": "Lorem et Consectetur",
+      "value": "10%"
+    },
+    "marketingCommunity": {
+      "label": "Lorem et Dolor",
+      "value": "10%"
+    },
+    "reserve": {
+      "label": "Lorem",
+      "value": "05%"
+    },
+    "ecosystemDevelopment": {
+      "label": "Lorem et Consectetur",
+      "value": "20%"
+    },
+    "presale": {
+      "label": "Lorem",
+      "value": "40%"
+    }
+  },
+  "button": "Lorem Ipsum"
+}

@@ -1,0 +1,19 @@
+{
+  "problem": {
+    "title": "Lorem Ipsum",
+    "items": [
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+    ]
+  },
+  "solution": {
+    "title": "Lorem Ipsum",
+    "items": [
+      "Lorem ipsum dolor sit amet consectetur adipiscing.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+      "Lorem ipsum dolor sit amet consectetur.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": {
+    "line1": "Lorem Dolor",
+    "line2": "Consectetur",
+    "line3": "Lorem Ipsum"
+  },
+  "description": "Lorem ipsum dolor sit amet consectetur adipiscing. Elit sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+  "features": {
+    "feature1": "Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit",
+    "feature2": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+    "feature3": "Lorem Ipsum Dolor Sit Amet"
+  },
+  "buttons": {
+    "buy": "Lorem Ipsum",
+    "howItWorks": "Lorem Ipsum?"
+  },
+  "poweredBy": "Lorem Ipsum:",
+  "listedOn": "Lorem Ipsum:"
+}

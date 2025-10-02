@@ -1,28 +1,30 @@
+import { useTranslation } from "react-i18next";
+
 export default function Hero() {
+  const { t } = useTranslation("hero");
   return (
-    <div className="relative pt-[120px] max-md:pt-[100px] max-sm:pt-[90px] pb-16 max-md:pb-12 max-sm:pb-8 bg-[#1a1612] before:absolute before:inset-x-0 before:bottom-0 before:w-full before:h-[75px] before:z-[2] before:bg-gradient-to-t before:from-[#1a1612] before:via-[rgba(26,22,18,0.33)] before:to-transparent before:content-['']">
+    <div className="bannerMain relative pt-[120px] max-md:pt-[110px] max-sm:pt-[120px] pb-[40px] bg-[#00070F] before:absolute before:inset-x-0 before:bottom-0 before:w-full before:h-[75px] before:z-[2] before:bg-[linear-gradient(0deg,#00070F_33.07%,rgba(0,7,15,0)_100%)] before:content-['']">
       <img
         alt="bannerMain"
         loading="lazy"
-        width="1600"
-        height="730"
         decoding="async"
-        className="absolute top-0 left-0 w-full h-full z-[1] object-cover object-[40%] max-[1600px]:object-[60%] max-[1400px]:object-[70%] max-md:object-[30%] opacity-80"
-        src="/bannerOriginalOverlay.png"
+        className="absolute top-0 left-0 w-full h-full md:w-[1600px] md:h-[860px] z-[1] object-cover object-[40%] max-[1600px]:object-[60%] max-[1400px]:object-[70%] max-md:object-[30%]"
+        src="/bannerOriginalOverlay.webp"
       />
 
       <div className="container relative z-20 px-6 max-md:px-4 max-sm:px-3">
         <div className="ml-auto max-w-[520px] flex flex-col max-lg:max-w-none max-lg:mx-auto max-lg:text-center lg:ml-auto lg:mr-0">
           <h1 className="leading-[1.1] text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-inter font-bold text-white animate-fade-in-up mb-6 max-md:mb-4">
-            <span className="block">Freedom Through</span>
-            <span className="block text-transparent bg-gradient-to-r from-[#FF8800] via-[#FFA500] to-[#FFD700] bg-clip-text animate-glow"> Innovation </span>
-            <span className="block">Sun God Lab</span>
+            <span className="block">{t("title.line1")}</span>
+            <span className="block text-transparent bg-gradient-to-r from-[#FF8800] via-[#FFA500] to-[#FFD700] bg-clip-text animate-glow">
+              {" "}
+              {t("title.line2")}{" "}
+            </span>
+            <span className="block">{t("title.line3")}</span>
           </h1>
 
           <p className="text-lg max-md:text-base max-sm:text-sm text-gray-300 leading-relaxed animate-fade-in-up animate-delay-200 mb-8 max-md:mb-6 max-sm:mb-4 max-w-lg max-lg:max-w-none">
-            Empowering communities through disciplined systems that serve
-            everyone fairly. Trade OBE CAT Token ($ODC) and join our mission of
-            freedom and community empowerment.
+            {t("description")}
           </p>
 
           <ul className="flex flex-col gap-4 max-sm:gap-3 bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent mb-8 max-md:mb-6">
@@ -71,7 +73,7 @@ export default function Hero() {
                 </svg>
               </i>
               <p className="text-base max-sm:text-sm font-inter font-bold leading-[1.5] max-lg:text-center lg:text-left">
-                The First AI-Managed Platform Offering Passive Income
+                {t("features.feature1")}
               </p>
             </li>
 
@@ -120,7 +122,7 @@ export default function Hero() {
                 </svg>
               </i>
               <p className="text-base max-sm:text-sm font-inter font-bold leading-[1.5] max-lg:text-center lg:text-left">
-                Invest in Bitcoin, Litecoin, Real Estate &amp; AI Assets
+                {t("features.feature2")}
               </p>
             </li>
 
@@ -169,7 +171,7 @@ export default function Hero() {
                 </svg>
               </i>
               <p className="text-base max-sm:text-sm font-inter font-bold leading-[1.5] max-lg:text-center lg:text-left">
-                Get Over 105%* Yearly Yields
+                {t("features.feature3")}
               </p>
             </li>
           </ul>
@@ -179,21 +181,21 @@ export default function Hero() {
               className="h-14 max-sm:h-12 min-w-[180px] max-sm:min-w-full font-medium flex items-center cursor-pointer transition-all duration-300 ease-in-out justify-center gap-2.5 font-bold text-base max-sm:text-sm bg-gradient-to-r from-[#FF8800] to-[#FF6600] rounded-full text-white hover:from-[#FF9900] hover:to-[#FF7700] hover:shadow-lg hover:scale-105 px-8 flex-1 max-sm:flex-initial"
               aria-label="Buy $CAT Token"
             >
-              Buy $CAT
+              {t("buttons.buy")}
             </button>
 
             <button
               className="h-14 max-sm:h-12 min-w-[180px] max-sm:min-w-full font-medium flex items-center cursor-pointer transition-all duration-300 ease-in-out justify-center gap-2.5 font-bold text-base max-sm:text-sm bg-transparent border-2 border-[#FF8800] rounded-full text-white hover:bg-[#FF8800] hover:scale-105 px-8"
               aria-label="How It Works"
             >
-              How It Works?
+              {t("buttons.howItWorks")}
             </button>
           </div>
 
           <div className="bg-gradient-to-br from-[rgba(42,31,26,0.3)] to-[rgba(255,136,0,0.1)] border border-[rgba(255,136,0,0.3)] backdrop-blur-[15px] rounded-xl mt-8 max-md:mt-6 w-full max-w-[480px] max-lg:max-w-none shadow-lg">
             <div className="py-5 px-6 flex items-center gap-4 border-b border-[rgba(255,136,0,0.2)] max-md:p-4 max-md:gap-3 max-sm:flex-col max-sm:text-center">
               <p className="text-base font-semibold font-inter text-[#FF8800] min-w-[100px] max-sm:min-w-0">
-                Powered By:
+                {t("poweredBy")}
               </p>
               <div className="flex items-center gap-4 max-sm:justify-center">
                 <a
@@ -208,7 +210,7 @@ export default function Hero() {
                     height="17"
                     decoding="async"
                     className="h-auto"
-                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcodeamImage.98e51960.png&w=256&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t"
+                    src="/codeamImage.webp"
                   />
                 </a>
                 <a
@@ -223,7 +225,7 @@ export default function Hero() {
                     height="20"
                     decoding="async"
                     className="h-auto"
-                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcyberPrusImage.f3953940.png&w=256&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t"
+                    src="/cyberPrusImage.webp"
                   />
                 </a>
               </div>
@@ -231,7 +233,7 @@ export default function Hero() {
 
             <div className="py-5 px-6 flex items-center gap-4 max-md:p-4 max-md:gap-3 max-sm:flex-col max-sm:text-center">
               <p className="text-base font-semibold font-inter text-[#FF8800] min-w-[100px] max-sm:min-w-0">
-                Listed On:
+                {t("listedOn")}
               </p>
               <div className="flex items-center gap-4 max-sm:justify-center">
                 <a
@@ -246,7 +248,7 @@ export default function Hero() {
                     height="35"
                     decoding="async"
                     className="h-auto"
-                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FmarketCap.14fa3974.png&w=256&q=75&dpl=dpl_EWAS8ZF1SPz1gvd3Hgrceu9TqG7t"
+                    src="/marketCap.webp"
                   />
                 </a>
               </div>

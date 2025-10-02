@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { ConnectKitButton } from "connectkit";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../common/LanguageSwitcher";
 
 const Header: React.FC = () => {
+  const { t } = useTranslation("common");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -14,12 +17,7 @@ const Header: React.FC = () => {
         <div className="overflow-hidden whitespace-nowrap">
           <span className="inline-block animate-marquee">
             <p className="text-center text-[13px] max-[380px]:text-[12px] text-black font-medium capitalize">
-              CELEBRATING 10,000 PRESALE INVESTORS: WE ARE OFFERING A 100% BONUS
-              ON ANY DEPOSIT! USE CODE{" "}
-              <span className="text-white bg-black rounded-[5px] px-1">
-                'BUY10K'
-              </span>{" "}
-              FOR ADDITIONAL TOKENS. OFFER IS FOR A LIMITED TIME ONLY
+              {t("header.banner")}
             </p>
           </span>
         </div>
@@ -43,101 +41,8 @@ const Header: React.FC = () => {
                     height="58"
                     decoding="async"
                     className="w-full h-full object-cover"
-                    src="/_next/image?url=%2Fwebp%2Fearth.webp&w=128&q=75"
+                    src="/logoSuncat.png"
                   />
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 59 40"
-                    className="w-[44px]"
-                  >
-                    <g filter="url(#logo_svg__a)">
-                      <path
-                        fill="#42BDDD"
-                        d="M6.795 1.773H1v30.909h23.955v-6.568H6.794z"
-                      ></path>
-                    </g>
-                    <g filter="url(#logo_svg__b)">
-                      <path
-                        fill="#0FEDBE"
-                        d="M21.863 1v30.91h5.796V7.181h18.159v24.727H52V1z"
-                      ></path>
-                    </g>
-                    <defs>
-                      <filter
-                        id="logo_svg__a"
-                        width="31.955"
-                        height="38.909"
-                        x="0"
-                        y="0.773"
-                        colorInterpolationFilters="sRGB"
-                        filterUnits="userSpaceOnUse"
-                      >
-                        <feFlood
-                          floodOpacity="0"
-                          result="BackgroundImageFix"
-                        ></feFlood>
-                        <feColorMatrix
-                          in="SourceAlpha"
-                          result="hardAlpha"
-                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        ></feColorMatrix>
-                        <feOffset dx="3" dy="3"></feOffset>
-                        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                        <feComposite
-                          in2="hardAlpha"
-                          operator="out"
-                        ></feComposite>
-                        <feColorMatrix values="0 0 0 0 0.290196 0 0 0 0 0.227451 0 0 0 0 1 0 0 0 1 0"></feColorMatrix>
-                        <feBlend
-                          in2="BackgroundImageFix"
-                          result="effect1_dropShadow_17_17372"
-                        ></feBlend>
-                        <feBlend
-                          in="SourceGraphic"
-                          in2="effect1_dropShadow_17_17372"
-                          result="shape"
-                        ></feBlend>
-                      </filter>
-                      <filter
-                        id="logo_svg__b"
-                        width="38.136"
-                        height="38.909"
-                        x="20.863"
-                        y="0"
-                        colorInterpolationFilters="sRGB"
-                        filterUnits="userSpaceOnUse"
-                      >
-                        <feFlood
-                          floodOpacity="0"
-                          result="BackgroundImageFix"
-                        ></feFlood>
-                        <feColorMatrix
-                          in="SourceAlpha"
-                          result="hardAlpha"
-                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        ></feColorMatrix>
-                        <feOffset dx="3" dy="3"></feOffset>
-                        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                        <feComposite
-                          in2="hardAlpha"
-                          operator="out"
-                        ></feComposite>
-                        <feColorMatrix values="0 0 0 0 0.290196 0 0 0 0 0.227451 0 0 0 0 1 0 0 0 1 0"></feColorMatrix>
-                        <feBlend
-                          in2="BackgroundImageFix"
-                          result="effect1_dropShadow_17_17372"
-                        ></feBlend>
-                        <feBlend
-                          in="SourceGraphic"
-                          in2="effect1_dropShadow_17_17372"
-                          result="shape"
-                        ></feBlend>
-                      </filter>
-                    </defs>
-                  </svg>
                 </div>
               </a>
             </div>
@@ -153,7 +58,7 @@ const Header: React.FC = () => {
                     className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
                     href="/#swap-interface"
                   >
-                    Trade $ODC
+                    {t("header.nav.trade")}
                   </a>
                 </div>
               </li>
@@ -165,7 +70,7 @@ const Header: React.FC = () => {
                     className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
                     href="/#corefeatures"
                   >
-                    Core Features
+                    {t("header.nav.features")}
                   </a>
                 </div>
               </li>
@@ -177,7 +82,7 @@ const Header: React.FC = () => {
                     className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
                     href="/#roadmap"
                   >
-                    Roadmap
+                    {t("header.nav.roadmap")}
                   </a>
                 </div>
               </li>
@@ -190,7 +95,7 @@ const Header: React.FC = () => {
                     className="text-white font-medium hover:text-amber-400 transition-colors duration-200"
                     href="https://codeum.org/kyc/uni-labs"
                   >
-                    Audit
+                    {t("header.nav.audit")}
                   </a>
                 </div>
               </li>
@@ -200,7 +105,7 @@ const Header: React.FC = () => {
                     type="button"
                     className="outline-none text-white font-medium text-base cursor-pointer hover:text-amber-400 transition-colors duration-200"
                   >
-                    White Paper
+                    {t("header.nav.whitepaper")}
                   </button>
                 </div>
               </li>
@@ -210,6 +115,7 @@ const Header: React.FC = () => {
           <div className="flex justify-end ml-5 max-xl:ml-2">
             <div className="opacity-100">
               <div className="flex items-center justify-between gap-5 max-xl:gap-2">
+                <LanguageSwitcher />
                 <ConnectKitButton.Custom>
                   {({ isConnected, show, truncatedAddress, ensName }) => {
                     return (
@@ -220,7 +126,7 @@ const Header: React.FC = () => {
                       >
                         {isConnected
                           ? ensName ?? truncatedAddress
-                          : "Connect Wallet"}
+                          : t("header.connectWallet")}
                       </button>
                     );
                   }}
@@ -268,7 +174,7 @@ const Header: React.FC = () => {
         >
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-[#b3ecfa9d]">
-            <h2 className="text-white font-bold text-lg">Menu</h2>
+            <h2 className="text-white font-bold text-lg">{t("header.menu")}</h2>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-white hover:text-amber-400 transition-colors"
@@ -298,21 +204,21 @@ const Header: React.FC = () => {
               className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Trade $ODC
+              {t("header.nav.trade")}
             </a>
             <a
               href="/#corefeatures"
               className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Core Features
+              {t("header.nav.features")}
             </a>
             <a
               href="/#roadmap"
               className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Roadmap
+              {t("header.nav.roadmap")}
             </a>
             <a
               href="https://codeum.org/kyc/uni-labs"
@@ -321,14 +227,14 @@ const Header: React.FC = () => {
               className="text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3 border-b border-white/10"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Audit
+              {t("header.nav.audit")}
             </a>
             <button
               type="button"
               className="text-left text-white font-medium hover:text-amber-400 transition-colors duration-200 py-3"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              White Paper
+              {t("header.nav.whitepaper")}
             </button>
           </div>
         </div>

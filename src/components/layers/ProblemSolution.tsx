@@ -1,637 +1,1173 @@
-
 import SectionDivider from "../common/SectionDivider";
+import { useTranslation } from "react-i18next";
 
 export default function ProblemSolution() {
+  const { t } = useTranslation("problemSolution");
   return (
     <>
       <SectionDivider variant="simple" />
       <div className="relative z-10 py-[70px] max-[1200px]:py-[60px] max-[900px]:py-10 bg-cover bg-center bg-gradient-to-b from-[rgba(255,136,0,0.02)] to-transparent">
-      <div className="container relative z-10">
-        {/* Problem vs Solution Section */}
-        <div className="mb-[70px] max-[1200px]:mb-[50px] max-[900px]:mb-10 max-[600px]:mb-[50px]">
-          <div className="grid grid-cols-2 max-sm:grid-cols-1">
-            {/* Problem Side */}
-            <div className="bg-gradient-to-br from-[rgba(255,83,67,0.4)] to-[rgba(99,160,159,0.172)] h-full border border-[#ff001e89] border-r-0 rounded-tl-[20px] rounded-bl-[20px] p-[35px] max-lg:p-5 max-[600px]:p-[15px] max-sm:rounded-t-3 max-sm:rounded-b-none max-sm:border-r max-sm:border-b-0">
-              <h3 className="text-xl font-bold mb-4 text-white">The Problem</h3>
-              <ul className="flex flex-col gap-4">
-                <li className="flex items-start gap-2">
-                  <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_341_11825)">
-                        <path
-                          d="M12.4993 7.50008L7.49935 12.5001M7.49935 7.50008L12.4993 12.5001M18.3327 10.0001C18.3327 14.6025 14.6017 18.3334 9.99935 18.3334C5.39698 18.3334 1.66602 14.6025 1.66602 10.0001C1.66602 5.39771 5.39698 1.66675 9.99935 1.66675C14.6017 1.66675 18.3327 5.39771 18.3327 10.0001Z"
-                          stroke="#FF001E"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_341_11825">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </i>
-                  <p className="text-base font-inter font-normal leading-relaxed text-white">
-                    80% of retail traders lose money or underperform the market.
-                  </p>
-                </li>
+        <div className="container relative z-10">
+          {/* Problem vs Solution Section */}
+          <div className="mb-[70px] max-[1200px]:mb-[50px] max-[900px]:mb-10 max-[600px]:mb-[50px]">
+            <div className="grid grid-cols-2 max-sm:grid-cols-1">
+              {/* Problem Side */}
+              <div className="bg-gradient-to-br from-[rgba(255,83,67,0.4)] to-[rgba(99,160,159,0.172)] h-full border border-[#ff001e89] border-r-0 rounded-tl-[20px] rounded-bl-[20px] p-[35px] max-lg:p-5 max-[600px]:p-[15px] max-sm:rounded-t-3 max-sm:rounded-b-none max-sm:border-r max-sm:border-b-0">
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  {t("problem.title")}
+                </h3>
+                <ul className="flex flex-col gap-4">
+                  <li className="flex items-start gap-2">
+                    <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_341_11825)">
+                          <path
+                            d="M12.4993 7.50008L7.49935 12.5001M7.49935 7.50008L12.4993 12.5001M18.3327 10.0001C18.3327 14.6025 14.6017 18.3334 9.99935 18.3334C5.39698 18.3334 1.66602 14.6025 1.66602 10.0001C1.66602 5.39771 5.39698 1.66675 9.99935 1.66675C14.6017 1.66675 18.3327 5.39771 18.3327 10.0001Z"
+                            stroke="#FF001E"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_341_11825">
+                            <rect width="20" height="20" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                    <p className="text-base font-inter font-normal leading-relaxed text-white">
+                      {t("problem.items.0")}
+                    </p>
+                  </li>
 
-                <li className="flex items-start gap-2">
-                  <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_341_11825_2)">
-                        <path
-                          d="M12.4993 7.50008L7.49935 12.5001M7.49935 7.50008L12.4993 12.5001M18.3327 10.0001C18.3327 14.6025 14.6017 18.3334 9.99935 18.3334C5.39698 18.3334 1.66602 14.6025 1.66602 10.0001C1.66602 5.39771 5.39698 1.66675 9.99935 1.66675C14.6017 1.66675 18.3327 5.39771 18.3327 10.0001Z"
-                          stroke="#FF001E"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_341_11825_2">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </i>
-                  <p className="text-base font-inter font-normal leading-relaxed text-white">
-                    Countless hours wasted staring at charts and chasing pumps.
-                  </p>
-                </li>
+                  <li className="flex items-start gap-2">
+                    <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_341_11825_2)">
+                          <path
+                            d="M12.4993 7.50008L7.49935 12.5001M7.49935 7.50008L12.4993 12.5001M18.3327 10.0001C18.3327 14.6025 14.6017 18.3334 9.99935 18.3334C5.39698 18.3334 1.66602 14.6025 1.66602 10.0001C1.66602 5.39771 5.39698 1.66675 9.99935 1.66675C14.6017 1.66675 18.3327 5.39771 18.3327 10.0001Z"
+                            stroke="#FF001E"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_341_11825_2">
+                            <rect width="20" height="20" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                    <p className="text-base font-inter font-normal leading-relaxed text-white">
+                      {t("problem.items.1")}
+                    </p>
+                  </li>
 
-                <li className="flex items-start gap-2">
-                  <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_341_11825_3)">
-                        <path
-                          d="M12.4993 7.50008L7.49935 12.5001M7.49935 7.50008L12.4993 12.5001M18.3327 10.0001C18.3327 14.6025 14.6017 18.3334 9.99935 18.3334C5.39698 18.3334 1.66602 14.6025 1.66602 10.0001C1.66602 5.39771 5.39698 1.66675 9.99935 1.66675C14.6017 1.66675 18.3327 5.39771 18.3327 10.0001Z"
-                          stroke="#FF001E"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_341_11825_3">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </i>
-                  <p className="text-base font-inter font-normal leading-relaxed text-white">
-                    Missed market cycles, poor timing, and fragmented
-                    allocations.
-                  </p>
-                </li>
-              </ul>
+                  <li className="flex items-start gap-2">
+                    <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_341_11825_3)">
+                          <path
+                            d="M12.4993 7.50008L7.49935 12.5001M7.49935 7.50008L12.4993 12.5001M18.3327 10.0001C18.3327 14.6025 14.6017 18.3334 9.99935 18.3334C5.39698 18.3334 1.66602 14.6025 1.66602 10.0001C1.66602 5.39771 5.39698 1.66675 9.99935 1.66675C14.6017 1.66675 18.3327 5.39771 18.3327 10.0001Z"
+                            stroke="#FF001E"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_341_11825_3">
+                            <rect width="20" height="20" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                    <p className="text-base font-inter font-normal leading-relaxed text-white">
+                      {t("problem.items.2")}
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Solution Side */}
+              <div className="max-sm:rounded-none max-sm:rounded-b-3 max-sm:p-2 max-sm:rounded-t-none bg-gradient-to-br from-[rgba(58,45,36,0)] to-[rgba(29,141,139,0.5)] h-full border border-[#FF8800] max-sm:border-l max-sm:border-t-0 border-l-0 rounded-tr-[20px] rounded-br-[20px] p-[35px] max-lg:p-5 max-[600px]:p-[15px]">
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  {t("solution.title")}
+                </h3>
+                <ul className="flex flex-col gap-4">
+                  <li className="flex items-start gap-2">
+                    <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_341_11839)">
+                          <path
+                            d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
+                            stroke="#FF8800"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_341_11839">
+                            <rect width="20" height="20" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                    <p className="text-base font-inter font-normal leading-relaxed text-white">
+                      {t("solution.items.0")}
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-2">
+                    <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_341_11839_2)">
+                          <path
+                            d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
+                            stroke="#FF8800"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_341_11839_2">
+                            <rect width="20" height="20" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                    <p className="text-base font-inter font-normal leading-relaxed text-white">
+                      {t("solution.items.1")}
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-2">
+                    <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_341_11839_3)">
+                          <path
+                            d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
+                            stroke="#FF8800"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_341_11839_3">
+                            <rect width="20" height="20" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                    <p className="text-base font-inter font-normal leading-relaxed text-white">
+                      {t("solution.items.2")}
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-2">
+                    <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_341_11839_4)">
+                          <path
+                            d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
+                            stroke="#FF8800"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_341_11839_4">
+                            <rect width="20" height="20" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                    <p className="text-base font-inter font-normal leading-relaxed text-white">
+                      {t("solution.items.3")}
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content Section */}
+        <div className="container relative z-10">
+          <div className="text-center max-w-[1022px] mx-auto mb-6 max-md:mb-5">
+            <h2 className="text-4xl max-lg:text-3xl max-md:text-2xl font-bold text-white mb-[10px]">
+              The First AI Hedge Fund Built for Everyday Investors
+            </h2>
+            <p className="text-white text-base max-md:text-sm">
+              Most investors lose money chasing hype or trading on emotions. Cat
+              changes the game, automating growth with AI, optimizing
+              allocations, and sharing profits directly with $CAT holders.
+            </p>
+          </div>
+
+          {/* Comparison Table */}
+          <div className="relative shadow-[inset_0px_4px_34px_0px_#FF8800] max-[900px]:shadow-[inset_0px_4px_10px_0px_#FF8800] rounded-[20px] max-md:rounded-[10px] overflow-hidden overflow-x-auto">
+            {/* Hover overlays for desktop */}
+            <div className="absolute inset-0 z-20 pointer-events-none max-[1200px]:hidden">
+              <div
+                className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100 hover:shadow-[inset_0px_8px_50px_0px_#FF8800] hover:from-[rgba(58,45,36,0.4)] hover:to-[rgba(237,134,15,0.4)]"
+                style={{ left: "0.399994px", width: "240px" }}
+              ></div>
+              <div
+                className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100 hover:shadow-[inset_0px_8px_50px_0px_#FF8800] hover:from-[rgba(58,45,36,0.4)] hover:to-[rgba(237,134,15,0.4)]"
+                style={{ left: "240.4px", width: "308.925px" }}
+              ></div>
+              <div
+                className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100 hover:shadow-[inset_0px_8px_50px_0px_#FF8800] hover:from-[rgba(58,45,36,0.4)] hover:to-[rgba(237,134,15,0.4)]"
+                style={{ left: "549.325px", width: "524.513px" }}
+              ></div>
             </div>
 
-            {/* Solution Side */}
-            <div className="max-sm:rounded-none max-sm:rounded-b-3 max-sm:p-2 max-sm:rounded-t-none bg-gradient-to-br from-[rgba(58,45,36,0)] to-[rgba(29,141,139,0.5)] h-full border border-[#FF8800] max-sm:border-l max-sm:border-t-0 border-l-0 rounded-tr-[20px] rounded-br-[20px] p-[35px] max-lg:p-5 max-[600px]:p-[15px]">
-              <h3 className="text-xl font-bold mb-4 text-white">
-                The Solution
-              </h3>
-              <ul className="flex flex-col gap-4">
-                <li className="flex items-start gap-2">
-                  <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_341_11839)">
-                        <path
-                          d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
-                          stroke="#FF8800"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_341_11839">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </i>
-                  <p className="text-base font-inter font-normal leading-relaxed text-white">
-                    <strong className="font-bold">AI-Powered Allocation</strong>{" "}
-                    - advanced algorithms build and manage your portfolio across
-                    Bitcoin, Litecoin, Real Estate, and AI assets.
-                  </p>
-                </li>
+            <table className="relative z-12 w-full border-collapse bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.6)] max-[900px]:from-[rgba(58,45,36,0.3)] max-[900px]:to-[rgba(237,134,15,0.1)] min-w-[800px] max-[767px]:min-w-auto">
+              <thead className="max-md:hidden">
+                <tr className="font-bold">
+                  <th className="py-[23px] px-8 border border-[#443828] min-w-[240px]">
+                    <p className="text-xl font-bold text-left text-white">
+                      Performance
+                    </p>
+                  </th>
+                  <th className="py-[23px] px-8 border border-[#443828]">
+                    <p className="text-xl font-bold text-left text-white">
+                      Other Crypto Exchanges
+                    </p>
+                  </th>
+                  <th className="py-[23px] px-8 border border-[#443828]">
+                    <p className="text-xl font-bold text-left text-white">
+                      Cat
+                    </p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
+                  <td
+                    className="p-4 border border-[#283442] align-middle"
+                    data-th="Performance"
+                  >
+                    <p className="font-semibold">Time & Stress</p>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Other Crypto Exchanges"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="46"
+                          viewBox="0 0 46 46"
+                          width="46"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_341_11872)">
+                            <path
+                              d="M35.5002 44H10.0002C6.40024 44 6.16691 41.6666 6.50024 40.5V18.5C6.50024 19.7 8.83358 20.3333 10.0002 20.5H39.5002V40.5C39.5002 43.7 36.8336 44.1666 35.5002 44Z"
+                              fill="#0A2025"
+                            />
+                          </g>
+                          <path
+                            d="M37.375 14.4472V7.9061C37.3744 7.33443 37.147 6.78635 36.7427 6.38211C36.3385 5.97788 35.7904 5.75049 35.2188 5.74985H34.3235L33.829 4.01946C33.6989 3.56409 33.4801 3.13894 33.1851 2.76843C32.8901 2.39792 32.5248 2.08937 32.1102 1.86052C31.6956 1.63167 31.2398 1.48703 30.7691 1.43491C30.2983 1.3828 29.822 1.42423 29.3673 1.55685L14.991 5.74985H12.2188C11.6471 5.75049 11.099 5.97788 10.6948 6.38211C10.2905 6.78635 10.0631 7.33443 10.0625 7.9061V14.3749H9.34375C8.39096 14.3759 7.47749 14.7549 6.80377 15.4286C6.13004 16.1023 5.75107 17.0158 5.75 17.9686V40.9686C5.75107 41.9214 6.13004 42.8349 6.80377 43.5086C7.47749 44.1823 8.39096 44.5613 9.34375 44.5624H36.6562C37.609 44.5613 38.5225 44.1823 39.1962 43.5086C39.87 42.8349 40.2489 41.9214 40.25 40.9686V17.9686C40.2489 17.1405 39.9624 16.3381 39.4387 15.6967C38.915 15.0552 38.1861 14.6139 37.375 14.4472ZM29.7698 2.93676C30.0426 2.85717 30.3284 2.8323 30.6109 2.86357C30.8933 2.89484 31.1668 2.98163 31.4156 3.11895C31.6643 3.25627 31.8835 3.44142 32.0605 3.66374C32.2375 3.88607 32.3688 4.14118 32.4468 4.41442L32.8284 5.74985H20.125L29.7698 2.93676ZM11.5 7.9061C11.5002 7.71555 11.576 7.53287 11.7108 7.39813C11.8455 7.26339 12.0282 7.18759 12.2188 7.18735H35.2188C35.4093 7.18759 35.592 7.26339 35.7267 7.39813C35.8615 7.53287 35.9373 7.71555 35.9375 7.9061V20.1249H34.5V11.4999H33.7812C33.2096 11.4992 32.6615 11.2718 32.2573 10.8676C31.853 10.4634 31.6256 9.91528 31.625 9.3436V8.62485H15.8125V9.3436C15.8119 9.91528 15.5845 10.4634 15.1802 10.8676C14.776 11.2718 14.2279 11.4992 13.6562 11.4999H12.9375V20.1249H11.5V7.9061ZM23.7188 12.9374C22.886 12.9368 22.071 13.1775 21.3722 13.6304C20.6733 14.0833 20.1207 14.7289 19.781 15.4892C19.4414 16.2495 19.3293 17.0919 19.4582 17.9146C19.5872 18.7373 19.9518 19.505 20.5078 20.1249H14.375V12.8651C15.0649 12.7229 15.698 12.3816 16.1961 11.8835C16.6942 11.3854 17.0355 10.7523 17.1778 10.0624H30.2597C30.402 10.7523 30.7433 11.3854 31.2414 11.8835C31.7395 12.3816 32.3726 12.7229 33.0625 12.8651V20.1249H26.9297C27.4857 19.505 27.8503 18.7373 27.9793 17.9146C28.1082 17.0919 27.9961 16.2495 27.6565 15.4892C27.3168 14.7289 26.7642 14.0833 26.0653 13.6304C25.3665 13.1775 24.5515 12.9368 23.7188 12.9374ZM26.5938 17.2499C26.5938 17.8185 26.4251 18.3743 26.1092 18.8471C25.7933 19.3199 25.3443 19.6884 24.819 19.906C24.2936 20.1236 23.7156 20.1805 23.1579 20.0696C22.6002 19.9587 22.0879 19.6849 21.6858 19.2828C21.2837 18.8807 21.0099 18.3684 20.899 17.8107C20.7881 17.253 20.845 16.675 21.0626 16.1496C21.2802 15.6243 21.6487 15.1753 22.1215 14.8594C22.5943 14.5435 23.1501 14.3749 23.7188 14.3749C24.481 14.3757 25.2118 14.6789 25.7507 15.2179C26.2897 15.7568 26.5929 16.4876 26.5938 17.2499ZM9.34375 15.8124H10.0625V20.1249H9.34375C8.77188 20.1249 8.22343 19.8977 7.81905 19.4933C7.41468 19.0889 7.1875 18.5405 7.1875 17.9686C7.1875 17.3967 7.41468 16.8483 7.81905 16.4439C8.22343 16.0395 8.77188 15.8124 9.34375 15.8124ZM38.8125 40.9686C38.8119 41.5403 38.5845 42.0884 38.1802 42.4926C37.776 42.8968 37.2279 43.1242 36.6562 43.1249H9.34375C8.77207 43.1242 8.224 42.8968 7.81976 42.4926C7.41552 42.0884 7.18814 41.5403 7.1875 40.9686V20.8416C7.80867 21.3101 8.56572 21.5632 9.34375 21.5624H38.8125V40.9686ZM38.8125 20.1249H37.375V15.936C37.7951 16.085 38.1587 16.3604 38.4161 16.7243C38.6735 17.0882 38.8119 17.5229 38.8125 17.9686V20.1249Z"
+                            fill="#FFFF00"
+                          />
+                          <path
+                            d="M29.4695 16.5312H31.6258V17.9688H29.4695V16.5312ZM15.8133 16.5312H17.9695V17.9688H15.8133V16.5312ZM24.4383 33.3602L28.4531 37.375L25.5781 40.25H35.2195V30.6086L32.3445 33.4836L24.4383 25.5773L20.8445 29.1711L15.0945 23.4211L11.2031 27.3125L20.8445 36.9539L24.4383 33.3602ZM15.0945 25.4539L20.8445 31.2039L24.4383 27.6102L32.3445 35.5164L33.782 34.0789V38.8125H29.0484L30.4859 37.375L24.4383 31.3273L20.8445 34.9211L13.2359 27.3125L15.0945 25.4539Z"
+                            fill="#FFFF00"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="26.5293"
+                              id="filter0_i_341_11872"
+                              width="33.1094"
+                              x="6.39062"
+                              y="18.5"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="4.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11872"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">High Failure Rate</p>
+                        <p className="font-normal text-[14px]">
+                          90% of retail traders lose money
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Unilabs"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="48"
+                          viewBox="0 0 48 48"
+                          width="48"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_341_11912)">
+                            <path
+                              d="M28.6952 38.0868C29.9474 46.0173 26.0865 47.3042 23.9996 46.9564C19.304 45.913 19.304 40.174 19.304 37.0436V37.0434C13.0431 35.4781 10.9561 28.6955 9.91261 24.5216C8.86913 20.3477 14.0865 9.39119 23.9996 10.4347C33.9126 11.4781 35.4778 15.6521 38.0865 22.9564C38.6083 31.3042 31.3039 36.5216 28.6952 38.0868Z"
+                              fill="#103539"
+                            />
+                          </g>
+                          <path
+                            d="M24.779 7.74317V4.50653C25.6772 4.18906 26.3276 3.33731 26.3276 2.32295C26.3276 1.04533 25.2823 0 24.0047 0C22.727 0 21.6817 1.04533 21.6817 2.32295C21.6817 3.32957 22.3321 4.18131 23.2303 4.50653V7.74317H24.779ZM24.0047 1.54863C24.4305 1.54863 24.779 1.89708 24.779 2.32295C24.779 2.74883 24.4305 3.09727 24.0047 3.09727C23.5788 3.09727 23.2303 2.74883 23.2303 2.32295C23.2303 1.89708 23.5788 1.54863 24.0047 1.54863ZM21.2636 19.3579H19.7149C19.3665 19.3579 19.0568 19.598 18.9639 19.9387L16.6719 28.6497H18.2747L19.0877 25.5525H21.8908L22.7038 28.6497H24.3066L22.0147 19.9387C21.9217 19.598 21.6198 19.3579 21.2636 19.3579ZM19.4981 24.0038L20.3112 20.9066H20.6674L21.4804 24.0038H19.4981ZM25.9095 20.9066H27.8453V27.1011H25.9095V28.6497H31.3297V27.1011H29.3939V20.9066H31.3297V19.3579H25.9095V20.9066ZM45.6856 21.6809C44.6789 21.6809 43.8272 22.3313 43.502 23.2295H40.2653V24.7782H43.502C43.8194 25.6764 44.6712 26.3268 45.6856 26.3268C46.9632 26.3268 48.0085 25.2815 48.0085 24.0038C48.0085 22.7262 46.9632 21.6809 45.6856 21.6809ZM45.6856 24.7782C45.2597 24.7782 44.9112 24.4297 44.9112 24.0038C44.9112 23.578 45.2597 23.2295 45.6856 23.2295C46.1114 23.2295 46.4599 23.578 46.4599 24.0038C46.4599 24.4297 46.1114 24.7782 45.6856 24.7782Z"
+                            fill="#00FFDD"
+                          />
+                          <path
+                            d="M33.8144 13.0395C30.6552 10.2132 26.5746 8.91234 22.3236 9.38467C15.4012 10.1512 9.94224 15.7573 9.34601 22.7029C8.7885 29.2072 12.5672 35.2779 18.5836 37.6628V42.5797C18.5836 45.5685 21.015 47.9999 24.0038 47.9999C26.9927 47.9999 29.4241 45.5685 29.4241 42.5797V37.6628C35.0069 35.4482 38.7159 30.028 38.7159 23.996C38.7159 19.8147 36.9272 15.8193 33.8144 13.0317V13.0395ZM24.0038 46.459C22.4165 46.459 21.0614 45.4988 20.4575 44.136H27.5425C26.9462 45.4988 25.5835 46.459 23.9961 46.459H24.0038ZM27.8754 42.5874H20.1323V40.2645H27.8754V42.5874ZM28.3942 36.4006C28.0845 36.509 27.8754 36.8033 27.8754 37.1285V38.7158H20.1323V37.1285C20.1323 36.8033 19.9232 36.509 19.6135 36.4006C13.9609 34.4029 10.3759 28.82 10.8869 22.8346C11.4212 16.6168 16.2994 11.607 22.4939 10.9178C23.005 10.8636 23.516 10.8326 24.0193 10.8326C27.2637 10.8326 30.33 11.9941 32.7769 14.1854C35.5644 16.6787 37.1672 20.2561 37.1672 23.996C37.1672 29.5556 33.6441 34.5345 28.3942 36.3929V36.4006ZM7.74318 23.2295H4.50653C4.34775 22.777 4.0524 22.385 3.66125 22.1076C3.27011 21.8302 2.80248 21.6811 2.32295 21.6808C1.04533 21.6808 0 22.7262 0 24.0038C0 25.2814 1.04533 26.3267 2.32295 26.3267C3.32957 26.3267 4.18131 25.6763 4.50653 24.7781H7.74318V23.2295ZM2.32295 24.7781C1.89708 24.7781 1.54864 24.4297 1.54864 24.0038C1.54864 23.5779 1.89708 23.2295 2.32295 23.2295C2.74883 23.2295 3.09727 23.5779 3.09727 24.0038C3.09727 24.4297 2.74883 24.7781 2.32295 24.7781ZM38.3442 37.2524L36.0445 34.9526L34.9527 36.0444L37.2447 38.3364C37.0347 38.7684 36.9652 39.2552 37.0457 39.7287C37.1262 40.2021 37.3528 40.6386 37.6938 40.9768C38.1351 41.4182 38.7159 41.6582 39.3353 41.6582C39.9548 41.6582 40.5433 41.4182 40.9769 40.9768C41.4105 40.5355 41.6583 39.9547 41.6583 39.3353C41.6583 38.7158 41.4182 38.1351 40.9769 37.6937C40.2877 37.0046 39.2037 36.8652 38.3442 37.2524ZM39.8773 39.885C39.5831 40.1793 39.0798 40.1793 38.7856 39.885C38.6384 39.7379 38.561 39.5443 38.561 39.3353C38.56 39.2333 38.5793 39.1321 38.6178 39.0377C38.6564 38.9433 38.7134 38.8576 38.7855 38.7854C38.8576 38.7133 38.9434 38.6563 39.0378 38.6178C39.1322 38.5792 39.2334 38.5599 39.3353 38.561C39.4373 38.5599 39.5385 38.5792 39.6329 38.6178C39.7273 38.6563 39.8131 38.7133 39.8852 38.7854C39.9573 38.8576 40.0143 38.9433 40.0528 39.0377C40.0914 39.1321 40.1107 39.2333 40.1096 39.3353C40.1096 39.5443 40.0322 39.7379 39.8851 39.885H39.8773ZM7.0308 7.03075C6.58944 7.47211 6.3494 8.05285 6.3494 8.6723C6.3494 9.29175 6.58944 9.87249 7.0308 10.3139C7.47216 10.7552 8.0529 10.9953 8.67236 10.9953C9.0208 10.9953 9.3615 10.9101 9.67123 10.763L11.9632 13.0549L13.055 11.9631L10.763 9.67117C10.9729 9.2392 11.0425 8.7524 10.962 8.27892C10.8815 7.80545 10.6548 7.36901 10.3139 7.03075C9.43119 6.15577 7.90578 6.15577 7.0308 7.03075ZM9.22212 9.22206C8.92788 9.51631 8.41683 9.51631 8.13033 9.22206C7.98321 9.07494 7.90578 8.88136 7.90578 8.6723C7.90475 8.57033 7.92407 8.46917 7.96261 8.37476C8.00116 8.28035 8.05816 8.19458 8.13027 8.12247C8.20238 8.05036 8.28815 7.99336 8.38256 7.95481C8.47697 7.91627 8.57813 7.89695 8.6801 7.89798C8.78207 7.89695 8.88323 7.91627 8.97764 7.95481C9.07205 7.99336 9.15782 8.05036 9.22993 8.12247C9.30204 8.19458 9.35904 8.28035 9.39758 8.37476C9.43613 8.46917 9.45545 8.57033 9.45442 8.6723C9.45442 8.88136 9.37698 9.07494 9.22987 9.22206H9.22212ZM36.0522 13.0549L38.3442 10.763C38.7762 10.9729 39.263 11.0425 39.7365 10.9619C40.2099 10.8814 40.6464 10.6548 40.9846 10.3139C41.426 9.87249 41.666 9.29175 41.666 8.6723C41.666 8.05285 41.426 7.46436 40.9846 7.03075C40.1096 6.15577 38.5765 6.15577 37.7015 7.03075C37.2602 7.47211 37.0201 8.05285 37.0201 8.6723C37.0201 9.02074 37.1053 9.36144 37.2524 9.67117L34.9604 11.9631L36.0522 13.0549ZM38.7933 8.13028C38.9404 7.98316 39.134 7.90572 39.3431 7.90572C39.445 7.90469 39.5462 7.92401 39.6406 7.96256C39.735 8.0011 39.8208 8.0581 39.8929 8.13021C39.965 8.20232 40.022 8.28809 40.0606 8.3825C40.0991 8.47692 40.1184 8.57807 40.1174 8.68004C40.1174 8.88911 40.04 9.08269 39.8928 9.22981C39.5986 9.52405 39.0953 9.52405 38.8011 9.22981C38.6539 9.08269 38.5765 8.88911 38.5765 8.68004C38.5765 8.47098 38.6539 8.2774 38.8011 8.13028H38.7933ZM11.9555 34.9526L9.65574 37.2524C8.79625 36.8652 7.7122 37.0046 7.02306 37.6937C6.5817 38.1351 6.34166 38.7158 6.34166 39.3353C6.34166 39.9547 6.5817 40.5432 7.02306 40.9768C7.46442 41.4104 8.04516 41.6582 8.66461 41.6582C9.28407 41.6582 9.86481 41.4182 10.3062 40.9768C10.7475 40.5355 10.9876 39.9547 10.9876 39.3353C10.9876 38.9868 10.9024 38.6461 10.7553 38.3364L13.0472 36.0444L11.9555 34.9526ZM9.21438 39.8773C8.92014 40.1715 8.40909 40.1715 8.12259 39.8773C7.97547 39.7302 7.89804 39.5366 7.89804 39.3275C7.897 39.2256 7.91632 39.1244 7.95487 39.03C7.99342 38.9356 8.05041 38.8498 8.12252 38.7777C8.19463 38.7056 8.28041 38.6486 8.37482 38.61C8.46923 38.5715 8.57038 38.5522 8.67236 38.5532C8.77433 38.5522 8.87548 38.5715 8.9699 38.61C9.06431 38.6486 9.15008 38.7056 9.22219 38.7777C9.2943 38.8498 9.35129 38.9356 9.38984 39.03C9.42839 39.1244 9.44771 39.2256 9.44667 39.3275C9.44667 39.5366 9.36924 39.7302 9.22212 39.8773H9.21438Z"
+                            fill="#00FFDD"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="40.6421"
+                              id="filter0_i_341_11912"
+                              width="28.332"
+                              x="9.78125"
+                              y="10.365"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="3.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.866667 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11912"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">AI Powered Performance</p>
+                        <p className="font-normal text-[14px]">
+                          Automated allocations across STC, ETN, AI coins, RWAs
+                          & mining
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
+                  <td
+                    className="p-4 border border-[#283442] align-middle"
+                    data-th="Performance"
+                  >
+                    <p className="font-semibold">Rewards</p>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Other Crypto Exchanges"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          width="40"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_341_11869)">
+                            <path
+                              d="M29.4998 39.5002H9.99981C7.19966 39.5002 7.16654 37.8335 7.5 37.0001L5.5 24.0001C5.5 23.8335 5.19996 23.5002 3.99981 23.5002C2.49962 23.5002 1.99981 23.5002 1.49981 21.5001C1.09981 19.9001 2.99981 18.8335 3.99981 18.5002C13.4998 18.3335 33.1998 18.1002 35.9998 18.5002C39.4998 19.1741 38.4998 21.5002 37.9998 22.5002C37.5998 23.3002 35.4998 23.5002 34.4998 23.5002C34.1665 26.5002 33.2998 33.3002 32.4998 36.5002C31.6998 39.7002 30.1665 39.8335 29.4998 39.5002Z"
+                              fill="#09282B"
+                            />
+                          </g>
+                          <path
+                            d="M20.6446 9.5746V10.3823C20.6446 10.5534 20.5767 10.7175 20.4557 10.8385C20.3347 10.9595 20.1706 11.0275 19.9995 11.0275C19.8284 11.0275 19.6643 10.9595 19.5433 10.8385C19.4223 10.7175 19.3543 10.5534 19.3543 10.3823V9.5746C19.3543 9.40349 19.4223 9.23939 19.5433 9.1184C19.6643 8.99741 19.8284 8.92943 19.9995 8.92943C20.1706 8.92943 20.3347 8.99741 20.4557 9.1184C20.5767 9.23939 20.6446 9.40349 20.6446 9.5746ZM24.6971 12.9733C24.7819 12.9734 24.8658 12.9568 24.9441 12.9244C25.0224 12.8919 25.0935 12.8444 25.1533 12.7844L25.7245 12.2132C25.785 12.1534 25.8331 12.0823 25.866 12.0039C25.8989 11.9254 25.9159 11.8413 25.9162 11.7562C25.9164 11.6712 25.8999 11.5869 25.8674 11.5083C25.835 11.4296 25.7874 11.3582 25.7272 11.2981C25.6671 11.2379 25.5956 11.1903 25.517 11.1579C25.4384 11.1254 25.3541 11.1089 25.269 11.1091C25.184 11.1094 25.0998 11.1265 25.0214 11.1594C24.943 11.1923 24.8718 11.2404 24.812 11.3009L24.2409 11.872C24.1507 11.9622 24.0893 12.0772 24.0644 12.2023C24.0395 12.3275 24.0523 12.4572 24.1011 12.5751C24.15 12.6929 24.2327 12.7937 24.3387 12.8646C24.4448 12.9355 24.5695 12.9733 24.6971 12.9733ZM15.1868 11.3008C15.0656 11.181 14.9019 11.1141 14.7314 11.1146C14.561 11.1151 14.3977 11.183 14.2772 11.3035C14.1567 11.424 14.0887 11.5873 14.0882 11.7578C14.0877 11.9282 14.1546 12.0919 14.2744 12.2131L14.8455 12.7843C14.9715 12.9102 15.1366 12.9732 15.3017 12.9732C15.4669 12.9732 15.632 12.9102 15.7579 12.7843C15.8789 12.6633 15.9469 12.4992 15.9469 12.3281C15.9469 12.157 15.8789 11.9929 15.7579 11.8719L15.1868 11.3008ZM26.643 17.671H27.4507C27.6218 17.671 27.7859 17.603 27.9069 17.482C28.0279 17.361 28.0958 17.1969 28.0958 17.0258C28.0958 16.8547 28.0279 16.6906 27.9069 16.5696C27.7859 16.4486 27.6218 16.3806 27.4507 16.3806H26.643C26.4719 16.3806 26.3078 16.4486 26.1868 16.5696C26.0658 16.6906 25.9979 16.8547 25.9979 17.0258C25.9979 17.1969 26.0658 17.361 26.1868 17.482C26.3078 17.603 26.4719 17.671 26.643 17.671ZM13.3559 16.3806H12.5482C12.3771 16.3806 12.213 16.4486 12.092 16.5696C11.971 16.6906 11.903 16.8547 11.903 17.0258C11.903 17.1969 11.971 17.361 12.092 17.482C12.213 17.603 12.3771 17.671 12.5482 17.671H13.3559C13.527 17.671 13.6911 17.603 13.8121 17.482C13.9331 17.361 14.0011 17.1969 14.0011 17.0258C14.0011 16.8547 13.9331 16.6906 13.8121 16.5696C13.6911 16.4486 13.527 16.3806 13.3559 16.3806ZM12.1336 35.0013C12.1468 35.1719 12.2272 35.3303 12.3571 35.4416C12.4871 35.5529 12.6559 35.6081 12.8265 35.5949C12.9971 35.5817 13.1555 35.5013 13.2668 35.3713C13.3782 35.2414 13.4333 35.0725 13.4201 34.9019L12.8548 27.5877C12.8273 27.2324 12.5166 26.9675 12.1618 26.9941C11.9912 27.0073 11.8328 27.0877 11.7215 27.2177C11.6102 27.3476 11.5551 27.5165 11.5683 27.6871L12.1336 35.0013ZM26.859 35.5948C26.9435 35.6014 27.0284 35.5912 27.109 35.5649C27.1895 35.5386 27.2641 35.4967 27.3284 35.4416C27.3928 35.3864 27.4457 35.3192 27.484 35.2436C27.5224 35.1681 27.5455 35.0857 27.552 35.0012L28.1173 27.6869C28.1305 27.5163 28.0753 27.3475 27.964 27.2175C27.8527 27.0876 27.6943 27.0072 27.5237 26.994C27.1679 26.9677 26.8583 27.2323 26.8308 27.5875L26.2654 34.9018C26.2589 34.9863 26.2691 35.0712 26.2953 35.1518C26.3216 35.2323 26.3635 35.3069 26.4187 35.3713C26.4738 35.4356 26.541 35.4885 26.6166 35.5268C26.6921 35.5652 26.7745 35.5883 26.859 35.5948ZM19.8428 35.5967C19.9275 35.5967 20.0114 35.58 20.0897 35.5476C20.1679 35.5152 20.2391 35.4676 20.299 35.4077C20.3589 35.3478 20.4064 35.2767 20.4388 35.1984C20.4712 35.1202 20.4879 35.0363 20.4879 34.9515V27.6373C20.4879 27.4662 20.42 27.3021 20.299 27.1811C20.178 27.0601 20.0139 26.9922 19.8428 26.9922C19.6717 26.9922 19.5076 27.0601 19.3866 27.1811C19.2656 27.3021 19.1976 27.4662 19.1976 27.6373V34.9515C19.1976 35.1226 19.2656 35.2867 19.3866 35.4077C19.5076 35.5287 19.6717 35.5967 19.8428 35.5967ZM39.2899 21.0583C39.2899 22.6137 38.0245 23.8792 36.469 23.8792H35.2529L33.1274 37.6308C32.9151 39.0036 31.7529 40 30.3638 40H9.40431C8.01511 40 6.85286 39.0036 6.6406 37.6307L4.51511 23.8791H3.52979C1.97439 23.8791 0.708984 22.6137 0.708984 21.0582C0.708984 19.5027 1.97431 18.2374 3.52979 18.2374H7.44197C7.40343 17.8347 7.38408 17.4303 7.38399 17.0257C7.38399 14.3346 8.23148 11.838 9.67294 9.78766L9.06584 9.18056C8.83665 8.95145 8.71036 8.64621 8.71036 8.32129C8.71036 7.99637 8.83657 7.69121 9.06592 7.46194L10.4356 6.09218C10.9097 5.61847 11.6806 5.61839 12.1543 6.09218L12.7613 6.69927C14.2443 5.65669 15.9608 4.92508 17.8155 4.6V3.60637C17.1456 3.60613 16.6008 3.02419 16.6008 2.30903V1.29734C16.6008 0.582016 17.1459 0 17.816 0H22.1828C22.8529 0 23.398 0.582016 23.398 1.29734V2.30911C23.398 3.02427 22.8531 3.60613 22.1833 3.60645V4.6C24.038 4.92508 25.7545 5.65669 27.2375 6.69927L27.8445 6.09218C28.3186 5.61831 29.0894 5.61839 29.5632 6.09218L30.933 7.46202C31.4068 7.93589 31.4068 8.70685 30.933 9.18064L30.3259 9.78774C31.7674 11.8381 32.6149 14.3347 32.6149 17.0258C32.6149 17.4294 32.5954 17.8347 32.5569 18.2375H36.469C38.0245 18.2375 39.2899 19.5029 39.2899 21.0583ZM28.2616 7.5C28.712 7.89108 29.1342 8.31336 29.5253 8.76371L29.9676 8.32137L28.7039 7.05774L28.2616 7.5ZM17.8911 2.30911C17.8911 2.31161 17.8912 2.31395 17.8913 2.31613H22.1075C22.1077 2.31395 22.1078 2.31161 22.1078 2.30911V1.29734C22.1078 1.29484 22.1077 1.2925 22.1075 1.29032H17.8913C17.8912 1.29266 17.8911 1.295 17.8911 1.29734V2.30911ZM19.1059 4.44234C19.4012 4.42153 19.699 4.41032 19.9995 4.41032C20.3 4.41032 20.5978 4.42161 20.893 4.44234V3.60645H19.1059V4.44234ZM10.4737 8.76363C10.8648 8.31332 11.287 7.89104 11.7373 7.49992L11.295 7.05758L10.0312 8.32129L10.4737 8.76363ZM8.74028 18.2375H10.0691C10.0204 17.8354 9.99586 17.4308 9.99568 17.0258C9.99568 11.5098 14.4833 7.02202 19.9995 7.02202C25.5156 7.02202 30.0033 11.5097 30.0033 17.0258C30.0031 17.4308 29.9785 17.8354 29.9298 18.2375H31.2587C31.3015 17.8352 31.3246 17.4296 31.3246 17.0258C31.3246 10.781 26.2442 5.70065 19.9995 5.70065C13.7547 5.70065 8.67431 10.7811 8.67431 17.0258C8.67431 17.4298 8.69745 17.8354 8.74028 18.2375ZM19.9995 16.3882C19.6479 16.3882 19.3618 16.6743 19.3618 17.0258C19.3618 17.3773 19.6479 17.6634 19.9995 17.6634C20.351 17.6634 20.6371 17.3773 20.6371 17.0258C20.6371 16.6743 20.351 16.3882 19.9995 16.3882ZM21.9274 17.0258C21.9274 17.4845 21.7661 17.9061 21.4975 18.2375H28.6283C28.6841 17.8367 28.7129 17.431 28.7129 17.0258C28.7129 12.2212 24.804 8.31234 19.9994 8.31234C15.1948 8.31234 11.2859 12.2212 11.2859 17.0258C11.2859 17.4312 11.3147 17.8369 11.3704 18.2375H18.5012C18.2229 17.8951 18.071 17.4671 18.0714 17.0258C18.0714 15.9627 18.9363 15.0979 19.9994 15.0979C20.2957 15.0979 20.5765 15.1652 20.8276 15.2852L22.6438 13.469C22.7651 13.3492 22.9288 13.2822 23.0992 13.2827C23.2696 13.2832 23.4329 13.3512 23.5534 13.4717C23.674 13.5922 23.7419 13.7555 23.7424 13.9259C23.7429 14.0963 23.676 14.26 23.5562 14.3813L21.74 16.1975C21.8636 16.4561 21.9277 16.7392 21.9274 17.0258ZM33.9473 23.8792H5.82076L7.91584 37.4337C8.03011 38.1731 8.65616 38.7097 9.40431 38.7097H30.3637C31.1119 38.7097 31.7379 38.1731 31.8521 37.4337L33.9473 23.8792ZM37.9995 21.0583C37.9995 20.2144 37.3129 19.5278 36.469 19.5278H3.52979C2.68592 19.5278 1.99931 20.2144 1.99931 21.0583C1.99931 21.9023 2.68592 22.5889 3.52979 22.5889H36.469C37.313 22.5889 37.9995 21.9023 37.9995 21.0583Z"
+                            fill="#FFFF00"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="22.3455"
+                              id="filter0_i_341_11869"
+                              width="37.0801"
+                              x="1.44531"
+                              y="18.2793"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="4.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11869"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">Time-Consuming</p>
+                        <p className="font-normal text-[14px]">
+                          Hours wasted chasing charts
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Unilabs"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="42"
+                          viewBox="0 0 42 42"
+                          width="42"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_341_11922)">
+                            <path
+                              d="M32.7404 40.4407H8.71618L7.64844 38.3052V27.0939L8.71618 23.8906H32.7404C33.2148 24.6813 34.1108 25.9216 34.3045 25.2892C34.327 24.8419 34.3421 24.6896 34.3421 24.9584C34.3421 25.1012 34.3288 25.2099 34.3045 25.2892C34.1929 27.5066 33.8978 36.9725 34.3421 38.3052C34.7692 39.5865 33.4523 40.2628 32.7404 40.4407Z"
+                              fill="#0D4744"
+                            />
+                          </g>
+                          <path
+                            d="M32.6274 41.375H9.0569C7.95579 41.375 7.05488 40.4741 7.05488 39.373V25.7992C7.05488 24.6981 7.95579 23.7972 9.0569 23.7972H32.6274C33.7285 23.7972 34.6294 24.6981 34.6294 25.7992V39.373C34.6294 40.4741 33.7285 41.375 32.6274 41.375ZM9.0569 25.1319C8.68987 25.1319 8.38956 25.4322 8.38956 25.7992V39.373C8.38956 39.74 8.68987 40.0403 9.0569 40.0403H32.6274C32.9944 40.0403 33.2947 39.74 33.2947 39.373V25.7992C33.2947 25.4322 32.9944 25.1319 32.6274 25.1319H9.0569ZM4.20534 24.0908H4.06519C3.80247 24.0737 3.54575 24.0047 3.30981 23.8879C3.07387 23.7711 2.86338 23.6087 2.69047 23.4102L0.861958 21.3147C0.508267 20.9143 0.334759 20.3938 0.374799 19.8599C0.408166 19.326 0.655082 18.8389 1.05549 18.4852L21.663 0.493675C21.8609 0.320695 22.091 0.188461 22.34 0.104551C22.5891 0.0206401 22.8523 -0.0132986 23.1146 0.00467917C23.3768 0.0226569 23.6329 0.0921977 23.8682 0.209317C24.1035 0.326437 24.3134 0.488834 24.4858 0.687204L26.321 2.78265C26.6747 3.18306 26.8482 3.70358 26.8082 4.23746C26.7748 4.77133 26.5279 5.25849 26.1275 5.61218L5.52 23.6037C5.15296 23.924 4.69249 24.0975 4.20534 24.0975V24.0908ZM22.9776 1.33452C22.8153 1.33414 22.6585 1.39353 22.5372 1.50136L1.93638 19.4862C1.80291 19.6063 1.72283 19.7665 1.70948 19.9467C1.69613 20.1268 1.75619 20.2937 1.86964 20.4338L3.69816 22.5293C3.81828 22.6627 3.97844 22.7428 4.15862 22.7562C4.3388 22.7695 4.50564 22.7094 4.63911 22.596L25.2466 4.60449C25.3793 4.48659 25.4607 4.3214 25.4731 4.14429C25.4856 3.96717 25.4282 3.79222 25.3133 3.65687L23.4781 1.56142C23.4158 1.48997 23.3389 1.43273 23.2525 1.39359C23.1662 1.35444 23.0724 1.3343 22.9776 1.33452Z"
+                            fill="#00FFDD"
+                          />
+                          <path
+                            d="M13.5882 16.3365C13.4014 16.3365 13.2145 16.2564 13.0877 16.1096L9.49742 11.9988C9.38397 11.8653 9.32391 11.6918 9.33058 11.5116C9.34393 11.3381 9.42401 11.1713 9.55748 11.0511L13.1544 7.90795C13.2206 7.85051 13.2974 7.80666 13.3805 7.77893C13.4636 7.75119 13.5514 7.7401 13.6387 7.7463C13.7261 7.7525 13.8114 7.77586 13.8898 7.81505C13.9682 7.85424 14.038 7.90848 14.0954 7.97469L17.6857 12.0855C17.7991 12.219 17.8592 12.3925 17.8525 12.5727C17.8392 12.7462 17.7591 12.913 17.6256 13.0331L14.0287 16.1763C13.9019 16.2898 13.7484 16.3431 13.5882 16.3431V16.3365ZM10.9455 11.625L13.6549 14.7282L16.2442 12.4659L13.5348 9.36276L10.9455 11.625ZM23.2246 41.3751H18.4531C18.0861 41.3751 17.7858 41.0748 17.7858 40.7078V24.4647C17.7858 24.0976 18.0861 23.7973 18.4531 23.7973H23.2246C23.5917 23.7973 23.892 24.0976 23.892 24.4647V40.7078C23.892 41.0748 23.5917 41.3751 23.2246 41.3751ZM19.1205 40.0404H22.5573V25.132H19.1205V40.0404Z"
+                            fill="#00FFDD"
+                          />
+                          <path
+                            d="M5.10611 13.3601C5.01268 13.3601 4.92593 13.3601 4.84585 13.3535C2.9239 13.2267 1.92289 11.7585 2.08305 9.33608C2.24989 6.91364 3.4511 5.5923 5.3597 5.72577C6.38073 5.7925 7.99569 6.30636 9.29701 6.9737C11.0988 7.89463 12.0131 8.94903 11.9464 10.0034C11.7929 12.3058 6.98801 13.3668 5.10611 13.3668V13.3601ZM5.07274 7.04043C4.54554 7.04043 3.55788 7.25398 3.41106 9.41616C3.24423 11.8987 4.51217 11.9854 4.9326 12.0121C6.67436 12.1256 10.5383 10.9711 10.6117 9.90332C10.6384 9.53629 10.0511 8.84893 8.68973 8.14822C7.41511 7.49422 5.97365 7.09382 5.27294 7.04711C5.21956 7.04711 5.15282 7.04043 5.07274 7.04043Z"
+                            fill="#00FFDD"
+                          />
+                          <path
+                            d="M11.9055 10.1368H11.7921C10.731 10.0634 9.81675 9.01565 9.14274 7.10705C8.65558 5.73233 8.36862 4.05731 8.43536 3.03627C8.56883 1.11433 10.0303 0.106648 12.4594 0.273483C14.8819 0.440318 16.2032 1.63486 16.0697 3.55013C16.003 4.57116 15.4891 6.18612 14.8218 7.48744C13.9342 9.22252 12.9266 10.1368 11.9055 10.1368ZM11.9389 1.58814C9.87681 1.58814 9.79673 2.7293 9.77004 3.12303C9.72333 3.83041 9.9302 5.30523 10.404 6.65993C10.9112 8.10806 11.5118 8.7754 11.8788 8.8021C12.2726 8.82879 12.9332 8.24153 13.6339 6.88016C14.2879 5.60554 14.6883 4.16408 14.7351 3.46337C14.7617 3.04295 14.8485 1.775 12.366 1.60816C12.2125 1.59482 12.0724 1.59482 11.9322 1.59482L11.9389 1.58814ZM30.9047 14.5212C30.7245 14.5212 30.5444 14.4878 30.3642 14.4144C30.1133 14.3149 29.8953 14.1472 29.7349 13.9302C29.5745 13.7131 29.4781 13.4555 29.4566 13.1865L29.3431 11.7451C29.3431 11.7117 29.3165 11.6783 29.2898 11.6583L28.0352 10.9376C27.5547 10.6573 27.2811 10.1435 27.3144 9.58956C27.3478 9.03567 27.6881 8.56186 28.202 8.34831L29.5367 7.79441C29.5367 7.79441 29.5967 7.75437 29.6034 7.71433L29.9037 6.29957C30.0172 5.75902 30.4242 5.3386 30.9581 5.19846C31.4987 5.05832 32.0525 5.2385 32.4129 5.65892C32.7733 6.07935 33.3539 6.76004 33.3539 6.76004C33.3806 6.78673 33.4139 6.80008 33.4473 6.80008L34.8821 6.64659C35.1507 6.61862 35.4218 6.66626 35.6648 6.78414C35.9078 6.90201 36.113 7.08542 36.2573 7.3137C36.4016 7.54197 36.4793 7.80603 36.4816 8.07609C36.4838 8.34615 36.4106 8.61147 36.2701 8.84214L35.516 10.0767C35.516 10.0767 35.496 10.1435 35.5094 10.1768L36.0966 11.4982C36.3235 12.0053 36.2435 12.5859 35.8898 13.013C35.5361 13.4401 34.9755 13.6203 34.4416 13.4935L33.0402 13.1598C33.0068 13.1465 32.9668 13.1598 32.9401 13.1865L31.8657 14.1542C31.5921 14.4011 31.2517 14.5279 30.9047 14.5279V14.5212ZM31.3251 6.4931H31.2918C31.225 6.51312 31.2117 6.55983 31.2117 6.57985L30.9114 7.99462C30.8113 8.46175 30.491 8.84881 30.0505 9.02899L28.7158 9.58289C28.7158 9.58289 28.6491 9.60958 28.6491 9.67631C28.6491 9.74305 28.6892 9.76974 28.7025 9.78309L29.9504 10.5038C30.3642 10.7441 30.6311 11.1645 30.6712 11.645L30.7846 13.0864C30.7846 13.0864 30.7846 13.1532 30.8513 13.1799C30.9181 13.2065 30.9514 13.1732 30.9648 13.1598L32.0392 12.1922C32.3929 11.8719 32.8801 11.7517 33.3405 11.8585L34.7419 12.1922C34.7419 12.1922 34.8087 12.2055 34.8554 12.1521C34.9021 12.0988 34.8754 12.052 34.8687 12.0387L34.2815 10.7174C34.0879 10.2836 34.1213 9.78309 34.3682 9.37601L35.1223 8.14143C35.1223 8.14143 35.1557 8.08137 35.1223 8.02131C35.0889 7.96125 35.0356 7.96792 35.0155 7.96792L33.5808 8.12141C33.1069 8.16812 32.6398 7.98794 32.3328 7.6209L31.3919 6.51979C31.3919 6.51979 31.3585 6.47975 31.3118 6.47975L31.3251 6.4931ZM38.4857 23.3701C38.1254 23.3701 37.7783 23.2167 37.5314 22.9364L36.7773 22.0822L35.6962 22.2357C35.2091 22.2957 34.7419 22.0755 34.4683 21.6618C34.2014 21.248 34.188 20.7342 34.4416 20.3071L35.0222 19.3261L34.5417 18.3451C34.3349 17.898 34.4016 17.3841 34.7086 17.0037C35.0155 16.6233 35.5094 16.4498 35.9832 16.5566L37.091 16.8035L37.8784 16.0427C38.2388 15.7091 38.746 15.609 39.2064 15.7825C39.6669 15.956 39.9806 16.3697 40.0273 16.8569L40.134 17.9914L41.1017 18.5052C41.5288 18.7455 41.7824 19.1993 41.7557 19.6864C41.729 20.1736 41.4354 20.6007 40.9882 20.8009L39.9472 21.2547L39.7603 22.3291C39.7155 22.5638 39.6052 22.781 39.4423 22.9557C39.2794 23.1305 39.0704 23.2556 38.8394 23.3168C38.726 23.3501 38.6125 23.3635 38.4991 23.3635L38.4857 23.3701ZM36.8174 20.7675C37.1844 20.7675 37.5314 20.921 37.7783 21.2013L38.459 21.9687L38.6592 20.961C38.7393 20.5473 39.0196 20.2003 39.4066 20.0334L40.3476 19.6264L39.4467 19.1259C39.0796 18.919 38.8327 18.5453 38.7927 18.1248L38.6926 17.0638L37.9452 17.7979C37.6382 18.0848 37.2111 18.1983 36.7973 18.1115L35.7897 17.8846L36.2234 18.8189C36.4036 19.1993 36.3769 19.6464 36.1634 20.0068L35.6428 20.8943L36.6639 20.7742C36.7173 20.7742 36.764 20.7675 36.8174 20.7675ZM24.9387 21.7619C24.6918 21.7619 24.4515 21.6951 24.238 21.555L23.277 20.9277L22.2627 21.3681C21.8089 21.555 21.295 21.4682 20.9213 21.1479C20.7396 20.9903 20.6061 20.7844 20.5364 20.5541C20.4668 20.3238 20.4637 20.0785 20.5276 19.8466L20.8279 18.7388L20.0938 17.9113C19.7735 17.5376 19.6934 17.0237 19.8936 16.5699C20.0871 16.1162 20.5142 15.8225 21.0081 15.7958L22.1559 15.7358L22.7165 14.7815C22.9767 14.361 23.4305 14.1208 23.931 14.1742C24.4248 14.2209 24.8386 14.5346 25.0121 14.995L25.4259 16.0694L26.5069 16.3097C26.9874 16.4231 27.3545 16.7968 27.4612 17.2773C27.568 17.7578 27.4012 18.2516 27.0141 18.5586L26.1199 19.2793L26.2267 20.3805C26.2667 20.8743 26.0265 21.3348 25.5994 21.5883C25.3925 21.7085 25.1656 21.7685 24.9387 21.7685V21.7619ZM23.297 19.5997C23.544 19.5997 23.7842 19.6664 23.9977 19.8065L24.8786 20.3805L24.7986 19.3327C24.7652 18.9123 24.9454 18.4986 25.2724 18.2316L26.0865 17.571L25.0655 17.324C24.6517 17.2239 24.3181 16.9303 24.1646 16.5366L23.7775 15.5222L23.237 16.4498C23.0168 16.8102 22.6297 17.0371 22.2093 17.0638L21.1615 17.1172L21.8422 17.918C22.1158 18.2383 22.2159 18.6787 22.1092 19.0858L21.8356 20.1002L22.8099 19.6998C22.97 19.633 23.1369 19.5997 23.3037 19.5997H23.297Z"
+                            fill="#00FFDD"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="20.55"
+                              id="filter0_i_341_11922"
+                              width="26.7773"
+                              x="7.64844"
+                              y="23.8906"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="3.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.866667 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11922"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">Daily Rewards</p>
+                        <p className="font-normal text-[14px]">
+                          Claim $UNIL, USDT staking income
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
+                  <td
+                    className="p-4 border border-[#283442] align-middle"
+                    data-th="Performance"
+                  >
+                    <p className="font-semibold">Transparency</p>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Other Crypto Exchanges"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="37"
+                          viewBox="0 0 37 37"
+                          width="37"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M33.8002 8.09722C31.757 5.09783 28.9105 2.7815 25.5685 1.3987C25.1995 1.24608 24.7764 1.42146 24.6237 1.79045C24.4711 2.15959 24.6464 2.58248 25.0155 2.73525C28.0964 4.01002 30.7206 6.14583 32.6048 8.91158C34.5339 11.7437 35.5537 15.0592 35.5537 18.5001C35.5537 27.9036 27.9035 35.5537 18.5001 35.5537C9.09665 35.5537 1.4464 27.9033 1.4464 18.5C1.4464 9.09665 9.09651 1.4464 18.5 1.4464C18.8994 1.4464 19.2232 1.12257 19.2232 0.723234C19.2232 0.323822 18.8994 0 18.5 0C8.29898 0 0 8.29898 0 18.5C0 28.701 8.29898 37 18.5 37C28.701 37 37 28.701 37 18.5C37 14.7675 35.8935 11.1702 33.8002 8.09722Z"
+                            fill="#FFFF00"
+                          />
+                          <g filter="url(#filter0_i_341_11864)">
+                            <path
+                              d="M28 23.5H14C15 25 16.5 30.5 22 30C26.4 29.6 27.8333 25.5 28 23.5Z"
+                              fill="#09282B"
+                            />
+                          </g>
+                          <path
+                            d="M15.4044 10.1047C13.8094 10.1047 12.5117 11.4024 12.5117 12.9975C12.5117 14.5925 13.8094 15.8902 15.4044 15.8902C16.9995 15.8902 18.2972 14.5925 18.2972 12.9975C18.2972 11.4024 16.9995 10.1047 15.4044 10.1047ZM15.4044 14.4439C14.6069 14.4439 13.958 13.795 13.958 12.9975C13.958 12.1999 14.6069 11.5511 15.4044 11.5511C16.202 11.5511 16.8508 12.1999 16.8508 12.9975C16.8508 13.795 16.202 14.4439 15.4044 14.4439ZM27.619 10.1047C26.0239 10.1047 24.7263 11.4024 24.7263 12.9975C24.7263 14.5925 26.0239 15.8902 27.619 15.8902C29.214 15.8902 30.5117 14.5925 30.5117 12.9975C30.5117 11.4024 29.214 10.1047 27.619 10.1047ZM27.619 14.4439C26.8215 14.4439 26.1726 13.795 26.1726 12.9975C26.1726 12.1999 26.8215 11.5511 27.619 11.5511C28.4165 11.5511 29.0654 12.1999 29.0654 12.9975C29.0654 13.795 28.4165 14.4439 27.619 14.4439ZM28.2823 22.5176H13.8909C13.4915 22.5176 13.1677 22.8414 13.1677 23.2407C13.1677 27.6073 16.7201 31.1597 21.0867 31.1597C25.4533 31.1597 29.0056 27.6073 29.0056 23.2407C29.0055 22.8414 28.6817 22.5176 28.2823 22.5176ZM27.519 23.964C27.1582 27.1939 24.4111 29.7133 21.0865 29.7133C17.762 29.7133 15.0149 27.1939 14.6541 23.964H27.519Z"
+                            fill="#FFFF00"
+                          />
+                          <path
+                            d="M22.7232 1.94193C23.1226 1.94193 23.4463 1.61816 23.4463 1.21877C23.4463 0.819376 23.1226 0.495605 22.7232 0.495605C22.3238 0.495605 22 0.819376 22 1.21877C22 1.61816 22.3238 1.94193 22.7232 1.94193Z"
+                            fill="#FFFF00"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="6.53198"
+                              id="filter0_i_341_11864"
+                              width="14"
+                              x="14"
+                              y="23.5"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset />
+                              <feGaussianBlur stdDeviation="2.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11864"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">Emotion Driven</p>
+                        <p className="font-normal text-[14px]">
+                          Buy tops, sell bottoms
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Unilabs"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="39"
+                          viewBox="0 0 39 39"
+                          width="39"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_341_11885)">
+                            <path
+                              d="M6.67528 21.5657H0.513672V34.9158H6.67528L7.18875 34.4024H9.24262L9.75609 33.3754H11.2965C12.4946 34.06 14.9935 35.532 15.4042 35.9428C15.815 36.3535 17.6293 37.1409 18.485 37.4832H33.3756C34.916 37.4832 35.4295 36.4562 35.4295 35.4293C35.4295 34.6077 34.7448 33.7177 34.4025 33.3754C31.8352 33.5466 26.8032 33.6835 27.214 32.862C27.6248 32.0404 26.7005 30.4658 26.187 29.7812C23.6197 27.8984 18.0743 24.0303 16.4312 23.6195C14.7881 23.2088 11.2965 23.4484 9.75609 23.6195L9.24262 22.5926H7.18875L6.67528 21.5657Z"
+                              fill="#0D4744"
+                            />
+                          </g>
+                          <path
+                            d="M32.408 0C32.091 0 31.774 0.211346 31.774 0.636441V1.90692C31.774 2.75471 33.0445 2.75471 33.0445 1.90692V0.634039C33.0445 0.211346 32.7251 0 32.408 0ZM28.5077 2.08224L29.406 2.98046C30.0064 3.58088 30.9046 2.68026 30.3042 2.08224L29.406 1.18162C29.3453 1.11619 29.2711 1.06471 29.1886 1.03071C29.1061 0.996709 29.0172 0.981007 28.928 0.984682C28.4501 1.0135 28.0586 1.63313 28.5077 2.08224ZM35.4101 1.18162L34.5119 2.08224C33.9115 2.68266 34.8121 3.57848 35.4101 2.98046L36.3083 2.08224C36.7575 1.63313 36.366 1.0135 35.8881 0.984682C35.7989 0.981007 35.71 0.996709 35.6275 1.03071C35.545 1.06471 35.4708 1.11619 35.4101 1.18162ZM18.5817 2.13028L14.7678 6.57575C14.6884 6.66795 14.637 6.781 14.6199 6.9015C14.6027 7.02199 14.6204 7.14488 14.671 7.2556C14.7215 7.36632 14.8028 7.46022 14.9051 7.52616C15.0074 7.59211 15.1264 7.62734 15.2482 7.62768H16.521C16.521 11.0068 15.6084 13.6919 13.9128 15.5364C12.2197 17.3784 9.72193 18.4232 6.36201 18.4232C5.51422 18.4232 5.51422 19.6936 6.36201 19.6936C9.77477 19.6936 13.5214 19.5639 16.5114 17.9548C19.5039 16.3457 21.6078 13.2788 21.6078 7.62048L22.8879 7.62528C23.009 7.62358 23.1271 7.58737 23.2283 7.52089C23.3295 7.4544 23.4097 7.36042 23.4594 7.24997C23.509 7.13951 23.5262 7.01718 23.5087 6.89733C23.4913 6.77747 23.4401 6.66508 23.361 6.57335L19.5471 2.13028C19.4876 2.05996 19.4135 2.00346 19.3299 1.96471C19.2463 1.92596 19.1553 1.90589 19.0632 1.90589C18.9711 1.90589 18.8801 1.92596 18.7965 1.96471C18.7129 2.00346 18.6412 2.05996 18.5817 2.13028ZM19.062 3.51844L21.5117 6.37642L20.9593 6.38362C20.7928 6.38614 20.634 6.45406 20.5172 6.57269C20.4003 6.69132 20.3349 6.85115 20.3349 7.01766V7.62768C20.3349 12.8753 18.44 15.4715 15.9086 16.8357C15.04 17.2925 14.1144 17.6317 13.1563 17.8444C13.7831 17.4169 14.3139 16.975 14.8471 16.3938C16.8044 14.2659 17.7939 11.2374 17.7939 7.62768V6.98884C17.7933 6.8211 17.7262 6.66045 17.6074 6.54206C17.4885 6.42367 17.3276 6.3572 17.1599 6.3572H16.6315L19.062 3.51844ZM27.2949 5.24283C27.1871 5.27123 27.0887 5.32744 27.0094 5.40584C26.9302 5.48423 26.8729 5.58206 26.8434 5.68954C26.6499 6.40836 26.6353 7.16361 26.8009 7.88936C26.9665 8.61512 27.3071 9.28931 27.7932 9.8531C28.2793 10.4169 28.896 10.8531 29.5895 11.1237C30.283 11.3943 31.0321 11.4911 31.7716 11.4055V15.253H28.5942C28.3442 15.2526 28.0966 15.3016 27.8656 15.3971C27.6345 15.4925 27.4245 15.6326 27.2477 15.8092C27.0708 15.9859 26.9304 16.1957 26.8347 16.4266C26.739 16.6575 26.6897 16.9051 26.6897 17.1551V19.0668C26.6897 19.2902 26.7281 19.4991 26.7978 19.6984H26.0532C25.8028 19.6978 25.5548 19.7466 25.3233 19.8421C25.0918 19.9375 24.8815 20.0778 24.7043 20.2547C24.5271 20.4317 24.3866 20.6418 24.2909 20.8732C24.1951 21.1046 24.146 21.3526 24.1463 21.603V23.5123C24.1463 24.5714 25.0061 25.4144 26.0508 25.4168H26.7954C26.7241 25.6206 26.6884 25.835 26.6897 26.0508V27.9602C26.6897 28.1835 26.7257 28.3949 26.7978 28.5942H26.0532C25.8675 28.5946 25.6829 28.6229 25.5057 28.6783L20.3445 24.9028C18.8459 23.8053 17.597 23.2817 15.9014 23.0464C14.4244 22.8398 12.6255 22.871 10.1686 22.8782V22.2346C10.1686 22.1508 10.1521 22.0679 10.12 21.9905C10.0878 21.9131 10.0407 21.8428 9.98139 21.7837C9.92203 21.7246 9.85159 21.6778 9.77409 21.6459C9.6966 21.6141 9.61358 21.5978 9.5298 21.5982H7.62528C7.62528 21.5146 7.60882 21.4318 7.57684 21.3546C7.54485 21.2774 7.49797 21.2072 7.43887 21.1481C7.37977 21.089 7.30961 21.0421 7.2324 21.0102C7.15518 20.9782 7.07242 20.9617 6.98884 20.9617H0.638843C0.555062 20.9614 0.472044 20.9776 0.39455 21.0095C0.317056 21.0413 0.246611 21.0881 0.187257 21.1473C0.127904 21.2064 0.0808092 21.2767 0.048675 21.354C0.0165407 21.4314 -5.96505e-07 21.5144 0 21.5982V34.9562C0 35.3093 0.2882 35.5926 0.638843 35.5926H6.98884C7.15764 35.5926 7.31952 35.5256 7.43887 35.4062C7.55823 35.2869 7.62528 35.125 7.62528 34.9562H9.5298C9.61358 34.9565 9.6966 34.9403 9.77409 34.9085C9.85159 34.8766 9.92203 34.8298 9.98139 34.7706C10.0407 34.7115 10.0878 34.6413 10.12 34.5639C10.1521 34.4865 10.1686 34.4035 10.1686 34.3198V33.6785H10.8051C11.1125 33.6785 11.5712 33.8827 12.1884 34.2741C12.8033 34.668 13.5094 35.2108 14.2251 35.768C14.9383 36.3228 15.6637 36.8919 16.3577 37.3339C17.0518 37.7758 17.7723 38.1264 18.4256 38.1264H33.6809C35.0787 38.1264 36.2243 37.0072 36.2243 35.5854C36.2243 34.7425 35.8256 34.01 35.206 33.5512C35.4549 33.2223 35.5883 32.8205 35.5854 32.408V30.4987C35.5851 30.2826 35.5478 30.0682 35.475 29.8647H36.2219C36.727 29.8647 37.2114 29.664 37.5686 29.3069C37.9258 28.9497 38.1264 28.4653 38.1264 27.9602V26.0508C38.1267 25.8006 38.0777 25.5528 37.9821 25.3216C37.8865 25.0904 37.7462 24.8804 37.5693 24.7034C37.3924 24.5265 37.1823 24.3862 36.9511 24.2906C36.7199 24.1951 36.4721 24.146 36.2219 24.1463H35.475C35.5479 23.9429 35.5852 23.7284 35.5854 23.5123V21.603C35.5867 21.3871 35.551 21.1727 35.4798 20.9689H36.2243C36.7286 20.9683 37.212 20.7677 37.5686 20.4111C37.9252 20.0545 38.1258 19.5711 38.1264 19.0668V17.1551C38.1264 16.9051 38.0771 16.6575 37.9814 16.4266C37.8856 16.1957 37.7453 15.9859 37.5684 15.8092C37.3916 15.6326 37.1816 15.4925 36.9505 15.3971C36.7195 15.3016 36.4719 15.2526 36.2219 15.253H33.0445V13.9489C33.7838 14.0338 34.5327 13.9367 35.2259 13.6659C35.9191 13.3951 36.5355 12.9589 37.0214 12.3952C37.5074 11.8316 37.8481 11.1577 38.0139 10.4322C38.1797 9.7067 38.1656 8.95167 37.9727 8.2329C37.9431 8.12542 37.8859 8.02759 37.8067 7.9492C37.7274 7.8708 37.629 7.81459 37.5212 7.78619C36.748 7.57772 35.9335 7.57674 35.1598 7.78334C34.3861 7.98994 33.6805 8.39683 33.1141 8.96301L33.0085 9.06628C32.8819 8.06377 32.4227 7.1327 31.7044 6.42205C31.1381 5.85505 30.4321 5.44763 29.6578 5.24099C28.8835 5.03435 28.0684 5.03581 27.2949 5.24523V5.24283ZM30.8085 7.32027C31.481 7.99273 31.8941 8.99663 31.7356 10.135C31.2271 10.2074 30.7087 10.1609 30.2211 9.9992C29.7336 9.83752 29.2902 9.56505 28.9256 9.20317C28.5638 8.83855 28.2912 8.39518 28.1291 7.90772C27.967 7.42026 27.9199 6.90192 27.9914 6.39323C28.501 6.31342 29.0223 6.35609 29.5122 6.51771C30.0021 6.67933 30.4465 6.95526 30.8085 7.32267V7.32027ZM36.8175 8.92698C36.94 10.1999 36.5629 11.0717 35.8905 11.7441C35.218 12.4166 34.2237 12.8249 33.0805 12.6784C33.0043 12.1694 33.0482 11.6497 33.2089 11.1608C33.3695 10.6719 33.6423 10.2274 34.0055 9.86277C34.3687 9.49817 34.8121 9.22365 35.3004 9.06116C35.7887 8.89867 36.3083 8.85271 36.8175 8.92698ZM28.5942 16.5234H29.2306V17.7915C29.2306 18.6393 30.5035 18.6393 30.5035 17.7915V16.5258H31.774V17.7939C31.774 18.6417 33.0445 18.6417 33.0445 17.7939V16.5258H34.315V17.7939C34.315 18.6417 35.5878 18.6417 35.5878 17.7939V16.5258H36.2219C36.3053 16.5246 36.3881 16.54 36.4655 16.5713C36.5428 16.6025 36.6131 16.6489 36.6722 16.7078C36.7313 16.7667 36.778 16.8368 36.8096 16.9141C36.8411 16.9913 36.8569 17.0741 36.8559 17.1575V19.0692C36.8559 19.4295 36.5677 19.7008 36.2219 19.7008H28.5942C28.5112 19.7012 28.4289 19.685 28.3521 19.6534C28.2753 19.6218 28.2056 19.5753 28.1469 19.5166C28.0881 19.4578 28.0416 19.3881 28.01 19.3113C27.9784 19.2345 27.9622 19.1522 27.9626 19.0692V17.1575C27.9616 17.0743 27.9773 16.9917 28.0087 16.9146C28.0401 16.8376 28.0866 16.7675 28.1454 16.7087C28.2043 16.6498 28.2743 16.6034 28.3514 16.572C28.4284 16.5406 28.511 16.5225 28.5942 16.5234ZM26.0508 20.9689H26.6897V22.2394C26.6897 23.0872 27.9626 23.0872 27.9626 22.2394V20.9689H29.2306V22.2394C29.2306 23.0872 30.5035 23.0872 30.5035 22.2394V20.9689H31.774V22.2394C31.774 23.0872 33.0445 23.0872 33.0445 22.2394V20.9689H33.6785C33.7621 20.9676 33.8452 20.9831 33.9227 21.0145C34.0002 21.0459 34.0706 21.0926 34.1297 21.1517C34.1889 21.2109 34.2355 21.2813 34.2669 21.3588C34.2983 21.4363 34.3139 21.5193 34.3126 21.603V23.5123C34.3126 23.8749 34.0244 24.1463 33.6785 24.1463H26.0508C25.9676 24.1466 25.8851 24.1304 25.8082 24.0987C25.7313 24.0669 25.6614 24.0202 25.6026 23.9612C25.5439 23.9022 25.4974 23.8322 25.4659 23.7551C25.4345 23.6781 25.4186 23.5955 25.4192 23.5123V21.603C25.4179 21.5195 25.4334 21.4367 25.4646 21.3594C25.4959 21.282 25.5423 21.2117 25.6012 21.1526C25.6601 21.0935 25.7302 21.0468 25.8074 21.0153C25.8847 20.9837 25.9674 20.9679 26.0508 20.9689ZM1.27528 22.2418H6.3572V34.3126H1.27528V22.2418ZM7.62768 22.8758H8.90057V33.6785H7.62768V22.8758ZM10.171 24.1487C12.6328 24.1415 14.4076 24.1199 15.7309 24.3024C17.1191 24.4946 18.2166 24.9197 19.5976 25.9308L26.1733 30.7437C26.7497 31.1664 26.8506 31.9733 26.4495 32.5209C26.2508 32.7906 25.9538 32.9711 25.6229 33.0232C25.292 33.0754 24.9539 32.995 24.6819 32.7995L20.9929 29.9968C20.3109 29.4036 19.4727 30.5059 20.2244 31.0055L23.9182 33.8178C24.3913 34.1468 24.8068 34.3318 25.6714 34.3126H33.6809C34.3966 34.3126 34.9538 34.9034 34.9538 35.5854C34.9538 36.2651 34.3966 36.8559 33.6809 36.8559H18.4232C18.1302 36.8559 17.6546 36.6518 17.0398 36.2603C16.425 35.8688 15.7189 35.3189 15.0056 34.7641C14.2899 34.2069 13.5646 33.6425 12.8681 33.203C12.1764 32.7587 11.4751 32.4104 10.8027 32.4104H10.1662L10.171 24.1487ZM28.5966 25.4168H29.233V26.6873C29.233 27.5351 30.5059 27.5351 30.5059 26.6873V25.4168H31.7764V26.6873C31.7764 27.5351 33.0469 27.5351 33.0469 26.6873V25.4168H34.3174V26.6873C34.3174 27.5351 35.5903 27.5351 35.5903 26.6873V25.4168H36.2243C36.3079 25.4155 36.3909 25.431 36.4685 25.4624C36.546 25.4938 36.6164 25.5405 36.6755 25.5996C36.7346 25.6588 36.7813 25.7292 36.8127 25.8067C36.8441 25.8842 36.8596 25.9672 36.8583 26.0508V27.9602C36.8583 28.3228 36.5701 28.5942 36.2243 28.5942H28.5966C28.5134 28.5945 28.4309 28.5783 28.354 28.5465C28.277 28.5148 28.2072 28.468 28.1484 28.4091C28.0897 28.3501 28.0432 28.28 28.0117 28.203C27.9802 28.1259 27.9643 28.0434 27.965 27.9602V26.0508C27.9637 25.9674 27.9791 25.8846 28.0104 25.8072C28.0416 25.7299 28.0881 25.6596 28.1469 25.6005C28.2058 25.5414 28.276 25.4947 28.3532 25.4631C28.4304 25.4316 28.5132 25.4158 28.5966 25.4168ZM27.1076 29.8647H29.233V31.1376C29.233 31.983 30.5059 31.983 30.5059 31.1376V29.8647H31.7764V31.1376C31.7764 31.983 33.0469 31.983 33.0469 31.1376V29.8647H33.6833C33.7668 29.8637 33.8495 29.8795 33.9268 29.911C34.004 29.9426 34.0741 29.9893 34.133 30.0484C34.1919 30.1075 34.2383 30.1778 34.2696 30.2551C34.3008 30.3325 34.3163 30.4153 34.315 30.4987V32.408C34.315 32.7707 34.0268 33.0421 33.6833 33.0421H27.6311C28.2412 31.9926 28.0154 30.6644 27.1076 29.8647ZM3.81624 31.7716C3.64745 31.7716 3.48557 31.8387 3.36621 31.958C3.24686 32.0774 3.1798 32.2393 3.1798 32.408C3.1798 32.5768 3.24686 32.7387 3.36621 32.8581C3.48557 32.9774 3.64745 33.0445 3.81624 33.0445C3.98504 33.0445 4.14692 32.9774 4.26627 32.8581C4.38563 32.7387 4.45268 32.5768 4.45268 32.408C4.45268 32.2393 4.38563 32.0774 4.26627 31.958C4.14692 31.8387 3.98504 31.7716 3.81624 31.7716Z"
+                            fill="#00FFDD"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="19.9175"
+                              id="filter0_i_341_11885"
+                              width="34.916"
+                              x="0.513672"
+                              y="21.5657"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="3.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.866667 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11885"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">Stress-Free</p>
+                        <p className="font-normal text-[14px]">
+                          AI manages rebalancing, profit taking, and downside
+                          protection
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
+                  <td
+                    className="p-4 border border-[#283442] align-middle"
+                    data-th="Performance"
+                  >
+                    <p className="font-semibold">Community</p>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Other Crypto Exchanges"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="38"
+                          viewBox="0 0 38 38"
+                          width="38"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_2001_232)">
+                            <circle cx="19" cy="19" fill="#073C38" r="19" />
+                          </g>
+                          <circle cx="19" cy="19" r="18.5" stroke="#FFFF00" />
+                          <path
+                            d="M19.1743 10.5006C19.1943 10.5326 19.1972 10.5723 19.1822 10.6069L18.6475 11.8349C18.4042 12.3938 18.9289 13.0229 19.5261 12.8746L20.8261 12.552C20.8627 12.5429 20.9013 12.5524 20.9295 12.5774L21.9322 13.4654C22.3883 13.8693 23.1489 13.5649 23.1925 12.951L23.2874 11.6149C23.2887 11.5964 23.2945 11.5785 23.3043 11.5627C23.3141 11.5469 23.3276 11.5338 23.3436 11.5244L24.4979 10.8452C25.0233 10.5361 24.9684 9.71878 24.3981 9.48765L23.1568 8.98453C23.1396 8.97756 23.1244 8.96651 23.1124 8.95234C23.1004 8.93817 23.0921 8.9213 23.0881 8.90319L22.7988 7.59535C22.6672 7.00023 21.873 6.79978 21.4769 7.27076L20.6148 8.29587C20.6029 8.3101 20.5877 8.3212 20.5705 8.32821C20.5534 8.33522 20.5347 8.33792 20.5163 8.33609L19.1831 8.20705C18.5765 8.14887 18.1402 8.84149 18.4659 9.36399L19.1743 10.5006ZM19.0127 8.9022C19.0267 8.87964 19.0595 8.8426 19.1209 8.84858L20.4541 8.97761C20.5766 8.98948 20.7001 8.97137 20.814 8.92487C20.928 8.87836 21.0289 8.80484 21.1081 8.71065L21.9701 7.68554C22.045 7.59651 22.1324 7.66668 22.1694 7.73448L22.4587 9.04236C22.4853 9.16252 22.5406 9.2744 22.6201 9.36839C22.6995 9.46237 22.8006 9.53562 22.9146 9.58184L24.1559 10.085C24.2458 10.147 24.2508 10.2152 24.171 10.2897L23.0166 10.9689C22.9105 11.0313 22.8212 11.1186 22.7564 11.2232C22.6915 11.3278 22.6531 11.4466 22.6444 11.5693L22.5495 12.9053C22.5183 13.01 22.455 13.0358 22.3595 12.9829L21.3568 12.0949C21.1794 11.9377 20.9013 11.8693 20.6708 11.9264L19.3708 12.249C19.2617 12.2517 19.2176 12.1994 19.2384 12.0923L19.773 10.8642C19.8222 10.7514 19.8431 10.6283 19.8341 10.5056C19.8251 10.3828 19.7864 10.2642 19.7213 10.1597L19.0127 9.02303C18.98 8.97048 18.9987 8.92476 19.0127 8.9022ZM11.6831 9.61333L12.3887 10.0767L12.407 10.9206C12.4176 11.4104 13.0002 11.6909 13.3892 11.379L14.0479 10.8511L14.8562 11.0945C15.3275 11.2364 15.7698 10.7624 15.5957 10.302L15.2972 9.51244L15.7784 8.81888C16.0591 8.41433 15.7449 7.84758 15.2533 7.87065L14.4101 7.91057L13.8992 7.23858C13.5889 6.89711 12.971 6.94815 12.8351 7.445L12.6125 8.25926L11.8156 8.53748C11.3509 8.69982 11.2717 9.34319 11.6831 9.61333ZM12.8449 8.86086C12.9374 8.82858 13.0207 8.77427 13.0875 8.70263C13.1544 8.631 13.2028 8.54417 13.2286 8.44965L13.4354 7.69353L13.9097 8.31748C13.9691 8.39544 14.0465 8.45782 14.1353 8.49927C14.224 8.54072 14.3215 8.56 14.4194 8.55544L15.2024 8.51836L14.7556 9.16238C14.6997 9.24289 14.6642 9.33578 14.6523 9.43304C14.6403 9.5303 14.6522 9.62901 14.6868 9.72067L14.964 10.4539L14.2135 10.2279C14.1196 10.1997 14.0204 10.1947 13.9242 10.2133C13.828 10.232 13.7377 10.2738 13.6613 10.335L13.0496 10.8252L13.0326 10.0416C13.0304 9.94359 13.0045 9.84761 12.9571 9.76189C12.9096 9.67616 12.842 9.60327 12.7601 9.54948L12.1049 9.11924L12.8449 8.86086Z"
+                            fill="#FFFF00"
+                          />
+                          <path
+                            d="M29.8184 25.5442H29.0407C29.8304 24.1078 29.1158 21.4338 27.2815 21.4451V14.5998C27.2815 14.5143 27.2476 14.4323 27.1871 14.3719C27.1267 14.3114 27.0447 14.2775 26.9593 14.2775H18.5558C18.5599 14.0678 18.4632 13.8691 18.2898 13.7423L17.4789 13.1493C17.4782 13.1488 17.4777 13.1481 17.4773 13.1473C17.4769 13.1465 17.4768 13.1457 17.4768 13.1448L17.5056 12.1406C17.5208 11.6117 16.9049 11.2854 16.4758 11.5951L15.6612 12.183C15.6605 12.1835 15.6597 12.1838 15.6589 12.184C15.658 12.1841 15.6571 12.184 15.6563 12.1837L14.7102 11.846C14.2119 11.668 13.7112 12.153 13.8732 12.6568L14.1806 13.6131C14.1808 13.614 14.1809 13.6149 14.1808 13.6157C14.1806 13.6166 14.1802 13.6174 14.1797 13.618L13.671 14.2775H9.32227C9.2368 14.2775 9.15483 14.3114 9.09439 14.3719C9.03395 14.4323 9 14.5143 9 14.5998V16.5619C9 16.6473 9.03395 16.7293 9.09439 16.7898C9.15483 16.8502 9.2368 16.8841 9.32227 16.8841C9.40774 16.8841 9.48971 16.8502 9.55014 16.7898C9.61058 16.7293 9.64453 16.6473 9.64453 16.5619V14.922H16.3306V21.4498C14.5669 21.5357 13.9079 24.1441 14.6778 25.5442H13.9002C13.2486 25.5442 12.7185 26.0742 12.7185 26.7258V28.3555H10.1807C9.88503 28.3555 9.64453 28.115 9.64453 27.8193V18.3835C9.63452 17.9639 9.01525 17.9514 9 18.3835V27.8193C9 28.4704 9.52963 29 10.1807 29H26.8335C27.2505 28.9892 27.2676 28.3714 26.8335 28.3555H23.6694V26.1887H29.8184C30.1145 26.1887 30.3555 26.4297 30.3555 26.7258V28.3555H28.5479C28.4624 28.3555 28.3805 28.3894 28.32 28.4499C28.2596 28.5103 28.2256 28.5923 28.2256 28.6777C28.2256 28.7632 28.2596 28.8452 28.32 28.9056C28.3805 28.966 28.4624 29 28.5479 29H30.6777C30.7632 29 30.8452 28.966 30.9056 28.9056C30.966 28.8452 31 28.7632 31 28.6777V26.7258C31 26.0743 30.4699 25.5442 29.8184 25.5442ZM28.5913 23.3033C28.8514 24.1688 28.6861 25.1621 28.2335 25.5442H22.4652C23.2188 24.4868 25.1581 22.0888 27.2456 22.0888C28.1308 22.0888 28.4816 22.9381 28.5913 23.3033ZM26.637 21.4976C24.9509 21.6972 22.8517 23.7761 21.8593 25.2834C21.3044 24.4857 20.6693 23.7356 19.9509 23.0805V14.922H26.637V21.4976ZM14.7943 13.416L14.4859 12.4573C14.4866 12.4559 14.4877 12.4547 14.4891 12.4539C14.4905 12.4532 14.4921 12.4528 14.4936 12.453L15.4398 12.7907C15.539 12.8262 15.6453 12.8369 15.7496 12.8221C15.8539 12.8073 15.9531 12.7673 16.0385 12.7056L16.8549 12.1161C16.8565 12.1163 16.8579 12.117 16.8591 12.1181C16.8603 12.1192 16.8611 12.1206 16.8614 12.1221L16.8326 13.1263C16.8295 13.2316 16.8521 13.3361 16.8985 13.4307C16.9448 13.5253 17.0134 13.6073 17.0984 13.6695L17.9114 14.2638C17.9093 14.2734 17.9027 14.2779 17.8915 14.2775H14.4851L14.6901 14.0117C14.7545 13.9283 14.7976 13.8305 14.8157 13.7267C14.8339 13.6229 14.8265 13.5163 14.7943 13.416ZM19.3064 14.922V22.5433C18.5142 21.9458 17.7347 21.5903 16.9752 21.4809V14.922H19.3064ZM15.1271 23.3033C15.2369 22.9381 15.5877 22.0888 16.4729 22.0888C18.5571 22.0888 20.4982 24.4867 21.2528 25.5442H15.4849C15.0324 25.1621 14.867 24.1687 15.1271 23.3033ZM13.363 26.7258C13.363 26.4297 13.6039 26.1887 13.9001 26.1887H20.0491V28.3555H13.363V26.7258ZM23.0248 28.3555H20.6936V26.1887H23.0248V28.3555ZM10.9747 12.7116C11.3894 12.7116 11.3901 12.0671 10.9747 12.0671C10.5599 12.0671 10.5592 12.7116 10.9747 12.7116ZM16.9404 10.0505C17.3551 10.0505 17.3558 9.40599 16.9404 9.40599C16.5257 9.40599 16.525 10.0505 16.9404 10.0505ZM17.8846 7.64453C18.2994 7.64453 18.3001 7 17.8846 7C17.4699 7 17.4692 7.64453 17.8846 7.64453ZM25.0097 13.1838C25.4244 13.1838 25.4251 12.5392 25.0097 12.5392C24.595 12.5392 24.5943 13.1838 25.0097 13.1838Z"
+                            fill="#FFFF00"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="39"
+                              id="filter0_i_2001_232"
+                              width="38"
+                              x="0"
+                              y="0"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="4.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_2001_232"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">No Rewards</p>
+                        <p className="font-normal text-[14px]">
+                          Just holding coins with no yield
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Unilabs"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="43"
+                          viewBox="0 0 44 43"
+                          width="44"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M37.9402 22.3743V10.6897C37.9402 9.75999 38.3172 8.91772 38.9269 8.30891C39.5365 7.69927 40.378 7.32227 41.3077 7.32227C41.966 7.32227 42.4997 7.85601 42.4997 8.51432V24.36C42.4997 24.9943 42.3133 25.6147 41.9643 26.1435L41.1872 27.3207M32.6309 41.9998C32.7565 40.6804 33.204 39.4119 33.9343 38.3057L39.5959 29.7304"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="1.5"
+                          />
+                          <path
+                            d="M23.4862 41.9998C23.4508 40.9845 23.2058 39.9875 22.7664 39.0714C22.2619 38.0198 22.0001 36.8683 22.0001 35.7019C22.0001 34.6732 22.2038 33.6546 22.5995 32.7051C22.9951 31.7555 23.5749 30.8937 24.3054 30.1694L33.8745 20.681C34.8032 19.7601 36.3002 19.7585 37.231 20.6772C38.1453 21.5797 38.1809 23.0441 37.3116 23.99L30.5927 31.3012M1.5 16.6269V24.36C1.5 24.9943 1.68644 25.6147 2.03539 26.1435L7.40169 34.2709M1.5 13.7395V8.51432C1.5 7.85601 2.03374 7.32227 2.69205 7.32227C3.62177 7.32227 4.46322 7.69927 5.07286 8.30891C5.68249 8.91772 6.0595 9.75999 6.0595 10.6897V22.3743M8.99302 36.6814L10.0655 38.3057C10.7957 39.4119 11.2433 40.6804 11.3689 41.9998"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="1.5"
+                          />
+                          <path
+                            d="M20.5132 42C20.5486 40.9847 20.7937 39.9876 21.233 39.0716C21.7375 38.0199 21.9994 36.8684 21.9993 35.702C21.9994 34.6733 21.7956 33.6548 21.4 32.7052C21.0043 31.7557 20.4245 30.8939 19.694 30.1696L10.1249 20.6812C9.19621 19.7603 7.69925 19.7587 6.76846 20.6774C5.85417 21.5799 5.81853 23.0443 6.68786 23.9902L13.4067 31.3014M37.8965 10.844L35.3026 10.376M35.3026 10.376C34.6575 12.1049 32.2121 12.1049 31.5671 10.376M35.3026 10.376L35.0991 8.71435M31.5671 10.376L28.7259 10.8886C28.3922 10.9486 28.0694 11.0585 27.7685 11.2146M31.5671 10.376L31.7814 8.626M6.1575 10.8341L8.69629 10.376M8.69629 10.376C9.34131 12.105 11.7867 12.105 12.4317 10.376M8.69629 10.376L8.91061 8.626M12.4317 10.376L15.273 10.8887C15.6064 10.9486 15.9289 11.0584 16.2297 11.2144M12.4317 10.376L12.212 8.58162M32.5225 8.94889C32.807 9.08919 33.1199 9.16224 33.4371 9.1624C33.7543 9.16255 34.0673 9.08981 34.3519 8.94979C35.6548 8.30872 36.5344 7.03937 36.6782 5.59249L36.7679 4.68909C36.9641 2.71491 35.4148 1.00099 33.4331 1C31.4514 0.99901 29.9038 2.71128 30.102 4.68563L30.1927 5.58911C30.2641 6.3008 30.5154 6.98261 30.923 7.57037C31.3306 8.15814 31.881 8.63253 32.5225 8.94889ZM11.4764 8.94889C11.1919 9.08919 10.879 9.16224 10.5618 9.1624C10.2446 9.16255 9.93158 9.08981 9.64696 8.94979C8.34395 8.30872 7.46439 7.03937 7.32068 5.59249L7.23093 4.68909C7.03467 2.71491 8.58401 1.00099 10.5657 1C12.5474 0.99901 14.0949 2.71128 13.8968 4.68563L13.8061 5.58911C13.7347 6.3008 13.4834 6.98261 13.0759 7.57038C12.6683 8.15815 12.1179 8.63253 11.4764 8.94889Z"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="1.5"
+                          />
+                          <path
+                            d="M29.4892 17.9403V14.2157C29.4892 12.5798 28.3178 11.1791 26.7083 10.8887L23.8672 10.3764C23.5446 11.2409 22.7716 11.6724 21.9995 11.6724C21.2273 11.6724 20.4544 11.2409 20.1318 10.3764L17.2907 10.8887C15.6812 11.1791 14.5098 12.5798 14.5098 14.2157V24.4117C14.5098 25.23 15.1732 25.8934 15.9915 25.8934C16.8099 25.8934 17.4733 25.23 17.4733 24.4116L17.4732 16.0364M29.4892 24.9392V20.8277M21.9995 24.9388V35.7021M23.8673 10.376L23.6475 8.58162M20.1317 10.3761L20.346 8.626M21.0872 8.94889C21.3717 9.08919 21.6846 9.16224 22.0018 9.1624C22.319 9.16256 22.632 9.08982 22.9166 8.94979C24.2195 8.30873 25.0991 7.03938 25.2429 5.5925L25.3326 4.68909C25.5289 2.71491 23.9795 1.00099 21.9978 1C20.0161 0.99901 18.4686 2.71128 18.6668 4.68563L18.7574 5.5892C18.8288 6.30086 19.0801 6.98265 19.4877 7.5704C19.8953 8.15815 20.4457 8.63253 21.0872 8.94889Z"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="1.5"
+                          />
+                          <path
+                            d="M14.5098 17.9402V24.4118C14.5098 25.2302 15.1732 25.8936 15.9915 25.8936C16.8099 25.8936 17.4733 25.2302 17.4733 24.4118L17.4732 16.0366M29.4892 20.8279L29.4893 24.4119C29.4893 25.2303 28.8259 25.8937 28.0075 25.8937C27.1892 25.8937 26.5257 25.2303 26.5257 24.4118L26.5258 16.0367"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="1.5"
+                          />
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">Community-First</p>
+                        <p className="font-normal text-[14px]">
+                          Holders benefit directly from fund growth
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#283442]">
+                  <td
+                    className="p-4 border border-[#283442] align-middle"
+                    data-th="Performance"
+                  >
+                    <p className="font-semibold">Transparent Dashboard</p>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Other Crypto Exchanges"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="38"
+                          viewBox="0 0 38 38"
+                          width="38"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_341_11854)">
+                            <circle cx="19" cy="19" fill="#073C38" r="19" />
+                          </g>
+                          <circle cx="19" cy="19" r="18.5" stroke="#FFFF00" />
+                          <line
+                            stroke="#FFFF00"
+                            x1="31.3983"
+                            x2="9.39834"
+                            y1="5.30219"
+                            y2="34.3022"
+                          />
+                          <path
+                            d="M30.8568 14.0514C30.8554 14.0423 30.8537 14.0333 30.8516 14.0244C30.7192 13.3189 30.4984 12.633 30.1945 11.9827C30.1861 11.958 30.175 11.9344 30.1615 11.9121C29.8838 11.3319 29.5421 10.7844 29.1429 10.28C29.128 10.2548 29.11 10.2314 29.0894 10.2106C29.0865 10.2078 29.0834 10.2053 29.0804 10.2025C28.6901 9.72078 28.2494 9.28214 27.7658 8.89413C27.7631 8.89122 27.7607 8.88817 27.7578 8.88531C27.7365 8.86411 27.7125 8.84574 27.6864 8.83066C27.1798 8.43391 26.6305 8.09503 26.0487 7.82031C26.0267 7.80686 26.0032 7.7959 25.9788 7.78764C25.3246 7.48574 24.6349 7.26778 23.9261 7.13894C23.9172 7.13692 23.9082 7.13525 23.8991 7.13392C23.3982 7.04462 22.8904 6.99981 22.3816 7C21.9835 7 21.5919 7.02775 21.208 7.0802C21.2068 7.0803 21.2056 7.08058 21.2043 7.08072C17.5643 7.58022 14.6416 10.361 13.9297 13.93C12.9954 14.1161 12.0956 14.4558 11.2707 14.9387C11.1919 14.9868 11.1351 15.0639 11.1125 15.1534C11.09 15.2429 11.1035 15.3377 11.1501 15.4174C11.1968 15.4971 11.2728 15.5553 11.3619 15.5795C11.451 15.6036 11.546 15.5919 11.6266 15.5467C12.3091 15.1472 13.0477 14.8545 13.815 14.6755C13.7806 14.9886 13.7634 15.3034 13.7632 15.6184C13.7632 16.1356 13.8091 16.6422 13.8969 17.1345C13.8983 17.1442 13.9 17.1538 13.9022 17.1633C14.031 17.8719 14.249 18.5614 14.5508 19.2153C14.559 19.2396 14.5699 19.2631 14.5835 19.2854C14.8583 19.8672 15.1971 20.4165 15.5938 20.923C15.6089 20.9491 15.6273 20.9731 15.6485 20.9945C15.6513 20.9973 15.6543 20.9996 15.6572 21.0023C16.0453 21.486 16.4839 21.9268 16.9658 22.3171C16.9685 22.3201 16.971 22.3232 16.9738 22.326C16.9951 22.3472 17.0185 22.3648 17.0432 22.3795C17.5476 22.7787 18.095 23.1204 18.6753 23.3981C18.6978 23.4119 18.7215 23.4228 18.7459 23.4311C19.3962 23.7351 20.0823 23.9559 20.7879 24.0884C20.7966 24.0904 20.8054 24.0921 20.8143 24.0934C21.6422 24.2462 22.488 24.277 23.3248 24.1848C22.5065 27.6826 19.3619 30.2954 15.6183 30.2954C11.2546 30.2954 7.70444 26.7452 7.70444 22.3815C7.70444 20.1811 8.58597 18.137 10.1866 16.6258C10.2525 16.5612 10.2905 16.4733 10.2923 16.381C10.2941 16.2888 10.2596 16.1994 10.1963 16.1323C10.1329 16.0652 10.0457 16.0256 9.95347 16.0221C9.86122 16.0186 9.77129 16.0514 9.703 16.1135C8.85845 16.9109 8.19377 17.8519 7.7275 18.9105C7.24483 20.0067 7 21.1745 7 22.3816C7 27.1338 10.8663 31 15.6184 31C19.7928 31 23.2831 28.0167 24.0703 24.0702C27.6601 23.3542 30.4528 20.4015 30.9282 16.7318C30.9285 16.7296 30.9289 16.7275 30.9291 16.7254C31.0436 15.8357 31.0192 14.9336 30.8568 14.0514ZM28.8016 10.9965C29.0377 11.3232 29.2485 11.6675 29.4322 12.0263L23.1903 18.2683C22.998 17.9161 22.7816 17.5778 22.5424 17.2557L28.8016 10.9965ZM28.3615 10.4401L22.0971 16.7045C21.8388 16.4099 21.5609 16.1331 21.2651 15.876L27.529 9.61225C27.8264 9.8674 28.1047 10.1441 28.3615 10.4401ZM26.9705 9.1743L20.7113 15.4336C20.3877 15.1956 20.048 14.9805 19.6945 14.7898L25.9355 8.5488C26.2959 8.73062 26.6419 8.93973 26.9705 9.1743ZM23.964 7.86353C24.4015 7.95277 24.8306 8.07918 25.2466 8.24139L19.0231 14.4648C18.6227 14.2919 18.2097 14.1498 17.7876 14.0398L23.964 7.86353ZM21.406 7.76467C21.7297 7.72462 22.0555 7.70452 22.3817 7.70448C22.6218 7.70448 22.8594 7.71583 23.0943 7.73688L16.9629 13.8683C16.5181 13.7983 16.0686 13.7632 15.6184 13.7632C15.5469 13.7632 15.4754 13.765 15.4039 13.7668L21.406 7.76467ZM20.1484 8.02586L14.7891 13.3853C15.5466 10.8141 17.5773 8.78336 20.1484 8.02586ZM14.5002 16.331C14.4787 16.0941 14.4679 15.8563 14.4678 15.6184C14.4678 15.2881 14.4884 14.9626 14.5279 14.6428L14.6419 14.5288C14.9659 14.4884 15.292 14.468 15.6185 14.4677C15.8587 14.4677 16.0962 14.479 16.3311 14.5001L14.5002 16.331ZM14.6268 17.2007L17.2007 14.6268C17.6382 14.7159 18.0673 14.8423 18.4833 15.0046L15.0046 18.4834C14.8424 18.0674 14.716 17.6382 14.6268 17.2007ZM15.9376 20.2073C15.703 19.8787 15.4939 19.5327 15.312 19.1723L19.1724 15.312C19.5328 15.4938 19.8788 15.703 20.2073 15.9375L15.9376 20.2073ZM16.3755 20.7657L20.7657 16.3755C21.0632 16.6306 21.3415 16.9073 21.5983 17.2033L17.2034 21.5983C16.9073 21.3415 16.6306 21.0632 16.3755 20.7657ZM17.7597 22.0383L22.0384 17.7597C22.2745 18.0864 22.4853 18.4307 22.669 18.7895L18.7894 22.669C18.4307 22.4853 18.0864 22.2744 17.7597 22.0383ZM20.7521 23.3632C20.3164 23.2718 19.8893 23.1434 19.4754 22.9795L22.9795 19.4754C23.1434 19.8893 23.2718 20.3164 23.3633 20.7521L20.7521 23.3632ZM23.4796 23.2926L23.2926 23.4795C22.9902 23.5145 22.686 23.5322 22.3816 23.5323C22.1235 23.5323 21.8684 23.5195 21.6165 23.4952L23.4952 21.6165C23.5195 21.8683 23.5323 22.1235 23.5323 22.3816C23.5323 22.6897 23.514 22.9936 23.4796 23.2926ZM23.948 20.1674C23.8361 19.747 23.6922 19.3357 23.5177 18.9372L29.7427 12.7122C29.9066 13.1261 30.035 13.5532 30.1264 13.9889L23.948 20.1674ZM24.5338 23.2348L29.998 17.7705C29.252 20.4072 27.1705 22.4887 24.5338 23.2348ZM30.2428 16.5294L24.2349 22.5373C24.2358 22.4854 24.2368 22.4336 24.2368 22.3816C24.2368 21.9072 24.1977 21.4419 24.1236 20.9881L30.2584 14.8533C30.2827 15.1051 30.2956 15.3603 30.2956 15.6184C30.2954 15.9228 30.2778 16.227 30.2428 16.5294Z"
+                            fill="#FFFF00"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="39"
+                              id="filter0_i_341_11854"
+                              width="38"
+                              x="0"
+                              y="0"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="4.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11854"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">No Transparency</p>
+                        <p className="font-normal text-[14px]">
+                          Blind bets with little insight
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    className="p-4  border border-[#283442] align-middle"
+                    data-th="Unilabs"
+                  >
+                    <div className="flex items-center gap-[15px]">
+                      <i className="flex items-center">
+                        <svg
+                          fill="none"
+                          height="43"
+                          viewBox="0 0 43 43"
+                          width="43"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g filter="url(#filter0_i_341_11950)">
+                            <circle cx="17" cy="26" fill="#0D4744" r="17" />
+                          </g>
+                          <path
+                            d="M26 33C34.8366 33 42 25.8366 42 17C42 8.16344 34.8366 1 26 1C17.1634 1 10 8.16344 10 17C10 25.8366 17.1634 33 26 33Z"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="2"
+                          />
+                          <path
+                            d="M17 42C25.8366 42 33 34.8366 33 26C33 17.1634 25.8366 10 17 10C8.16344 10 1 17.1634 1 26C1 34.8366 8.16344 42 17 42Z"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="2"
+                          />
+                          <path
+                            d="M11.511 23.6791L19.7471 15.4429L32.7403 2.44984M26.3802 1L15.5567 11.8234L10 17.3802M19.4172 31.3927L40.502 10.3079M23.9822 19.0178L37.4565 5.54339M14.6367 28.3633L18.6814 24.3186M25.6198 33L42 16.6198"
+                            stroke="#00FFDD"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeMiterlimit="10"
+                            strokeWidth="2"
+                          />
+                          <defs>
+                            <filter
+                              colorInterpolationFilters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                              height="38"
+                              id="filter0_i_341_11950"
+                              width="34"
+                              x="0"
+                              y="9"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="BackgroundImageFix"
+                                mode="normal"
+                                result="shape"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="3.5" />
+                              <feComposite
+                                in2="hardAlpha"
+                                k2="-1"
+                                k3="1"
+                                operator="arithmetic"
+                              />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.866667 0 0 0 1 0"
+                              />
+                              <feBlend
+                                in2="shape"
+                                mode="normal"
+                                result="effect1_innerShadow_341_11950"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </i>
+                      <div>
+                        <p className="font-bold">Transparent Dashboard</p>
+                        <p className="font-normal text-[14px]">
+                          Live fund performance & allocation breakdown
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                <li className="flex items-start gap-2">
-                  <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_341_11839_2)">
-                        <path
-                          d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
-                          stroke="#FF8800"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_341_11839_2">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </i>
-                  <p className="text-base font-inter font-normal leading-relaxed text-white">
-                    <strong className="font-bold">
-                      Automatic Rebalancing & Optimization
-                    </strong>{" "}
-                    - your capital is always aligned with market conditions,
-                    without manual effort.
-                  </p>
-                </li>
-
-                <li className="flex items-start gap-2">
-                  <i className="inline-flex items-center justify-center w-5 h-5 mt-[3px] flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_341_11839_3)">
-                        <path
-                          d="M7.50065 10L9.16732 11.6667L12.5006 8.33333M3.20898 7.18333C3.08735 6.63544 3.10603 6.0657 3.26328 5.52695C3.42053 4.9882 3.71127 4.49787 4.10854 4.10143C4.50581 3.705 4.99674 3.41529 5.53582 3.25916C6.0749 3.10304 6.64468 3.08555 7.19232 3.20833C7.49374 2.73692 7.90898 2.34897 8.39977 2.08024C8.89056 1.81151 9.4411 1.67065 10.0006 1.67065C10.5602 1.67065 11.1107 1.81151 11.6015 2.08024C12.0923 2.34897 12.5076 2.73692 12.809 3.20833C13.3575 3.08502 13.9282 3.10242 14.4681 3.25893C15.0081 3.41543 15.4997 3.70595 15.8972 4.10346C16.2947 4.50097 16.5852 4.99256 16.7417 5.5325C16.8982 6.07244 16.9156 6.64319 16.7923 7.19167C17.2637 7.49309 17.6517 7.90834 17.9204 8.39913C18.1891 8.88992 18.33 9.44046 18.33 10C18.33 10.5595 18.1891 11.1101 17.9204 11.6009C17.6517 12.0917 17.2637 12.5069 16.7923 12.8083C16.9151 13.356 16.8976 13.9257 16.7415 14.4648C16.5854 15.0039 16.2957 15.4948 15.8992 15.8921C15.5028 16.2894 15.0125 16.5801 14.4737 16.7374C13.9349 16.8946 13.3652 16.9133 12.8173 16.7917C12.5163 17.2649 12.1007 17.6545 11.6091 17.9244C11.1175 18.1944 10.5657 18.3359 10.0048 18.3359C9.44396 18.3359 8.89217 18.1944 8.40054 17.9244C7.90892 17.6545 7.49335 17.2649 7.19232 16.7917C6.64468 16.9144 6.0749 16.897 5.53582 16.7408C4.99674 16.5847 4.50581 16.295 4.10854 15.8986C3.71127 15.5021 3.42053 15.0118 3.26328 14.4731C3.10603 13.9343 3.08735 13.3646 3.20898 12.8167C2.73395 12.516 2.34266 12.1001 2.07152 11.6077C1.80038 11.1152 1.6582 10.5622 1.6582 10C1.6582 9.43783 1.80038 8.88479 2.07152 8.39232C2.34266 7.89986 2.73395 7.48396 3.20898 7.18333Z"
-                          stroke="#FF8800"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_341_11839_3">
-                          <rect width="20" height="20" fill="white"></rect>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </i>
-                  <p className="text-base font-inter font-normal leading-relaxed text-white">
-                    <strong className="font-bold">
-                      All-in-One Access with $CAT
-                    </strong>{" "}
-                    - a single token unlocks exposure, yields, and growth across
-                    multiple sectors.
-                  </p>
-                </li>
-              </ul>
+          {/* CTA Button */}
+          <div className="flex items-center justify-center gap-3 mt-[30px] max-md:mt-5 mx-auto">
+            <div className="relative">
+              <button
+                className="h-[48px] font-medium font-ptSans flex items-center cursor-pointer ease-in-out justify-center gap-2.5 !font-semibold max-sm:!text-[14px] max-sm:!h-[40px] max-sm:w-full !border-none buttonRadialBGBlue bg-[radial-gradient(24.83%_154.95%_at_14.43%_72.32%,_#FF8800_0%,_#FF6600_100%)] rounded-[60px] bg-[#FFFF00] hover:bg-none hover:border-[#FFFF00] max-[479px]:!shadow-none button overflow-hidden px-[47px] max-lg:px-[35px] !bg-black hover:!bg-[#ffff00] hover:text-black relative z-10 text-[#FFFF00] !bg-none !border-0 border-transparent max-md:px-[30px] max-sm:px-[25px] min-w-[176px] max-lg:min-w-0 whitespace-nowrap max-md:h-[40px] max-md:text-[14px] transition-all duration-300"
+                aria-label="button"
+              >
+                See more
+              </button>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Main Content Section */}
-      <div className="container relative z-10">
-        <div className="text-center max-w-[1022px] mx-auto mb-6 max-md:mb-5">
-          <h2 className="text-4xl max-lg:text-3xl max-md:text-2xl font-bold text-white mb-[10px]">
-            The First AI Hedge Fund Built for Everyday Investors
-          </h2>
-          <p className="text-white text-base max-md:text-sm">
-            Most investors lose money chasing hype or trading on emotions.
-            Cat changes the game, automating growth with AI, optimizing
-            allocations, and sharing profits directly with $CAT holders.
-          </p>
-        </div>
-
-        {/* Comparison Table */}
-        <div className="relative shadow-[inset_0px_4px_34px_0px_#FF8800] max-[900px]:shadow-[inset_0px_4px_10px_0px_#FF8800] rounded-[20px] max-md:rounded-[10px] overflow-hidden overflow-x-auto">
-          {/* Hover overlays for desktop */}
-          <div className="absolute inset-0 z-20 pointer-events-none max-[1200px]:hidden">
-            <div
-              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
-              style={{ left: "0.399994px", width: "240px" }}
-            ></div>
-            <div
-              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
-              style={{ left: "240.4px", width: "308.925px" }}
-            ></div>
-            <div
-              className="absolute cursor-pointer top-0 bottom-0 pointer-events-auto shadow-[inset_0px_4px_34px_0px_#FF8800] bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.3)] transition-all ease duration-500 opacity-0 hover:opacity-100"
-              style={{ left: "549.325px", width: "524.513px" }}
-            ></div>
-          </div>
-
-          <table className="relative z-12 w-full border-collapse bg-gradient-to-br from-[rgba(58,45,36,0.3)] to-[rgba(237,134,15,0.6)] max-[900px]:from-[rgba(58,45,36,0.3)] max-[900px]:to-[rgba(237,134,15,0.1)] min-w-[800px] max-[767px]:min-w-auto">
-            <thead className="max-md:hidden">
-              <tr className="font-bold">
-                <th className="py-[23px] px-8 border border-[#443828] min-w-[240px]">
-                  <p className="text-xl font-bold text-left text-white">
-                    Performance
-                  </p>
-                </th>
-                <th className="py-[23px] px-8 border border-[#443828]">
-                  <p className="text-xl font-bold text-left text-white">
-                    Other Crypto Exchanges
-                  </p>
-                </th>
-                <th className="py-[23px] px-8 border border-[#443828]">
-                  <p className="text-xl font-bold text-left text-white">
-                    Cat
-                  </p>
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              {/* Time & Stress Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
-                <td className="p-4 border border-[#443828] align-middle">
-                  <p className="font-semibold text-white">Time & Stress</p>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="46"
-                        height="46"
-                        viewBox="0 0 46 46"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M35.5002 44H10.0002C6.40024 44 6.16691 41.6666 6.50024 40.5V18.5C6.50024 19.7 8.83358 20.3333 10.0002 20.5H39.5002V40.5C39.5002 43.7 36.8336 44.1666 35.5002 44Z"
-                          fill="#0A2025"
-                        ></path>
-                        <path
-                          d="M37.375 14.4472V7.9061C37.3744 7.33443 37.147 6.78635 36.7427 6.38211C36.3385 5.97788 35.7904 5.75049 35.2188 5.74985H34.3235L33.829 4.01946C33.6989 3.56409 33.4801 3.13894 33.1851 2.76843C32.8901 2.39792 32.5248 2.08937 32.1102 1.86052C31.6956 1.63167 31.2398 1.48703 30.7691 1.43491C30.2983 1.3828 29.822 1.42423 29.3673 1.55685L14.991 5.74985H12.2188C11.6471 5.75049 11.099 5.97788 10.6948 6.38211C10.2905 6.78635 10.0631 7.33443 10.0625 7.9061V14.3749H9.34375C8.39096 14.3759 7.47749 14.7549 6.80377 15.4286C6.13004 16.1023 5.75107 17.0158 5.75 17.9686V40.9686C5.75107 41.9214 6.13004 42.8349 6.80377 43.5086C7.47749 44.1823 8.39096 44.5613 9.34375 44.5624H36.6562C37.609 44.5613 38.5225 44.1823 39.1962 43.5086C39.87 42.8349 40.2489 41.9214 40.25 40.9686V17.9686C40.2489 17.1405 39.9624 16.3381 39.4387 15.6967C38.915 15.0552 38.1861 14.6139 37.375 14.4472Z"
-                          fill="#FFFF00"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">High Failure Rate</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        90% of retail traders lose money
-                      </p>
-                    </div>
-                  </div>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="48"
-                        height="48"
-                        viewBox="0 0 48 48"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M28.6952 38.0868C29.9474 46.0173 26.0865 47.3042 23.9996 46.9564C19.304 45.913 19.304 40.174 19.304 37.0436V37.0434C13.0431 35.4781 10.9561 28.6955 9.91261 24.5216C8.86913 20.3477 14.0865 9.39119 23.9996 10.4347C33.9126 11.4781 35.4778 15.6521 38.0865 22.9564C38.6083 31.3042 31.3039 36.5216 28.6952 38.0868Z"
-                          fill="#103539"
-                        ></path>
-                        <path
-                          d="M24.779 7.74317V4.50653C25.6772 4.18906 26.3276 3.33731 26.3276 2.32295C26.3276 1.04533 25.2823 0 24.0047 0C22.727 0 21.6817 1.04533 21.6817 2.32295C21.6817 3.32957 22.3321 4.18131 23.2303 4.50653V7.74317H24.779Z"
-                          fill="#FF8800"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">
-                        AI Powered Performance
-                      </p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Automated allocations across STC, ETN, AI coins, RWAs &
-                        mining
-                      </p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-              {/* Rewards Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
-                <td className="p-4 border border-[#443828] align-middle">
-                  <p className="font-semibold text-white">Rewards</p>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="40"
-                        height="40"
-                        viewBox="0 0 40 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M29.4998 39.5002H9.99981C7.19966 39.5002 7.16654 37.8335 7.5 37.0001L5.5 24.0001C5.5 23.8335 5.19996 23.5002 3.99981 23.5002C2.49962 23.5002 1.99981 23.5002 1.49981 21.5001C1.09981 19.9001 2.99981 18.8335 3.99981 18.5002C13.4998 18.3335 33.1998 18.1002 35.9998 18.5002C39.4998 19.1741 38.4998 21.5002 37.9998 22.5002C37.5998 23.3002 35.4998 23.5002 34.4998 23.5002C34.1665 26.5002 33.2998 33.3002 32.4998 36.5002C31.6998 39.7002 30.1665 39.8335 29.4998 39.5002Z"
-                          fill="#09282B"
-                        ></path>
-                        <path
-                          d="M20.6446 9.5746V10.3823C20.6446 10.5534 20.5767 10.7175 20.4557 10.8385C20.3347 10.9595 20.1706 11.0275 19.9995 11.0275C19.8284 11.0275 19.6643 10.9595 19.5433 10.8385C19.4223 10.7175 19.3543 10.5534 19.3543 10.3823V9.5746C19.3543 9.40349 19.4223 9.23939 19.5433 9.1184C19.6643 8.99741 19.8284 8.92943 19.9995 8.92943C20.1706 8.92943 20.3347 8.99741 20.4557 9.1184C20.5767 9.23939 20.6446 9.40349 20.6446 9.5746Z"
-                          fill="#FFFF00"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">Time-Consuming</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Hours wasted chasing charts
-                      </p>
-                    </div>
-                  </div>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="42"
-                        height="42"
-                        viewBox="0 0 42 42"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M32.7404 40.4407H8.71618L7.64844 38.3052V27.0939L8.71618 23.8906H32.7404C33.2148 24.6813 34.1108 25.9216 34.3045 25.2892C34.327 24.8419 34.3421 24.6896 34.3421 24.9584C34.3421 25.1012 34.3288 25.2099 34.3045 25.2892C34.1929 27.5066 33.8978 36.9725 34.3421 38.3052C34.7692 39.5865 33.4523 40.2628 32.7404 40.4407Z"
-                          fill="#0D4744"
-                        ></path>
-                        <path
-                          d="M32.6274 41.375H9.0569C7.95579 41.375 7.05488 40.4741 7.05488 39.373V25.7992C7.05488 24.6981 7.95579 23.7972 9.0569 23.7972H32.6274C33.7285 23.7972 34.6294 24.6981 34.6294 25.7992V39.373C34.6294 40.4741 33.7285 41.375 32.6274 41.375Z"
-                          fill="#FF8800"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">Daily Rewards</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Claim $CAT, USDT staking income
-                      </p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-              {/* Transparency Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
-                <td className="p-4 border border-[#443828] align-middle">
-                  <p className="font-semibold text-white">Transparency</p>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="37"
-                        height="37"
-                        viewBox="0 0 37 37"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M33.8002 8.09722C31.757 5.09783 28.9105 2.7815 25.5685 1.3987C25.1995 1.24608 24.7764 1.42146 24.6237 1.79045C24.4711 2.15959 24.6464 2.58248 25.0155 2.73525C28.0964 4.01002 30.7206 6.14583 32.6048 8.91158C34.5339 11.7437 35.5537 15.0592 35.5537 18.5001C35.5537 27.9036 27.9035 35.5537 18.5001 35.5537C9.09665 35.5537 1.4464 27.9033 1.4464 18.5C1.4464 9.09665 9.09651 1.4464 18.5 1.4464C18.8994 1.4464 19.2232 1.12257 19.2232 0.723234C19.2232 0.323822 18.8994 0 18.5 0C8.29898 0 0 8.29898 0 18.5C0 28.701 8.29898 37 18.5 37C28.701 37 37 28.701 37 18.5C37 14.7675 35.8935 11.1702 33.8002 8.09722Z"
-                          fill="#FFFF00"
-                        ></path>
-                        <path
-                          d="M28 23.5H14C15 25 16.5 30.5 22 30C26.4 29.6 27.8333 25.5 28 23.5Z"
-                          fill="#09282B"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">Emotion Driven</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Buy tops, sell bottoms
-                      </p>
-                    </div>
-                  </div>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="39"
-                        height="39"
-                        viewBox="0 0 39 39"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M6.67528 21.5657H0.513672V34.9158H6.67528L7.18875 34.4024H9.24262L9.75609 33.3754H11.2965C12.4946 34.06 14.9935 35.532 15.4042 35.9428C15.815 36.3535 17.6293 37.1409 18.485 37.4832H33.3756C34.916 37.4832 35.4295 36.4562 35.4295 35.4293C35.4295 34.6077 34.7448 33.7177 34.4025 33.3754C31.8352 33.5466 26.8032 33.6835 27.214 32.862C27.6248 32.0404 26.7005 30.4658 26.187 29.7812C23.6197 27.8984 18.0743 24.0303 16.4312 23.6195C14.7881 23.2088 11.2965 23.4484 9.75609 23.6195L9.24262 22.5926H7.18875L6.67528 21.5657Z"
-                          fill="#0D4744"
-                        ></path>
-                        <path
-                          d="M32.408 0C32.091 0 31.774 0.211346 31.774 0.636441V1.90692C31.774 2.75471 33.0445 2.75471 33.0445 1.90692V0.634039C33.0445 0.211346 32.7251 0 32.408 0Z"
-                          fill="#FF8800"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">Stress-Free</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        AI manages rebalancing, profit taking, and downside
-                        protection
-                      </p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-              {/* Community Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
-                <td className="p-4 border border-[#443828] align-middle">
-                  <p className="font-semibold text-white">Community</p>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="38"
-                        height="38"
-                        viewBox="0 0 38 38"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="19" cy="19" r="19" fill="#073C38"></circle>
-                        <circle
-                          cx="19"
-                          cy="19"
-                          r="18.5"
-                          stroke="#FFFF00"
-                        ></circle>
-                        <path
-                          d="M19.1743 10.5006C19.1943 10.5326 19.1972 10.5723 19.1822 10.6069L18.6475 11.8349C18.4042 12.3938 18.9289 13.0229 19.5261 12.8746L20.8261 12.552C20.8627 12.5429 20.9013 12.5524 20.9295 12.5774L21.9322 13.4654C22.3883 13.8693 23.1489 13.5649 23.1925 12.951L23.2874 11.6149C23.2887 11.5964 23.2945 11.5785 23.3043 11.5627C23.3141 11.5469 23.3276 11.5338 23.3436 11.5244L24.4979 10.8452C25.0233 10.5361 24.9684 9.71878 24.3981 9.48765L23.1568 8.98453C23.1396 8.97756 23.1244 8.96651 23.1124 8.95234C23.1004 8.93817 23.0921 8.9213 23.0881 8.90319L22.7988 7.59535C22.6672 7.00023 21.873 6.79978 21.4769 7.27076L20.6148 8.29587C20.6029 8.3101 20.5877 8.3212 20.5705 8.32821C20.5534 8.33522 20.5347 8.33792 20.5163 8.33609L19.1831 8.20705C18.5765 8.14887 18.1402 8.84149 18.4659 9.36399L19.1743 10.5006Z"
-                          fill="#FFFF00"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">No Rewards</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Just holding coins with no yield
-                      </p>
-                    </div>
-                  </div>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="44"
-                        height="43"
-                        viewBox="0 0 44 43"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M37.9402 22.3743V10.6897C37.9402 9.75999 38.3172 8.91772 38.9269 8.30891C39.5365 7.69927 40.378 7.32227 41.3077 7.32227C41.966 7.32227 42.4997 7.85601 42.4997 8.51432V24.36C42.4997 24.9943 42.3133 25.6147 41.9643 26.1435L41.1872 27.3207M32.6309 41.9998C32.7565 40.6804 33.204 39.4119 33.9343 38.3057L39.5959 29.7304"
-                          stroke="#FF8800"
-                          strokeWidth="1.5"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">Community-First</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Holders benefit directly from fund growth
-                      </p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-              {/* Dashboard Row */}
-              <tr className="max-md:block max-md:mb-6 max-md:border max-md:border-[#443828]">
-                <td className="p-4 border border-[#443828] align-middle">
-                  <p className="font-semibold text-white">
-                    Transparent Dashboard
-                  </p>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="38"
-                        height="38"
-                        viewBox="0 0 38 38"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="19" cy="19" r="19" fill="#073C38"></circle>
-                        <circle
-                          cx="19"
-                          cy="19"
-                          r="18.5"
-                          stroke="#FFFF00"
-                        ></circle>
-                        <line
-                          x1="31.3983"
-                          y1="5.30219"
-                          x2="9.39834"
-                          y2="34.3022"
-                          stroke="#FFFF00"
-                        ></line>
-                        <path
-                          d="M30.8568 14.0514C30.8554 14.0423 30.8537 14.0333 30.8516 14.0244C30.7192 13.3189 30.4984 12.633 30.1945 11.9827C30.1861 11.958 30.175 11.9344 30.1615 11.9121C29.8838 11.3319 29.5421 10.7844 29.1429 10.28C29.128 10.2548 29.11 10.2314 29.0894 10.2106C29.0865 10.2078 29.0834 10.2053 29.0804 10.2025C28.6901 9.72078 28.2494 9.28214 27.7658 8.89413C27.7631 8.89122 27.7607 8.88817 27.7578 8.88531C27.7365 8.86411 27.7125 8.84574 27.6864 8.83066C27.1798 8.43391 26.6305 8.09503 26.0487 7.82031C26.0267 7.80686 26.0032 7.7959 25.9788 7.78764C25.3246 7.48574 24.6349 7.26778 23.9261 7.13894C23.9172 7.13692 23.9082 7.13525 23.8991 7.13392C23.3982 7.04462 22.8904 6.99981 22.3816 7C21.9835 7 21.5919 7.02775 21.208 7.0802C21.2068 7.0803 21.2056 7.08058 21.2043 7.08072C17.5643 7.58022 14.6416 10.361 13.9297 13.93C12.9954 14.1161 12.0956 14.4558 11.2707 14.9387C11.1919 14.9868 11.1351 15.0639 11.1125 15.1534C11.09 15.2429 11.1035 15.3377 11.1501 15.4174C11.1968 15.4971 11.2728 15.5553 11.3619 15.5795C11.451 15.6036 11.546 15.5919 11.6266 15.5467C12.3091 15.1472 13.0477 14.8545 13.815 14.6755C13.7806 14.9886 13.7634 15.3034 13.7632 15.6184C13.7632 16.1356 13.8091 16.6422 13.8969 17.1345C13.8983 17.1442 13.9 17.1538 13.9022 17.1633C14.031 17.8719 14.249 18.5614 14.5508 19.2153C14.559 19.2396 14.5699 19.2631 14.5835 19.2854C14.8583 19.8672 15.1971 20.4165 15.5938 20.923C15.6089 20.9491 15.6273 20.9731 15.6485 20.9945C15.6513 20.9973 15.6543 20.9996 15.6572 21.0023C16.0453 21.486 16.4839 21.9268 16.9658 22.3171C16.9685 22.3201 16.971 22.3232 16.9738 22.326C16.9951 22.3472 17.0185 22.3648 17.0432 22.3795C17.5476 22.7787 18.095 23.1204 18.6753 23.3981C18.6978 23.4119 18.7215 23.4228 18.7459 23.4311C19.3962 23.7351 20.0823 23.9559 20.7879 24.0884C20.7966 24.0904 20.8054 24.0921 20.8143 24.0934C21.6422 24.2462 22.488 24.277 23.3248 24.1848C22.5065 27.6826 19.3619 30.2954 15.6183 30.2954C11.2546 30.2954 7.70444 26.7452 7.70444 22.3815C7.70444 20.1811 8.58597 18.137 10.1866 16.6258C10.2525 16.5612 10.2905 16.4733 10.2923 16.381C10.2941 16.2888 10.2596 16.1994 10.1963 16.1323C10.1329 16.0652 10.0457 16.0256 9.95347 16.0221C9.86122 16.0186 9.77129 16.0514 9.703 16.1135C8.85845 16.9109 8.19377 17.8519 7.7275 18.9105C7.24483 20.0067 7 21.1745 7 22.3816C7 27.1338 10.8663 31 15.6184 31C19.7928 31 23.2831 28.0167 24.0703 24.0702C27.6601 23.3542 30.4528 20.4015 30.9282 16.7318C30.9285 16.7296 30.9289 16.7275 30.9291 16.7254C31.0436 15.8357 31.0192 14.9336 30.8568 14.0514Z"
-                          fill="#FFFF00"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">No Transparency</p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Blind bets with little insight
-                      </p>
-                    </div>
-                  </div>
-                </td>
-                <td className="p-4 border border-[#443828] align-middle">
-                  <div className="flex items-center gap-[15px]">
-                    <i className="flex items-center flex-shrink-0">
-                      <svg
-                        width="43"
-                        height="43"
-                        viewBox="0 0 43 43"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="17" cy="26" r="17" fill="#0D4744"></circle>
-                        <path
-                          d="M26 33C34.8366 33 42 25.8366 42 17C42 8.16344 34.8366 1 26 1C17.1634 1 10 8.16344 10 17C10 25.8366 17.1634 33 26 33Z"
-                          stroke="#FF8800"
-                          strokeWidth="2"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                        <path
-                          d="M17 42C25.8366 42 33 34.8366 33 26C33 17.1634 25.8366 10 17 10C8.16344 10 1 17.1634 1 26C1 34.8366 8.16344 42 17 42Z"
-                          stroke="#FF8800"
-                          strokeWidth="2"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </svg>
-                    </i>
-                    <div>
-                      <p className="font-bold text-white">
-                        Transparent Dashboard
-                      </p>
-                      <p className="font-normal text-sm text-gray-300">
-                        Live fund performance & allocation breakdown
-                      </p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        {/* CTA Button */}
-        <div className="flex items-center justify-center gap-3 mt-[30px] max-md:mt-5 mx-auto">
-          <div className="relative">
-            <button
-              className="h-12 min-w-[166px] font-medium flex items-center cursor-pointer transition duration-300 ease-in-out justify-center gap-2.5 font-semibold max-sm:text-sm max-sm:h-10 max-sm:w-full bg-gradient-to-r from-emerald-400 to-teal-400 rounded-[60px] text-[#00070F] hover:from-emerald-500 hover:to-teal-500 px-[50px]"
-              aria-label="button"
-            >
-              Buy $CAT
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     </>
   );
 }

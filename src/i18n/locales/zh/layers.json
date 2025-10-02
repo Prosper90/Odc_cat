@@ -1,0 +1,72 @@
+{
+  "testimony": {
+    "title": "Lorem Ipsum Dolor",
+    "items": [
+      {
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+        "author": "Lorem Ipsum"
+      }
+    ]
+  },
+  "accessAI": {
+    "title": "Lorem Ipsum Dolor",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod"
+  },
+  "problemSolution": {
+    "title": "Lorem & Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+  },
+  "howItWorks": {
+    "title": "Lorem Ipsum Dolor",
+    "description": "Lorem ipsum dolor sit amet consectetur"
+  },
+  "advantages": {
+    "title": "Lorem Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing"
+  },
+  "benefits": {
+    "title": "Lorem Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+  },
+  "whitepapers": {
+    "title": "Lorem Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur",
+    "button": "Lorem Ipsum"
+  },
+  "tokenomics": {
+    "title": "Lorem",
+    "description": "Lorem ipsum dolor sit amet",
+    "distribution": {
+      "presale": "Lorem",
+      "liquidity": "Lorem",
+      "marketing": "Lorem",
+      "team": "Lorem",
+      "rewards": "Lorem"
+    }
+  },
+  "phase": {
+    "title": "Lorem Ipsum",
+    "phases": [
+      {
+        "title": "Lorem 1",
+        "description": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Lorem 2",
+        "description": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Lorem 3",
+        "description": "Lorem ipsum dolor sit amet"
+      }
+    ]
+  },
+  "ecosystem": {
+    "title": "Lorem Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur"
+  },
+  "growth": {
+    "title": "Lorem Ipsum",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing"
+  }
+}
